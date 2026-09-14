@@ -1,0 +1,59 @@
+/* Visa Executive Icons Library Utility Classes */
+
+.visa-icon {
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+/* SIZES */
+.visa-icon-xs { width: 14px; height: 14px; }
+.visa-icon-sm { width: 18px; height: 18px; }
+.visa-icon-md { width: 24px; height: 24px; }
+.visa-icon-lg { width: 32px; height: 32px; }
+.visa-icon-xl { width: 44px; height: 44px; }
+.visa-icon-2xl { width: 64px; height: 64px; }
+
+/* BRAND COLORS */
+.visa-icon-blue { color: #1434CB; fill: #1434CB; }
+.visa-icon-navy { color: #021E4C; fill: #021E4C; }
+.visa-icon-electric { color: #0056DD; fill: #0056DD; }
+.visa-icon-sky { color: #2B94F5; fill: #2B94F5; }
+.visa-icon-gold { color: #FCC015; fill: #FCC015; }
+.visa-icon-amber { color: #F7A105; fill: #F7A105; }
+.visa-icon-green { color: #00B050; fill: #00B050; }
+.visa-icon-red { color: #C00000; fill: #C00000; }
+.visa-icon-white { color: #FFFFFF; fill: #FFFFFF; }
+.visa-icon-muted { color: #596579; fill: #596579; }
+
+/* ICON BADGE CONTAINER */
+.visa-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: #F4F6FE;
+  border: 1px solid #C9D6F5;
+  color: #1434CB;
+}
+
+.visa-icon-badge-gold {
+  background: #FFF9ED;
+  border-color: #FCC015;
+  color: #021E4C;
+}
+
+.visa-icon-badge-navy {
+  background: #021E4C;
+  border-color: #021E4C;
+  color: #FFFFFF;
+}
+
+.visa-icon-badge-green {
+  background: #E6F4EA;
+  border-color: #00B050;
+  color: #00B050;
+}

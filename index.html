@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MKT VISA & Bank Hub — Banco de Activos, Armador de Emails & Exportador ZIP</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="tokens/theme.css">
+
+  <!-- Core Libraries -->
+  <script src="src/vendor/jszip.min.js"></script>
+  <script src="src/data/assets_data.js"></script>
+  <script src="src/builder/templates.js"></script>
+  <script src="src/exporter/zip_exporter.js"></script>
+  <script src="src/builder/builder.js"></script>
+</head>
+<body>
+
+  <!-- Ambient Glow -->
+  <div class="ambient-glow"></div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <nav class="navbar">
+    <a href="#" class="nav-brand" onclick="showView('assets')">
+      <div class="brand-badge">VISA & BANCOS</div>
+      <div class="nav-brand-title">
+        <span class="main-text">MKT Hub Oficial</span>
+        <span class="sub-text">Por Israel Torres</span>
+      </div>
+    </a>
+
+    <!-- Navigation Modes Switcher -->
+    <div class="nav-modes">
+      <button class="mode-btn active" id="navBtnAssets" onclick="showView('assets')">
+        <span>📁</span> Biblioteca de Activos
+      </button>
+      <button class="mode-btn" id="navBtnMatrix" onclick="showView('matrix')">
+        <span>🧠</span> Matriz de Decisión BCH
+      </button>
+      <button class="mode-btn" id="navBtnBuilder" onclick="showView('builder')">
+        <span>⚡</span> Armador de Emails
+      </button>
+      <button class="mode-btn" id="navBtnExporter" onclick="showView('exporter')">
+        <span>📦</span> Empaquetador ZIP
+      </button>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="nav-right">
+      <a href="public/assets/bch/BCH_Icon_Decision_Matrix_v1.md" download="BCH_Icon_Decision_Matrix_v1.md" class="btn-pill btn-secondary" title="Descargar la matriz oficial en Markdown">
+        <span>📄 Matriz (.md)</span>
+      </a>
+      <button class="btn-pill btn-primary" onclick="showView('builder')">
+        <span>⚡ Armar Email</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Hero Header -->
+    <section class="hero">
+      <div class="hero-pill">
+        <span class="hero-pill-dot"></span>
+        <span>MKT_VISA • Sistema Centralizado Multi-Banco</span>
+      </div>
+      <h1 class="hero-title">
+        Biblioteca de Activos, <strong>Armador de Emails</strong> y Exportador ZIP
+      </h1>
+      <p class="hero-subtitle">
+        Centraliza los 30 íconos oficiales de Banco de Chile (con su Matriz de Decisión), activos de Visa, Scotiabank, Santander y partners. Ensambla correos HTML responsivos y descárgalos con todas sus imágenes enlazadas en un solo archivo ZIP.
+      </p>
+
+      <!-- KPI Statistics Grid -->
+      <div class="stats-grid">
+        <div class="stat-card" onclick="setCategoryFilter('Íconos 3D'); showView('assets');">
+          <div class="stat-value blue">30</div>
+          <div class="stat-label">Íconos 3D Banco de Chile</div>
+        </div>
+        <div class="stat-card" onclick="setCategoryFilter('Travel & Turismo'); showView('assets');">
+          <div class="stat-value">10</div>
+          <div class="stat-label">Íconos Travel Club</div>
+        </div>
+        <div class="stat-card" onclick="setBankFilter('Visa'); showView('assets');">
+          <div class="stat-value gold">333</div>
+          <div class="stat-label">Visa Nova Icons</div>
+        </div>
+        <div class="stat-card" onclick="setCategoryFilter('Logotipos'); showView('assets');">
+          <div class="stat-value blue">6</div>
+          <div class="stat-label">Bancos & Partners</div>
+        </div>
+        <div class="stat-card" onclick="showView('builder');">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">ZIP Packaging Ready</div>
+        </div>
+      </div>
+
+      <!-- Continuous Marquee Ribbon of Featured BCH Icons -->
+      <div class="hero-marquee-wrapper">
+        <div class="marquee-track" id="marqueeTrack">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VIEW 1: ASSETS LIBRARY (BIBLIOTECA DE ACTIVOS)                     -->
+    <!-- ================================================================= -->
+    <section id="viewAssets">
+      <!-- Search and Filter Bar -->
+      <div class="filter-bar">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Buscar por concepto (ej. tarjeta, cashback, supermercado, travel, VIP, cuotas, dólar)..." oninput="handleSearch(this.value)">
+        </div>
+
+        <!-- Bank Filter Chips -->
+        <div class="chips-row">
+          <span class="chip-group-label">Banco:</span>
+          <button class="chip active" data-bank="all" onclick="filterByBank('all')">Todos</button>
+          <button class="chip" data-bank="Banco de Chile" onclick="filterByBank('Banco de Chile')">Banco de Chile</button>
+          <button class="chip" data-bank="Visa" onclick="filterByBank('Visa')">Visa</button>
+          <button class="chip" data-bank="Scotiabank" onclick="filterByBank('Scotiabank')">Scotiabank</button>
+          <button class="chip" data-bank="Santander" onclick="filterByBank('Santander')">Santander</button>
+          <button class="chip" data-bank="Itaú" onclick="filterByBank('Itaú')">Itaú</button>
+          <button class="chip" data-bank="Artefact" onclick="filterByBank('Artefact')">Artefact</button>
+        </div>
+
+        <!-- Category Filter Chips -->
+        <div class="chips-row">
+          <span class="chip-group-label">Tipo:</span>
+          <button class="chip active-blue" data-category="all" onclick="filterByCategory('all')">Todos los Tipos</button>
+          <button class="chip" data-category="Íconos 3D" onclick="filterByCategory('Íconos 3D')">Íconos 3D</button>
+          <button class="chip" data-category="Travel & Turismo" onclick="filterByCategory('Travel & Turismo')">Travel & Turismo</button>
+          <button class="chip" data-category="Logotipos" onclick="filterByCategory('Logotipos')">Logotipos</button>
+          <button class="chip" data-category="Tarjetas" onclick="filterByCategory('Tarjetas')">Tarjetas</button>
+          <button class="chip" data-category="Banners Hero" onclick="filterByCategory('Banners Hero')">Banners Hero</button>
+        </div>
+      </div>
+
+      <!-- Assets Counter -->
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; padding:0 4px;">
+        <span style="font-size:13px; font-weight:600; color:var(--text-muted);" id="assetsCountDisplay">Mostrando 0 activos</span>
+      </div>
+
+      <!-- Dynamic Assets Grid -->
+      <div class="assets-grid" id="assetsGrid">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VIEW 2: BCH DECISION MATRIX (MATRIZ DE DECISIÓN)                   -->
+    <!-- ================================================================= -->
+    <section id="viewMatrix" style="display:none;">
+      <div class="matrix-container">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px;">
+          <div>
+            <h1>Banco de Chile · Icon Decision Matrix</h1>
+            <p style="color:var(--text-muted);">Sistema de decisión para selección de iconografía en campañas de medios de pago</p>
+          </div>
+          <a href="public/assets/bch/BCH_Icon_Decision_Matrix_v1.md" download class="btn-pill btn-primary">
+            <span>💾 Descargar Documento .md</span>
+          </a>
+        </div>
+
+        <blockquote>
+          <strong>Pregunta Clave:</strong> "¿Qué concepto necesita entender el usuario en menos de 2 segundos?"<br>
+          No seleccionar un ícono porque “se ve bonito”, sino porque representa el significado principal del bloque.
+        </blockquote>
+
+        <h2>1. Regla de Prioridad Semántica</h2>
+        <p>Cuando una comunicación contenga varios conceptos, elegir el icono según este orden estricto:</p>
+        <div class="matrix-interactive-rules">
+          <div class="rule-interactive-card" onclick="filterByTag('descuento')">
+            <div class="rule-interactive-title"><span>1️⃣</span> Acción Principal del Cliente</div>
+            <div class="rule-interactive-desc">Si el bloque explica el beneficio principal o recompensa directa (ej. 24_descuento, 09_cashback).</div>
+          </div>
+          <div class="rule-interactive-card" onclick="filterByTag('cuotas')">
+            <div class="rule-interactive-title"><span>2️⃣</span> Mecánica o Condición</div>
+            <div class="rule-interactive-desc">Si la condición técnica es clave (ej. 25_cuotas_sin_interes, 08_meta_de_transacciones).</div>
+          </div>
+          <div class="rule-interactive-card" onclick="filterByTag('supermercado')">
+            <div class="rule-interactive-title"><span>3️⃣</span> Rubro o Comercio</div>
+            <div class="rule-interactive-desc">Si el bloque explica dónde usarlo (ej. 11_supermercado, 12_gastronomia, 14_combustible).</div>
+          </div>
+          <div class="rule-interactive-card" onclick="filterByTag('tarjeta')">
+            <div class="rule-interactive-title"><span>4️⃣</span> Medio de Pago</div>
+            <div class="rule-interactive-desc">Si el foco es el producto o canal (ej. 01_tarjeta, 04_wallet, 21_contactless).</div>
+          </div>
+        </div>
+
+        <h2>2. Familias de Íconos (Las 3 Categorías Oficiales)</h2>
+        <ul>
+          <li><strong>Medios de Pago & Ciclo de Uso:</strong> Representan el medio de pago, el momento del journey (onboarding, activación, inactividad) o el comportamiento buscado.</li>
+          <li><strong>Rubros de Consumo:</strong> Representan el contexto de gasto o categoría comercial (Supermercados, Cafeterías, Farmacias, Delivery, etc.).</li>
+          <li><strong>Mecánicas, Crossborder & Travel:</strong> Representan una condición comercial, modalidad de uso o experiencia específica (Dólares-Premio, Cuotas, Salones VIP, Traslados).</li>
+        </ul>
+
+        <h2>3. Árbol de Decisión Rápido</h2>
+        <p>Haz clic en cualquier escenario para ver y copiar el ícono recomendado:</p>
+        <div class="matrix-interactive-rules">
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('01_tarjeta.png')">
+            <div class="rule-interactive-title">💳 Tarjeta Genérica</div>
+            <div class="rule-interactive-desc">Portafolio general → <strong>01_tarjeta.png</strong></div>
+          </div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('04_wallet_pago_movil.png')">
+            <div class="rule-interactive-title">📱 Pago Móvil / Wallet</div>
+            <div class="rule-interactive-desc">Apple Pay / Google Wallet → <strong>04_wallet_pago_movil.png</strong></div>
+          </div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('10_dolares_premio.png')">
+            <div class="rule-interactive-title">⭐ Programa de Lealtad</div>
+            <div class="rule-interactive-desc">Acumulación o canje DP → <strong>10_dolares_premio.png</strong></div>
+          </div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('24_descuento.png')">
+            <div class="rule-interactive-title">🏷️ Descuento Porcentual</div>
+            <div class="rule-interactive-desc">% OFF directo en comercios → <strong>24_descuento.png</strong></div>
+          </div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('25_cuotas_sin_interes_csi.png')">
+            <div class="rule-interactive-title">📊 Financiamiento Cuotas</div>
+            <div class="rule-interactive-desc">Cuotas sin interés → <strong>25_cuotas_sin_interes_csi.png</strong></div>
+          </div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('29_lounge_salon_vip.png')">
+            <div class="rule-interactive-title">🛫 Salones VIP Pacific</div>
+            <div class="rule-interactive-desc">Salas de espera aeropuerto → <strong>29_lounge_salon_vip.png</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VIEW 3: EMAIL BUILDER STUDIO (ARMADOR DE PIEZAS)                   -->
+    <!-- ================================================================= -->
+    <section id="viewBuilder" style="display:none;">
+      <div class="builder-layout">
+        <!-- Controls & Form Left Panel -->
+        <div class="builder-controls-panel" id="builderFormContainer">
+          <!-- Dynamically populated by BuilderStudio -->
+        </div>
+
+        <!-- Preview & Code Right Panel -->
+        <div class="builder-preview-panel">
+          <!-- Toolbar -->
+          <div class="preview-toolbar">
+            <div class="device-toggle-group">
+              <button class="device-btn active" id="btnModeDesktop" onclick="BuilderStudio.setPreviewMode('desktop')">
+                <span>💻</span> Desktop (700px)
+              </button>
+              <button class="device-btn" id="btnModeMobile" onclick="BuilderStudio.setPreviewMode('mobile')">
+                <span>📱</span> Mobile (375px)
+              </button>
+            </div>
+
+            <div style="display:flex; gap:8px;">
+              <button class="btn-card" id="tabBtnPreview" onclick="BuilderStudio.setTab('preview')">👁️ Vista Previa</button>
+              <button class="btn-card" id="tabBtnCode" onclick="BuilderStudio.setTab('code')">&lt;/&gt; Código HTML</button>
+              <button class="btn-card" onclick="BuilderStudio.copyHtml()">📋 Copiar HTML</button>
+              <button class="btn-pill btn-primary" onclick="BuilderStudio.exportZip()">📦 Descargar ZIP</button>
+            </div>
+          </div>
+
+          <!-- Live Preview Frame Container -->
+          <div class="preview-frame-container">
+            <div class="preview-frame-wrapper" id="previewFrameWrapper">
+              <iframe id="emailPreviewFrame" class="preview-iframe"></iframe>
+            </div>
+
+            <!-- Code Editor Wrapper -->
+            <div class="code-editor-wrapper" id="codeEditorWrapper">
+              <textarea id="rawHtmlCode" class="code-textarea" readonly></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VIEW 4: BATCH EXPORTER (EMPAQUETADOR ZIP MANUAL)                   -->
+    <!-- ================================================================= -->
+    <section id="viewExporter" style="display:none;">
+      <div class="matrix-container" style="max-width:900px; margin:0 auto;">
+        <h1>Empaquetador Universal de Proyectos ZIP</h1>
+        <p>Pega cualquier código HTML de email marketing. El sistema analizará todas las etiquetas <code>&lt;img&gt;</code>, descargará y renombrará las imágenes a una carpeta <code>images/</code> interna y te entregará el archivo <strong>.zip</strong> listo para enviar sin links rotos.</p>
+        
+        <div class="form-group" style="margin-top:20px;">
+          <label class="form-label">Nombre de la Campaña / Proyecto</label>
+          <input type="text" id="customProjectName" class="form-control" value="campaña_banco_chile_2026">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Pega el HTML de tu Correo</label>
+          <textarea id="customHtmlInput" class="form-control" rows="12" placeholder="Pega aquí el código HTML completo de tu email..."></textarea>
+        </div>
+
+        <button class="btn-pill btn-primary" style="padding:14px 28px; font-size:15px;" onclick="handleCustomZipExport()">
+          <span>📦 Descargar Proyecto ZIP Completo (HTML + Imágenes)</span>
+        </button>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Asset Detail Modal -->
+  <div class="modal-overlay" id="assetDetailModal" onclick="closeModalOnOverlay(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalTitle" style="font-size:18px; font-weight:700; color:var(--bch-navy);">Detalle del Activo</h3>
+        <button class="modal-close" onclick="closeAssetModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-preview">
+          <img id="modalImg" src="" alt="">
+        </div>
+        <div class="modal-details">
+          <div>
+            <span id="modalBankBadge" class="chip active" style="margin-bottom:8px; display:inline-block;">BANCO</span>
+            <span id="modalCategoryBadge" class="chip" style="margin-bottom:8px; display:inline-block;">CATEGORIA</span>
+          </div>
+
+          <div>
+            <h4 style="font-size:13px; font-weight:700; color:var(--bch-navy); margin-bottom:4px;">Regla Semántica (Decision Matrix)</h4>
+            <p id="modalRule" style="font-size:13px; color:var(--text-secondary); line-height:1.5;"></p>
+          </div>
+
+          <div>
+            <h4 style="font-size:13px; font-weight:700; color:var(--bch-navy); margin-bottom:4px;">Ruta Relativa en Proyecto</h4>
+            <div class="code-snippet-box">
+              <span id="modalRelPath">assets/...</span>
+              <button class="copy-snippet-btn" onclick="copySnippet('modalRelPath')">Copiar</button>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="font-size:13px; font-weight:700; color:var(--bch-navy); margin-bottom:4px;">Snippet HTML &lt;img&gt;</h4>
+            <div class="code-snippet-box">
+              <span id="modalHtmlSnippet">&lt;img src="..."&gt;</span>
+              <button class="copy-snippet-btn" onclick="copySnippet('modalHtmlSnippet')">Copiar</button>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:10px; margin-top:8px;">
+            <a id="modalDownloadBtn" href="" download class="btn-pill btn-secondary" style="flex:1; justify-content:center;">
+              <span>💾 Descargar Archivo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Asset Picker Modal (for Builder Studio) -->
+  <div class="modal-overlay" id="assetPickerModal" onclick="closeModalOnOverlay(event)">
+    <div class="modal-box" style="max-width:700px;">
+      <div class="modal-header">
+        <h3 style="font-size:16px; font-weight:700; color:var(--bch-navy);">Seleccionar Ícono o Recurso</h3>
+        <button class="modal-close" onclick="document.getElementById('assetPickerModal').classList.remove('active')">&times;</button>
+      </div>
+      <div class="asset-picker-grid" id="assetPickerGrid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Popup Alert -->
+  <div class="toast-popup" id="toastAlert">
+    <span id="toastIcon">✨</span> <span id="toastText">Copiado al portapapeles</span>
+  </div>
+
+  <!-- Application Logic Controller -->
+  <script>
+    let currentBankFilter = 'all';
+    let currentCategoryFilter = 'all';
+    let currentSearchTerm = '';
+
+    // Switch between Main Views
+    function showView(viewName) {
+      document.getElementById('viewAssets').style.display = viewName === 'assets' ? 'block' : 'none';
+      document.getElementById('viewMatrix').style.display = viewName === 'matrix' ? 'block' : 'none';
+      document.getElementById('viewBuilder').style.display = viewName === 'builder' ? 'block' : 'none';
+      document.getElementById('viewExporter').style.display = viewName === 'exporter' ? 'block' : 'none';
+
+      document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+      if (viewName === 'assets') document.getElementById('navBtnAssets').classList.add('active');
+      if (viewName === 'matrix') document.getElementById('navBtnMatrix').classList.add('active');
+      if (viewName === 'builder') {
+        document.getElementById('navBtnBuilder').classList.add('active');
+        if (!window.BuilderStudio.state) window.BuilderStudio.init();
+      }
+      if (viewName === 'exporter') document.getElementById('navBtnExporter').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Toast Notification helper
+    function showToast(message, icon = "✨") {
+      const toast = document.getElementById('toastAlert');
+      document.getElementById('toastText').innerText = message;
+      document.getElementById('toastIcon').innerText = icon;
+      toast.classList.add('show');
+      setTimeout(() => { toast.classList.remove('show'); }, 3200);
+    }
+
+    function copySnippet(elementId) {
+      const text = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        showToast("¡Copiado al portapapeles!");
+      });
+    }
+
+    function copyText(text, label = "Ruta copiada") {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(`¡${label}!`);
+      });
+    }
+
+    // Render continuous marquee ribbon
+    function renderMarquee() {
+      const track = document.getElementById('marqueeTrack');
+      if (!track || !window.BANK_ASSETS) return;
+
+      const featured = window.BANK_ASSETS.filter(a => a.is_featured && a.category === "Íconos 3D");
+      const list = [...featured, ...featured]; // Duplicate for seamless infinite loop
+
+      track.innerHTML = list.map(item => `
+        <div class="marquee-item" onclick="openAssetModalByFilename('${item.filename}')">
+          <div class="marquee-icon-box">
+            <img src="${item.rel_path}" alt="${item.title}">
+          </div>
+          <div>
+            <div class="marquee-name">${item.title}</div>
+            <div class="marquee-tag">${item.rubro || item.family}</div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Filter by Bank
+    function filterByBank(bank) {
+      currentBankFilter = bank;
+      document.querySelectorAll('[data-bank]').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-bank') === bank);
+      });
+      renderAssets();
+    }
+
+    function setBankFilter(bank) {
+      filterByBank(bank);
+    }
+
+    // Filter by Category
+    function filterByCategory(cat) {
+      currentCategoryFilter = cat;
+      document.querySelectorAll('[data-category]').forEach(btn => {
+        btn.classList.toggle('active-blue', btn.getAttribute('data-category') === cat);
+      });
+      renderAssets();
+    }
+
+    function setCategoryFilter(cat) {
+      filterByCategory(cat);
+    }
+
+    function filterByTag(tag) {
+      currentSearchTerm = tag;
+      document.getElementById('searchInput').value = tag;
+      showView('assets');
+      renderAssets();
+    }
+
+    function handleSearch(val) {
+      currentSearchTerm = val.toLowerCase().trim();
+      renderAssets();
+    }
+
+    // Render Assets Cards Grid
+    function renderAssets() {
+      const grid = document.getElementById('assetsGrid');
+      const countEl = document.getElementById('assetsCountDisplay');
+      if (!grid || !window.BANK_ASSETS) return;
+
+      let filtered = window.BANK_ASSETS.filter(item => {
+        const matchesBank = currentBankFilter === 'all' || item.bank.toLowerCase() === currentBankFilter.toLowerCase();
+        const matchesCat = currentCategoryFilter === 'all' || item.category === currentCategoryFilter;
+        let matchesSearch = true;
+        if (currentSearchTerm) {
+          const haystack = `${item.title} ${item.category} ${item.family || ''} ${item.rubro || ''} ${item.rule || ''} ${(item.tags || []).join(' ')}`.toLowerCase();
+          matchesSearch = haystack.includes(currentSearchTerm);
+        }
+        return matchesBank && matchesCat && matchesSearch;
+      });
+
+      countEl.innerText = `Mostrando ${filtered.length} de ${window.BANK_ASSETS.length} activos`;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1/-1; text-align:center; padding:60px 20px; color:var(--text-muted);">
+            <div style="font-size:40px; margin-bottom:12px;">🔍</div>
+            <h3 style="font-size:18px; font-weight:700; color:var(--bch-navy);">No se encontraron recursos</h3>
+            <p>Intenta con otros términos como "tarjeta", "descuento", "pos", "travel" o selecciona otro banco.</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(asset => {
+        const htmlSnippet = `&lt;img src="${asset.rel_path}" width="64" alt="${asset.title}"&gt;`;
+        return `
+          <div class="asset-card">
+            <div class="asset-preview" onclick="openAssetModalByFilename('${asset.filename}')">
+              <span class="asset-bank-badge">${asset.bank}</span>
+              <span class="asset-format-badge">${asset.format}</span>
+              <img src="${asset.rel_path}" alt="${asset.title}" loading="lazy">
+            </div>
+
+            <div class="asset-info">
+              <h3 class="asset-title">${asset.title}</h3>
+              <p class="asset-rule">${asset.rule || asset.concept || 'Activo corporativo oficial.'}</p>
+              
+              <div class="asset-meta-row">
+                <span>${asset.width}x${asset.height}</span>
+                <span>${asset.size_kb}</span>
+              </div>
+
+              <div class="asset-actions">
+                <button class="btn-card" onclick="copyText('&lt;img src=&quot;${asset.rel_path}&quot; width=&quot;64&quot; alt=&quot;${asset.title}&quot;&gt;', 'Tag HTML copiado')" title="Copiar tag HTML">
+                  📋 &lt;img&gt;
+                </button>
+                <button class="btn-card" onclick="copyText('${asset.rel_path}', 'Ruta relativa copiada')" title="Copiar ruta relativa">
+                  🔗 Ruta
+                </button>
+                <button class="btn-card" onclick="openAssetModalByFilename('${asset.filename}')">
+                  🔍 Detalle
+                </button>
+                <a href="${asset.rel_path}" download="${asset.filename}" class="btn-card highlight" style="text-decoration:none;">
+                  💾 Descargar
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Modal Details Logic
+    function openAssetModalByFilename(filename) {
+      const asset = window.BANK_ASSETS.find(a => a.filename === filename);
+      if (!asset) return;
+
+      document.getElementById('modalTitle').innerText = asset.title;
+      document.getElementById('modalImg').src = asset.rel_path;
+      document.getElementById('modalBankBadge').innerText = asset.bank;
+      document.getElementById('modalCategoryBadge').innerText = asset.category;
+      document.getElementById('modalRule').innerText = asset.rule || asset.concept || 'Uso institucional oficial.';
+      document.getElementById('modalRelPath').innerText = asset.rel_path;
+      document.getElementById('modalHtmlSnippet').innerText = `<img src="${asset.rel_path}" width="64" height="64" alt="${asset.title}">`;
+      document.getElementById('modalDownloadBtn').href = asset.rel_path;
+      document.getElementById('modalDownloadBtn').download = asset.filename;
+
+      document.getElementById('assetDetailModal').classList.add('active');
+    }
+
+    function closeAssetModal() {
+      document.getElementById('assetDetailModal').classList.remove('active');
+    }
+
+    function closeModalOnOverlay(e) {
+      if (e.target.classList.contains('modal-overlay')) {
+        e.target.classList.remove('active');
+      }
+    }
+
+    // Custom ZIP Exporter
+    function handleCustomZipExport() {
+      const name = document.getElementById('customProjectName').value || "email_project";
+      const html = document.getElementById('customHtmlInput').value;
+      if (!html || !html.trim()) {
+        alert("Por favor pega el código HTML de tu email antes de exportar.");
+        return;
+      }
+      window.exportEmailProjectZip(html, name);
+    }
+
+    // Initialize on DOM load
+    document.addEventListener('DOMContentLoaded', () => {
+      renderMarquee();
+      renderAssets();
+      window.BuilderStudio.init();
+    });
+  </script>
+</body>
+</html>

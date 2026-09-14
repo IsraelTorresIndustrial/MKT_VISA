@@ -1,0 +1,11 @@
+{
+  "name": "mkt-visa-hub",
+  "version": "1.0.0",
+  "description": "Multi-Bank Visual Asset Hub, Interactive Email Piece Builder and 1-Click ZIP Exporter",
+  "author": "Israel Torres",
+  "private": true,
+  "scripts": {
+    "build:manifest": "python3 scripts/build_manifest.py",
+    "serve": "npx serve ."
+  }
+}
