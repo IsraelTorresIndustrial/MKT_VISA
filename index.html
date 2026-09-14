@@ -75,7 +75,7 @@
         Biblioteca de Activos, <strong>Armador de Emails</strong> y Exportador ZIP
       </h1>
       <p class="hero-subtitle">
-        Centraliza los 30 íconos oficiales de Banco de Chile (con su Matriz de Decisión), activos de Visa, Scotiabank, Santander y partners. Ensambla correos HTML responsivos y descárgalos con todas sus imágenes enlazadas en un solo archivo ZIP.
+        Centraliza los 30 íconos oficiales de Banco de Chile (con su Matriz de Decisión) y recursos Visa. Ensambla correos HTML responsivos y descárgalos con todas sus imágenes enlazadas en un solo archivo ZIP.
       </p>
 
       <!-- KPI Statistics Grid -->
@@ -88,13 +88,9 @@
           <div class="stat-value">10</div>
           <div class="stat-label">Íconos Travel Club</div>
         </div>
-        <div class="stat-card" onclick="setBankFilter('Visa'); showView('assets');">
-          <div class="stat-value gold">333</div>
-          <div class="stat-label">Visa Nova Icons</div>
-        </div>
-        <div class="stat-card" onclick="setCategoryFilter('Logotipos'); showView('assets');">
-          <div class="stat-value blue">6</div>
-          <div class="stat-label">Bancos & Partners</div>
+        <div class="stat-card" onclick="showView('matrix');">
+          <div class="stat-value gold">1</div>
+          <div class="stat-label">Matriz de Decisión (.md)</div>
         </div>
         <div class="stat-card" onclick="showView('builder');">
           <div class="stat-value">100%</div>
@@ -123,14 +119,10 @@
 
         <!-- Bank Filter Chips -->
         <div class="chips-row">
-          <span class="chip-group-label">Banco:</span>
+          <span class="chip-group-label">Entidad:</span>
           <button class="chip active" data-bank="all" onclick="filterByBank('all')">Todos</button>
           <button class="chip" data-bank="Banco de Chile" onclick="filterByBank('Banco de Chile')">Banco de Chile</button>
           <button class="chip" data-bank="Visa" onclick="filterByBank('Visa')">Visa</button>
-          <button class="chip" data-bank="Scotiabank" onclick="filterByBank('Scotiabank')">Scotiabank</button>
-          <button class="chip" data-bank="Santander" onclick="filterByBank('Santander')">Santander</button>
-          <button class="chip" data-bank="Itaú" onclick="filterByBank('Itaú')">Itaú</button>
-          <button class="chip" data-bank="Artefact" onclick="filterByBank('Artefact')">Artefact</button>
         </div>
 
         <!-- Category Filter Chips -->
@@ -140,8 +132,6 @@
           <button class="chip" data-category="Íconos 3D" onclick="filterByCategory('Íconos 3D')">Íconos 3D</button>
           <button class="chip" data-category="Travel & Turismo" onclick="filterByCategory('Travel & Turismo')">Travel & Turismo</button>
           <button class="chip" data-category="Logotipos" onclick="filterByCategory('Logotipos')">Logotipos</button>
-          <button class="chip" data-category="Tarjetas" onclick="filterByCategory('Tarjetas')">Tarjetas</button>
-          <button class="chip" data-category="Banners Hero" onclick="filterByCategory('Banners Hero')">Banners Hero</button>
         </div>
       </div>
 

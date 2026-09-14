@@ -17,13 +17,13 @@ window.EMAIL_PRESETS = {
       "borderColor": "#D9E3F2",
       "fontFamily": "Arial, Helvetica, sans-serif"
     },
-    "heroBanner": "assets/bch/banners/banner_masivo.png",
+    "heroBanner": "",
     "clientName": "[Nombre]",
     "h1Text": "Un plan del Chile puede darte más.<br>Conoce una propuesta pensada para ti.",
     "productSubtitle": "TU NUEVO PLAN",
     "productTitle": "Plan Travel Infinite",
     "productDescription": "Más beneficios para tus compras y una experiencia Travel más completa.",
-    "cardImage": "assets/bch/cards/tarjetas bancochile <> visa.webp",
+    "cardImage": "assets/bch/logos/banco_de_chile.png",
     "benefits": [
       {
         "icon": "assets/bch/icons/10_dolares_premio.png",
@@ -63,13 +63,13 @@ window.EMAIL_PRESETS = {
       "borderColor": "#D9E3F2",
       "fontFamily": "Arial, Helvetica, sans-serif"
     },
-    "heroBanner": "assets/bch/banners/quesuerteserbch.jpg",
+    "heroBanner": "",
     "clientName": "[Nombre]",
     "h1Text": "Tienes 30% de descuento en tu primera compra del mes.<br>Úsalo en todos los comercios.",
     "productSubtitle": "BENEFICIO EXCLUSIVO",
     "productTitle": "Vuelve a usar tu Tarjeta del Chile",
     "productDescription": "Aprovecha tus beneficios y acumula recompensas desde tu próxima compra.",
-    "cardImage": "assets/bch/cards/tarjetas bancochile <> visa.webp",
+    "cardImage": "assets/bch/logos/banco_de_chile.png",
     "benefits": [
       {
         "icon": "assets/bch/icons/24_descuento.png",
@@ -109,7 +109,7 @@ window.EMAIL_PRESETS = {
       "borderColor": "#C9D6F5",
       "fontFamily": "'Visa Dialect', Segoe UI, Arial, sans-serif"
     },
-    "heroBanner": "assets/bch/banners/banner_masivo.png",
+    "heroBanner": "",
     "clientName": "[Nombre del Titular]",
     "h1Text": "Tu Tarjeta Visa te acompaña en cada destino.<br>Viaja y compra en el extranjero sin preocupaciones.",
     "productSubtitle": "EXPERIENCIA INTERNACIONAL",

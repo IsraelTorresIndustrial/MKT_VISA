@@ -1151,78 +1151,6 @@ window.BANK_ASSETS = [
     "is_featured": true
   },
   {
-    "filename": "banner_masivo.png",
-    "rel_path": "assets/bch/banners/banner_masivo.png",
-    "bank": "Banco de Chile",
-    "format": "PNG",
-    "width": 1400,
-    "height": 600,
-    "size_kb": "1019.3 KB",
-    "size_bytes": 1043810,
-    "title": "Hero Banner (banner_masivo.png)",
-    "category": "Banners Hero",
-    "family": "Creatividades de Campaña",
-    "concept": "Cabecera visual de alto impacto para email",
-    "rubro": "Marketing",
-    "rule": "Insertar en la sección superior del email para establecer el tono de la campaña.",
-    "tags": [
-      "banner",
-      "hero",
-      "campaña",
-      "bch",
-      "email header"
-    ],
-    "is_featured": true
-  },
-  {
-    "filename": "quesuerteserbch.jpg",
-    "rel_path": "assets/bch/banners/quesuerteserbch.jpg",
-    "bank": "Banco de Chile",
-    "format": "JPG",
-    "width": 1200,
-    "height": 630,
-    "size_kb": "630.5 KB",
-    "size_bytes": 645670,
-    "title": "Hero Banner (quesuerteserbch.jpg)",
-    "category": "Banners Hero",
-    "family": "Creatividades de Campaña",
-    "concept": "Cabecera visual de alto impacto para email",
-    "rubro": "Marketing",
-    "rule": "Insertar en la sección superior del email para establecer el tono de la campaña.",
-    "tags": [
-      "banner",
-      "hero",
-      "campaña",
-      "bch",
-      "email header"
-    ],
-    "is_featured": true
-  },
-  {
-    "filename": "tarjetas bancochile <> visa.webp",
-    "rel_path": "assets/bch/cards/tarjetas bancochile <> visa.webp",
-    "bank": "Banco de Chile",
-    "format": "WEBP",
-    "width": 1200,
-    "height": 630,
-    "size_kb": "67.7 KB",
-    "size_bytes": 69332,
-    "title": "Tarjeta (tarjetas bancochile <> visa.webp)",
-    "category": "Tarjetas",
-    "family": "Portafolio de Productos",
-    "concept": "Render visual de tarjeta de crédito/débito",
-    "rubro": "Medios de Pago",
-    "rule": "Mostrar como producto protagonista en fichas y correos comerciales.",
-    "tags": [
-      "tarjeta",
-      "plastico",
-      "credito",
-      "bch",
-      "visa"
-    ],
-    "is_featured": true
-  },
-  {
     "filename": "visa_blue.png",
     "rel_path": "assets/visa/logos/visa_blue.png",
     "bank": "Visa",
@@ -1234,17 +1162,16 @@ window.BANK_ASSETS = [
     "title": "Visa Logo (visa_blue.png)",
     "category": "Logotipos",
     "family": "Visa Brand Standards",
-    "concept": "Logotipo oficial Visa",
+    "concept": "Logotipo oficial Visa para co-branding",
     "rubro": "Branding",
-    "rule": "Cumplir estándares oficiales de contraste (fondo claro vs fondo oscuro).",
+    "rule": "Logotipo oficial Visa para cabeceras y tarjetas co-branded.",
     "tags": [
       "visa",
       "logo",
       "branding",
-      "wordmark",
-      "vca"
+      "wordmark"
     ],
-    "is_featured": true
+    "is_featured": false
   },
   {
     "filename": "visa_logo_white.png",
@@ -1258,17 +1185,16 @@ window.BANK_ASSETS = [
     "title": "Visa Logo (visa_logo_white.png)",
     "category": "Logotipos",
     "family": "Visa Brand Standards",
-    "concept": "Logotipo oficial Visa",
+    "concept": "Logotipo oficial Visa para co-branding",
     "rubro": "Branding",
-    "rule": "Cumplir estándares oficiales de contraste (fondo claro vs fondo oscuro).",
+    "rule": "Logotipo oficial Visa para cabeceras y tarjetas co-branded.",
     "tags": [
       "visa",
       "logo",
       "branding",
-      "wordmark",
-      "vca"
+      "wordmark"
     ],
-    "is_featured": true
+    "is_featured": false
   },
   {
     "filename": "visa_vector.png",
@@ -1282,176 +1208,14 @@ window.BANK_ASSETS = [
     "title": "Visa Logo (visa_vector.png)",
     "category": "Logotipos",
     "family": "Visa Brand Standards",
-    "concept": "Logotipo oficial Visa",
+    "concept": "Logotipo oficial Visa para co-branding",
     "rubro": "Branding",
-    "rule": "Cumplir estándares oficiales de contraste (fondo claro vs fondo oscuro).",
+    "rule": "Logotipo oficial Visa para cabeceras y tarjetas co-branded.",
     "tags": [
       "visa",
       "logo",
       "branding",
-      "wordmark",
-      "vca"
-    ],
-    "is_featured": true
-  },
-  {
-    "filename": "scotiabank-ahora.webp",
-    "rel_path": "assets/scotiabank/scotiabank-ahora.webp",
-    "bank": "Scotiabank",
-    "format": "WEBP",
-    "width": 1200,
-    "height": 630,
-    "size_kb": "11.5 KB",
-    "size_bytes": 11816,
-    "title": "Scotiabank - scotiabank-ahora.webp",
-    "category": "Logotipos",
-    "family": "Identidad Scotiabank",
-    "concept": "Recurso oficial de Scotiabank",
-    "rubro": "Branding",
-    "rule": "Uso para co-branding y piezas específicas de Scotiabank.",
-    "tags": [
-      "scotiabank",
-      "logo",
-      "branding",
-      "banco"
-    ],
-    "is_featured": false
-  },
-  {
-    "filename": "scotiabank.png",
-    "rel_path": "assets/scotiabank/scotiabank.png",
-    "bank": "Scotiabank",
-    "format": "PNG",
-    "width": 1280,
-    "height": 318,
-    "size_kb": "30.9 KB",
-    "size_bytes": 31610,
-    "title": "Scotiabank - scotiabank.png",
-    "category": "Logotipos",
-    "family": "Identidad Scotiabank",
-    "concept": "Recurso oficial de Scotiabank",
-    "rubro": "Branding",
-    "rule": "Uso para co-branding y piezas específicas de Scotiabank.",
-    "tags": [
-      "scotiabank",
-      "logo",
-      "branding",
-      "banco"
-    ],
-    "is_featured": false
-  },
-  {
-    "filename": "santander.svg",
-    "rel_path": "assets/santander/santander.svg",
-    "bank": "Santander",
-    "format": "SVG",
-    "width": "Vector",
-    "height": "Vector",
-    "size_kb": "4.4 KB",
-    "size_bytes": 4461,
-    "title": "Santander - santander.svg",
-    "category": "Logotipos",
-    "family": "Identidad Santander",
-    "concept": "Recurso oficial de Santander",
-    "rubro": "Branding",
-    "rule": "Uso para co-branding y piezas específicas de Santander.",
-    "tags": [
-      "santander",
-      "logo",
-      "branding",
-      "banco"
-    ],
-    "is_featured": false
-  },
-  {
-    "filename": "itau.png",
-    "rel_path": "assets/itau/itau.png",
-    "bank": "Itaú",
-    "format": "PNG",
-    "width": 3840,
-    "height": 3840,
-    "size_kb": "85.8 KB",
-    "size_bytes": 87820,
-    "title": "Itaú - itau.png",
-    "category": "Logotipos",
-    "family": "Identidad Itaú",
-    "concept": "Recurso oficial de Itaú",
-    "rubro": "Branding",
-    "rule": "Uso para co-branding y piezas específicas de Itaú.",
-    "tags": [
-      "itaú",
-      "logo",
-      "branding",
-      "banco"
-    ],
-    "is_featured": false
-  },
-  {
-    "filename": "artefact_dark.png",
-    "rel_path": "assets/artefact/artefact_dark.png",
-    "bank": "Artefact",
-    "format": "PNG",
-    "width": 1576,
-    "height": 294,
-    "size_kb": "24.3 KB",
-    "size_bytes": 24873,
-    "title": "Artefact - artefact_dark.png",
-    "category": "Logotipos",
-    "family": "Identidad Artefact",
-    "concept": "Recurso oficial de Artefact",
-    "rubro": "Branding",
-    "rule": "Uso para co-branding y piezas específicas de Artefact.",
-    "tags": [
-      "artefact",
-      "logo",
-      "branding",
-      "banco"
-    ],
-    "is_featured": false
-  },
-  {
-    "filename": "artefact_logo_horizontal_dark.png",
-    "rel_path": "assets/artefact/artefact_logo_horizontal_dark.png",
-    "bank": "Artefact",
-    "format": "PNG",
-    "width": 1576,
-    "height": 294,
-    "size_kb": "24.3 KB",
-    "size_bytes": 24873,
-    "title": "Artefact - artefact_logo_horizontal_dark.png",
-    "category": "Logotipos",
-    "family": "Identidad Artefact",
-    "concept": "Recurso oficial de Artefact",
-    "rubro": "Branding",
-    "rule": "Uso para co-branding y piezas específicas de Artefact.",
-    "tags": [
-      "artefact",
-      "logo",
-      "branding",
-      "banco"
-    ],
-    "is_featured": false
-  },
-  {
-    "filename": "artefact_logo_horizontal_white.png",
-    "rel_path": "assets/artefact/artefact_logo_horizontal_white.png",
-    "bank": "Artefact",
-    "format": "PNG",
-    "width": 1576,
-    "height": 294,
-    "size_kb": "15.1 KB",
-    "size_bytes": 15422,
-    "title": "Artefact - artefact_logo_horizontal_white.png",
-    "category": "Logotipos",
-    "family": "Identidad Artefact",
-    "concept": "Recurso oficial de Artefact",
-    "rubro": "Branding",
-    "rule": "Uso para co-branding y piezas específicas de Artefact.",
-    "tags": [
-      "artefact",
-      "logo",
-      "branding",
-      "banco"
+      "wordmark"
     ],
     "is_featured": false
   }

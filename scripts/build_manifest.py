@@ -314,7 +314,7 @@ def get_file_info(filepath, rel_path, bank, category_default):
         "size_bytes": size_bytes
     }
 
-# 1. BCH 30 Icons
+# 1. BCH 30 Icons (Stream-Alpha)
 for fn, meta in BCH_30_METADATA.items():
     fp = os.path.join(BASE_DIR, "bch/icons", fn)
     if os.path.exists(fp):
@@ -331,7 +331,7 @@ for fn, meta in BCH_30_METADATA.items():
         })
         manifest.append(info)
 
-# 2. BCH Travel Icons
+# 2. BCH Travel Icons (Stream-Alpha)
 travel_dir = os.path.join(BASE_DIR, "bch/travel")
 if os.path.exists(travel_dir):
     for fn in sorted(os.listdir(travel_dir)):
@@ -370,44 +370,7 @@ if os.path.exists(bch_logos_dir):
             })
             manifest.append(info)
 
-# 4. BCH Banners & Cards
-bch_banners_dir = os.path.join(BASE_DIR, "bch/banners")
-if os.path.exists(bch_banners_dir):
-    for fn in sorted(os.listdir(bch_banners_dir)):
-        if not fn.startswith("."):
-            fp = os.path.join(bch_banners_dir, fn)
-            info = get_file_info(fp, f"assets/bch/banners/{fn}", "Banco de Chile", "Banners")
-            info.update({
-                "title": f"Hero Banner ({fn})",
-                "category": "Banners Hero",
-                "family": "Creatividades de Campaña",
-                "concept": "Cabecera visual de alto impacto para email",
-                "rubro": "Marketing",
-                "rule": "Insertar en la sección superior del email para establecer el tono de la campaña.",
-                "tags": ["banner", "hero", "campaña", "bch", "email header"],
-                "is_featured": True
-            })
-            manifest.append(info)
-
-bch_cards_dir = os.path.join(BASE_DIR, "bch/cards")
-if os.path.exists(bch_cards_dir):
-    for fn in sorted(os.listdir(bch_cards_dir)):
-        if not fn.startswith("."):
-            fp = os.path.join(bch_cards_dir, fn)
-            info = get_file_info(fp, f"assets/bch/cards/{fn}", "Banco de Chile", "Tarjetas")
-            info.update({
-                "title": f"Tarjeta ({fn})",
-                "category": "Tarjetas",
-                "family": "Portafolio de Productos",
-                "concept": "Render visual de tarjeta de crédito/débito",
-                "rubro": "Medios de Pago",
-                "rule": "Mostrar como producto protagonista en fichas y correos comerciales.",
-                "tags": ["tarjeta", "plastico", "credito", "bch", "visa"],
-                "is_featured": True
-            })
-            manifest.append(info)
-
-# 5. Visa Logos
+# 4. Visa Logos (Marca oficial)
 visa_logos_dir = os.path.join(BASE_DIR, "visa/logos")
 if os.path.exists(visa_logos_dir):
     for fn in sorted(os.listdir(visa_logos_dir)):
@@ -418,42 +381,16 @@ if os.path.exists(visa_logos_dir):
                 "title": f"Visa Logo ({fn})",
                 "category": "Logotipos",
                 "family": "Visa Brand Standards",
-                "concept": "Logotipo oficial Visa",
+                "concept": "Logotipo oficial Visa para co-branding",
                 "rubro": "Branding",
-                "rule": "Cumplir estándares oficiales de contraste (fondo claro vs fondo oscuro).",
-                "tags": ["visa", "logo", "branding", "wordmark", "vca"],
-                "is_featured": True
+                "rule": "Logotipo oficial Visa para cabeceras y tarjetas co-branded.",
+                "tags": ["visa", "logo", "branding", "wordmark"],
+                "is_featured": False
             })
             manifest.append(info)
-
-# 6. Other Banks & Artefact
-other_banks = [
-    ("scotiabank", "Scotiabank"),
-    ("santander", "Santander"),
-    ("itau", "Itaú"),
-    ("artefact", "Artefact")
-]
-for folder, bank_name in other_banks:
-    bdir = os.path.join(BASE_DIR, folder)
-    if os.path.exists(bdir):
-        for fn in sorted(os.listdir(bdir)):
-            if not fn.startswith(".") and os.path.isfile(os.path.join(bdir, fn)):
-                fp = os.path.join(bdir, fn)
-                info = get_file_info(fp, f"assets/{folder}/{fn}", bank_name, "Logotipos")
-                info.update({
-                    "title": f"{bank_name} - {fn}",
-                    "category": "Logotipos",
-                    "family": f"Identidad {bank_name}",
-                    "concept": f"Recurso oficial de {bank_name}",
-                    "rubro": "Branding",
-                    "rule": f"Uso para co-branding y piezas específicas de {bank_name}.",
-                    "tags": [bank_name.lower(), "logo", "branding", "banco"],
-                    "is_featured": False
-                })
-                manifest.append(info)
 
 os.makedirs(os.path.dirname(MANIFEST_PATH), exist_ok=True)
 with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
     json.dump(manifest, f, ensure_ascii=False, indent=2)
 
-print(f"Manifest created successfully with {len(manifest)} assets indexed!")
+print(f"Manifest created successfully with {len(manifest)} approved assets indexed!")
