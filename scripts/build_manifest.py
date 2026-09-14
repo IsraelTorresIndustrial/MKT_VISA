@@ -2,7 +2,7 @@ import os
 import json
 import struct
 
-BASE_DIR = os.path.abspath("public/assets")
+BASE_DIR = os.path.abspath("assets")
 MANIFEST_PATH = os.path.abspath("src/data/assets_manifest.json")
 
 BCH_30_METADATA = {
