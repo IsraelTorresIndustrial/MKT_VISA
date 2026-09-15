@@ -2,7 +2,7 @@
 > **Autor:** Israel Torres  
 > **Proyecto:** MKT_VISA  
 > **Ámbito:** Banco de Chile · Medios de Pago · Visa · Travel Club  
-> **Disponibilidad:** **100% Verificado (42 Activos Digitales Oficiales)** con descripciones morfológicas hiperdetalladas para LLMs con o sin visión, reglas de negocio, intenciones de campaña y URLs públicas directas de producción en Vercel (`https://mkt-visa.vercel.app/assets/bch/...`).
+> **Disponibilidad:** **100% Verificado (72 Activos Digitales Oficiales (42 3D/Travel/Logos + 30 2D))** con descripciones morfológicas hiperdetalladas para LLMs con o sin visión, reglas de negocio, intenciones de campaña y URLs públicas directas de producción en Vercel (`https://mkt-visa.vercel.app/assets/bch/...`).
 
 ---
 
@@ -1150,7 +1150,7 @@ Guía rápida para resolver ambivalencias comunes en requerimientos de marketing
 ## 🤖 PROMPT DE SISTEMA LISTO PARA INYECTAR EN AGENTES LLM
 ```text
 Eres el Selector Determinista de Iconografía para Medios de Pago de Banco de Chile y Visa.
-Tu tarea es analizar el requerimiento textual del usuario, extraer el concepto semántico dominante y devolver el ícono oficial más adecuado de la biblioteca BCH (42 activos verificados).
+Tu tarea es analizar el requerimiento textual del usuario, extraer el concepto semántico dominante y devolver el ícono oficial más adecuado de la biblioteca BCH (72 activos verificados).
 
 Reglas Obligatorias:
 1. NUNCA inventes nombres de archivo ni rutas relativas locales.
@@ -1168,3 +1168,54 @@ Reglas Obligatorias:
   "confidence": 0.99
 }
 ```
+
+
+---
+
+## 🎨 SUITE DE ÍCONOS 2D OFICIALES BANCO DE CHILE (30 ACTIVOS VECTORIALES/PLANOS)
+
+Para piezas con lenguaje visual plano, ilustraciones 2D, minimalismo gráfico o compresión ultra-ligera, Banco de Chile dispone de la versión 2D oficial correspondiente a los 30 conceptos clave de medios de pago.
+
+### 📐 Estándar Canónico de URLs CDN para Íconos 2D:
+```text
+https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/{carpeta}/{filename}
+```
+
+### 📋 Catálogo Completo de Íconos 2D:
+
+| ID | Concepto / Nombre | Carpeta | Filename | URL CDN Vercel Producción |
+|---|---|---|---|---|
+| **[01]** | Tarjeta de Crédito Genérica | `01_medios_pago_ciclo_uso` | `01_tarjeta_visa.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/01_medios_pago_ciclo_uso/01_tarjeta_visa.png` |
+| **[02]** | Pago Presencial POS | `01_medios_pago_ciclo_uso` | `02_pago_presencial_pos.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/01_medios_pago_ciclo_uso/02_pago_presencial_pos.png` |
+| **[03]** | Ecommerce Nacional | `01_medios_pago_ciclo_uso` | `03_ecommerce.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/01_medios_pago_ciclo_uso/03_ecommerce.png` |
+| **[04]** | Wallet & Pago Móvil | `01_medios_pago_ciclo_uso` | `04_wallet_pago_movil.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/01_medios_pago_ciclo_uso/04_wallet_pago_movil.png` |
+| **[05]** | Activación de Tarjeta | `01_medios_pago_ciclo_uso` | `05_activacion.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/01_medios_pago_ciclo_uso/05_activacion.png` |
+| **[06]** | Primera Compra | `01_medios_pago_ciclo_uso` | `06_primera_compra.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/01_medios_pago_ciclo_uso/06_primera_compra.png` |
+| **[07]** | Reactivación de Clientes | `01_medios_pago_ciclo_uso` | `07_reactivacion.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/01_medios_pago_ciclo_uso/07_reactivacion.png` |
+| **[08]** | Meta de Transacciones | `01_medios_pago_ciclo_uso` | `08_meta_de_transacciones.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/01_medios_pago_ciclo_uso/08_meta_de_transacciones.png` |
+| **[09]** | Cashback / Devolución | `01_medios_pago_ciclo_uso` | `09_cashback.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/01_medios_pago_ciclo_uso/09_cashback.png` |
+| **[10]** | Dólares-Premio (DP) | `01_medios_pago_ciclo_uso` | `10_dolares_premio.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/01_medios_pago_ciclo_uso/10_dolares_premio.png` |
+| **[11]** | Supermercados | `02_rubros_consumo` | `11_supermercado.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/11_supermercado.png` |
+| **[12]** | Gastronomía & Restaurantes | `02_rubros_consumo` | `12_gastronomia_restaurantes.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/12_gastronomia_restaurantes.png` |
+| **[13]** | Cafeterías & Coffee | `02_rubros_consumo` | `13_cafe_cafeterias.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/13_cafe_cafeterias.png` |
+| **[14]** | Combustible & Bencina | `02_rubros_consumo` | `14_combustible.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/14_combustible.png` |
+| **[15]** | Farmacias & Salud | `02_rubros_consumo` | `15_farmacia_salud.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/15_farmacia_salud.png` |
+| **[16]** | Retail & Shopping | `02_rubros_consumo` | `16_retail_shopping.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/16_retail_shopping.png` |
+| **[17]** | Tecnología & Electro | `02_rubros_consumo` | `17_tecnologia.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/17_tecnologia.png` |
+| **[18]** | Delivery & Apps de Envíos | `02_rubros_consumo` | `18_delivery.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/18_delivery.png` |
+| **[19]** | Viajes & Turismo | `02_rubros_consumo` | `19_viajes_turismo.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/19_viajes_turismo.png` |
+| **[20]** | Entretenimiento & Conciertos | `02_rubros_consumo` | `20_entretenimiento_musica.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/20_entretenimiento_musica.png` |
+| **[21]** | Pago Sin Contacto (Contactless) | `03_mecanicas_crossborder_travel` | `21_contactless.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/03_mecanicas_crossborder_travel/21_contactless.png` |
+| **[22]** | Card on File (COF) | `03_mecanicas_crossborder_travel` | `22_card_on_file_cof.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/03_mecanicas_crossborder_travel/22_card_on_file_cof.png` |
+| **[23]** | Pago Recurrente / PAT | `03_mecanicas_crossborder_travel` | `23_pago_recurrente.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/03_mecanicas_crossborder_travel/23_pago_recurrente.png` |
+| **[24]** | Descuento / Porcentaje OFF | `03_mecanicas_crossborder_travel` | `24_descuento.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/03_mecanicas_crossborder_travel/24_descuento.png` |
+| **[25]** | Cuotas Sin Interés (CSI) | `03_mecanicas_crossborder_travel` | `25_cuotas_sin_interes_csi.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/03_mecanicas_crossborder_travel/25_cuotas_sin_interes_csi.png` |
+| **[26]** | Meta de Facturación | `03_mecanicas_crossborder_travel` | `26_meta_de_facturacion.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/03_mecanicas_crossborder_travel/26_meta_de_facturacion.png` |
+| **[27]** | Compra Internacional Presencial | `03_mecanicas_crossborder_travel` | `27_compra_internacional_crossborder.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/03_mecanicas_crossborder_travel/27_compra_internacional_crossborder.png` |
+| **[28]** | Ecommerce Internacional | `03_mecanicas_crossborder_travel` | `28_ecommerce_internacional.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/03_mecanicas_crossborder_travel/28_ecommerce_internacional.png` |
+| **[29]** | Salones VIP & Travel Lounge | `03_mecanicas_crossborder_travel` | `29_lounge_salon_vip.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/03_mecanicas_crossborder_travel/29_lounge_salon_vip.png` |
+| **[30]** | Traslado al Aeropuerto | `03_mecanicas_crossborder_travel` | `30_traslado_aeropuerto.png` | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/03_mecanicas_crossborder_travel/30_traslado_aeropuerto.png` |
+
+### ⚡ Regla de Selección 2D vs 3D para LLMs y Diseñadores:
+- **Usar versión 3D (`assets/bch/icons/...`)**: Cuando el diseño principal use componentes 3D renderizados, degradados con volumen, tarjetas metálicas o piezas hero ricas en textura.
+- **Usar versión 2D (`assets/bch/iconos_bch_2d_30/...`)**: Cuando la interfaz o email siga una guía de diseño plana (*Flat Design*), infografías sencillas, badges circulares pequeños (< 32px) o comunicaciones corporativas sobrias.
