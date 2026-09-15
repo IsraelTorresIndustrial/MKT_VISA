@@ -303,9 +303,19 @@ def get_file_info(filepath, rel_path, bank, category_default):
     elif ext in [".jpg", ".jpeg", ".webp"]:
         width, height = 1200, 630
 
+    cdn_url = f"https://mkt-visa.vercel.app/{rel_path}"
+    if bank == "Banco de Chile":
+        if "icons/" in rel_path:
+            cdn_url = f"https://mkt-visa.vercel.app/assets/bch/icons/{filename}"
+        elif "travel/" in rel_path:
+            cdn_url = f"https://mkt-visa.vercel.app/assets/bch/travel/{filename}"
+        elif "logos/" in rel_path:
+            cdn_url = f"https://mkt-visa.vercel.app/assets/bch/logos/{filename}"
+
     return {
         "filename": filename,
         "rel_path": rel_path,
+        "cdn_url": cdn_url,
         "bank": bank,
         "format": ext.replace(".", "").upper(),
         "width": width,
@@ -424,4 +434,10 @@ os.makedirs(os.path.dirname(MANIFEST_PATH), exist_ok=True)
 with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
     json.dump(manifest, f, ensure_ascii=False, indent=2)
 
-print(f"Manifest created successfully with {len(manifest)} approved assets indexed!")
+JS_PATH = os.path.abspath("src/data/assets_data.js")
+with open(JS_PATH, "w", encoding="utf-8") as f:
+    f.write("window.BANK_ASSETS = ")
+    json.dump(manifest, f, ensure_ascii=False, indent=2)
+    f.write(";\n")
+
+print(f"Manifest and assets_data.js created successfully with {len(manifest)} approved assets indexed!")

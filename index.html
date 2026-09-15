@@ -53,8 +53,8 @@
 
     <!-- Quick Actions -->
     <div class="nav-right">
-      <a href="assets/banco_de_chile/BCH_Icon_Decision_Matrix_v1.md" download="BCH_Icon_Decision_Matrix_v1.md" class="btn-pill btn-secondary" title="Descargar la matriz oficial en Markdown">
-        <span>📄 Matriz (.md)</span>
+      <a href="assets/banco_de_chile/BCH_LLM_ICON_DECISION_MATRIX.md" download="BCH_LLM_ICON_DECISION_MATRIX.md" class="btn-pill btn-secondary" title="Descargar la matriz oficial para LLMs en Markdown">
+        <span>📄 Matriz LLM (.md)</span>
       </a>
       <button class="btn-pill btn-primary" onclick="showView('builder')">
         <span>⚡ Armar Email</span>
@@ -152,14 +152,29 @@
     <!-- ================================================================= -->
     <section id="viewMatrix" style="display:none;">
       <div class="matrix-container">
-        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; flex-wrap:wrap; gap:16px;">
           <div>
-            <h1>Banco de Chile · Icon Decision Matrix</h1>
-            <p style="color:var(--text-muted);">Sistema de decisión para selección de iconografía en campañas de medios de pago</p>
+            <h1 style="font-size:24px; font-weight:800; color:var(--bch-navy); margin-bottom:6px;">Banco de Chile · Matriz de Decisión Contextual para IA & LLMs</h1>
+            <p style="color:var(--text-muted); font-size:14px;">Catálogo maestro y reglas de inferencia para 42 activos verificados con URLs públicas de producción Vercel</p>
           </div>
-          <a href="assets/banco_de_chile/BCH_Icon_Decision_Matrix_v1.md" download class="btn-pill btn-primary">
-            <span>💾 Descargar Documento .md</span>
-          </a>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <button class="btn-pill btn-secondary" onclick="copySystemPrompt()" title="Copiar prompt de sistema optimizado para agentes">
+              <span>📋 Copiar Prompt de Sistema</span>
+            </button>
+            <a href="assets/banco_de_chile/BCH_LLM_ICON_DECISION_MATRIX.md" download="BCH_LLM_ICON_DECISION_MATRIX.md" class="btn-pill btn-primary">
+              <span>💾 Descargar Guía .md Completa</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="background:rgba(0, 36, 100, 0.04); border:1px solid rgba(0, 36, 100, 0.12); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:24px;">
+          <div style="font-weight:700; color:var(--bch-navy); font-size:14px; margin-bottom:6px;">⚡ Estándar Canónico de URLs CDN en Producción:</div>
+          <code style="background:#FFFFFF; border:1px solid var(--border-light); padding:6px 12px; border-radius:6px; font-family:var(--font-mono); font-size:13px; color:var(--bch-blue); display:block; word-break:break-all;">
+            https://mkt-visa.vercel.app/assets/bch/icons/{filename}.png
+          </code>
+          <p style="font-size:12px; color:var(--text-muted); margin-top:8px; line-height:1.4;">
+            Alimentado por el motor Edge de Vercel con cabeceras CORS abiertas (<code>*</code>), resolución instantánea 200 OK y canal alfa RGBA limpio para compilar correos HTML o presentaciones DOM-to-PPTX con cero caídas.
+          </p>
         </div>
 
         <blockquote>
@@ -167,60 +182,82 @@
           No seleccionar un ícono porque “se ve bonito”, sino porque representa el significado principal del bloque.
         </blockquote>
 
-        <h2>1. Regla de Prioridad Semántica</h2>
-        <p>Cuando una comunicación contenga varios conceptos, elegir el icono según este orden estricto:</p>
+        <h2>1. Regla de Prioridad Semántica (Para Diseñadores y Agentes)</h2>
+        <p>Cuando una comunicación contenga varios conceptos a la vez, resolver el ícono en este orden estricto:</p>
         <div class="matrix-interactive-rules">
-          <div class="rule-interactive-card" onclick="filterByTag('descuento')">
+          <div class="rule-interactive-card" onclick="filterByTag('activacion'); showView('assets');">
             <div class="rule-interactive-title"><span>1️⃣</span> Acción Principal del Cliente</div>
-            <div class="rule-interactive-desc">Si el bloque explica el beneficio principal o recompensa directa (ej. 24_descuento, 09_cashback).</div>
+            <div class="rule-interactive-desc">Primer uso, debut transaccional o reactivación (ej. <code>06_primera_compra</code>, <code>05_activacion</code>, <code>07_reactivacion</code>).</div>
           </div>
-          <div class="rule-interactive-card" onclick="filterByTag('cuotas')">
-            <div class="rule-interactive-title"><span>2️⃣</span> Mecánica o Condición</div>
-            <div class="rule-interactive-desc">Si la condición técnica es clave (ej. 25_cuotas_sin_interes, 08_meta_de_transacciones).</div>
+          <div class="rule-interactive-card" onclick="filterByTag('descuento'); showView('assets');">
+            <div class="rule-interactive-title"><span>2️⃣</span> Mecánica o Condición Comercial</div>
+            <div class="rule-interactive-desc">Ahorro porcentual, cashback o financiamiento (ej. <code>24_descuento</code>, <code>09_cashback</code>, <code>25_cuotas_sin_interes</code>).</div>
           </div>
-          <div class="rule-interactive-card" onclick="filterByTag('supermercado')">
-            <div class="rule-interactive-title"><span>3️⃣</span> Rubro o Comercio</div>
-            <div class="rule-interactive-desc">Si el bloque explica dónde usarlo (ej. 11_supermercado, 12_gastronomia, 14_combustible).</div>
+          <div class="rule-interactive-card" onclick="filterByTag('supermercado'); showView('assets');">
+            <div class="rule-interactive-title"><span>3️⃣</span> Rubro o Categoría Comercial</div>
+            <div class="rule-interactive-desc">Dónde se realiza el gasto (ej. <code>11_supermercado</code>, <code>12_gastronomia</code>, <code>14_combustible</code>, <code>17_tecnologia</code>).</div>
           </div>
-          <div class="rule-interactive-card" onclick="filterByTag('tarjeta')">
-            <div class="rule-interactive-title"><span>4️⃣</span> Medio de Pago</div>
-            <div class="rule-interactive-desc">Si el foco es el producto o canal (ej. 01_tarjeta, 04_wallet, 21_contactless).</div>
+          <div class="rule-interactive-card" onclick="filterByTag('tarjeta'); showView('assets');">
+            <div class="rule-interactive-title"><span>4️⃣</span> Medio de Pago o Canal</div>
+            <div class="rule-interactive-desc">Producto o billetera (ej. <code>01_tarjeta</code>, <code>04_wallet_pago_movil</code>, <code>21_contactless</code>, <code>22_cof</code>).</div>
           </div>
         </div>
 
-        <h2>2. Familias de Íconos (Las 3 Categorías Oficiales)</h2>
-        <ul>
-          <li><strong>Medios de Pago & Ciclo de Uso:</strong> Representan el medio de pago, el momento del journey (onboarding, activación, inactividad) o el comportamiento buscado.</li>
-          <li><strong>Rubros de Consumo:</strong> Representan el contexto de gasto o categoría comercial (Supermercados, Cafeterías, Farmacias, Delivery, etc.).</li>
-          <li><strong>Mecánicas, Crossborder & Travel:</strong> Representan una condición comercial, modalidad de uso o experiencia específica (Dólares-Premio, Cuotas, Salones VIP, Traslados).</li>
-        </ul>
-
-        <h2>3. Árbol de Decisión Rápido</h2>
-        <p>Haz clic en cualquier escenario para ver y copiar el ícono recomendado:</p>
+        <h2>2. Árbol de Selección Rápida (Click para Ver y Copiar)</h2>
+        <p>Haz clic en cualquier escenario clave para ver detalles, copiar su tag HTML con URL Vercel o descargarlo:</p>
         <div class="matrix-interactive-rules">
-          <div class="rule-interactive-card" onclick="openAssetModalByFilename('01_tarjeta.png')">
-            <div class="rule-interactive-title">💳 Tarjeta Genérica</div>
-            <div class="rule-interactive-desc">Portafolio general → <strong>01_tarjeta.png</strong></div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('06_primera_compra.png')">
+            <div class="rule-interactive-title">🚀 Primera Compra / Debut</div>
+            <div class="rule-interactive-desc">Incentivo de debut → <strong>06_primera_compra.png</strong></div>
+          </div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('07_reactivacion.png')">
+            <div class="rule-interactive-title">🔄 Reactivación de Clientes</div>
+            <div class="rule-interactive-desc">Inactivos M1-M3 → <strong>07_reactivacion.png</strong></div>
           </div>
           <div class="rule-interactive-card" onclick="openAssetModalByFilename('04_wallet_pago_movil.png')">
             <div class="rule-interactive-title">📱 Pago Móvil / Wallet</div>
             <div class="rule-interactive-desc">Apple Pay / Google Wallet → <strong>04_wallet_pago_movil.png</strong></div>
           </div>
-          <div class="rule-interactive-card" onclick="openAssetModalByFilename('10_dolares_premio.png')">
-            <div class="rule-interactive-title">⭐ Programa de Lealtad</div>
-            <div class="rule-interactive-desc">Acumulación o canje DP → <strong>10_dolares_premio.png</strong></div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('09_cashback.png')">
+            <div class="rule-interactive-title">💵 Devolución / Cashback</div>
+            <div class="rule-interactive-desc">Reintegro en dinero → <strong>09_cashback.png</strong></div>
           </div>
           <div class="rule-interactive-card" onclick="openAssetModalByFilename('24_descuento.png')">
-            <div class="rule-interactive-title">🏷️ Descuento Porcentual</div>
-            <div class="rule-interactive-desc">% OFF directo en comercios → <strong>24_descuento.png</strong></div>
+            <div class="rule-interactive-title">🏷️ Descuento Directo</div>
+            <div class="rule-interactive-desc">% OFF en comercios → <strong>24_descuento.png</strong></div>
           </div>
           <div class="rule-interactive-card" onclick="openAssetModalByFilename('25_cuotas_sin_interes_csi.png')">
             <div class="rule-interactive-title">📊 Financiamiento Cuotas</div>
             <div class="rule-interactive-desc">Cuotas sin interés → <strong>25_cuotas_sin_interes_csi.png</strong></div>
           </div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('28_ecommerce_internacional.png')">
+            <div class="rule-interactive-title">🌐 Ecommerce Internacional</div>
+            <div class="rule-interactive-desc">Amazon, AliExpress, Shein → <strong>28_ecommerce_internacional.png</strong></div>
+          </div>
           <div class="rule-interactive-card" onclick="openAssetModalByFilename('29_lounge_salon_vip.png')">
             <div class="rule-interactive-title">🛫 Salones VIP Pacific</div>
-            <div class="rule-interactive-desc">Salas de espera aeropuerto → <strong>29_lounge_salon_vip.png</strong></div>
+            <div class="rule-interactive-desc">Lounge aeropuerto → <strong>29_lounge_salon_vip.png</strong></div>
+          </div>
+        </div>
+
+        <h2>3. Suite Travel Club y Logotipos Corporativos</h2>
+        <p>Recursos oficiales complementarios con rutas canónicas de entrega:</p>
+        <div class="matrix-interactive-rules">
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('01_bch_icono_ticket_viaje_ncde7f.png')">
+            <div class="rule-interactive-title">🎫 Boarding Pass Travel</div>
+            <div class="rule-interactive-desc">Vuelos y tickets → <strong>01_bch_icono_ticket_viaje_ncde7f.png</strong></div>
+          </div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('02_bch_icono_dolares_premio_pplf0o.png')">
+            <div class="rule-interactive-title">⭐ Moneda Dólares-Premio</div>
+            <div class="rule-interactive-desc">Canje y saldo Travel → <strong>02_bch_icono_dolares_premio_pplf0o.png</strong></div>
+          </div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('banco_de_chile.png')">
+            <div class="rule-interactive-title">🏛️ Logo Institucional BCH</div>
+            <div class="rule-interactive-desc">Logotipo principal azul → <strong>banco_de_chile.png</strong></div>
+          </div>
+          <div class="rule-interactive-card" onclick="openAssetModalByFilename('bch_logo.png')">
+            <div class="rule-interactive-title">⭐ Isotipo Estrella Azul</div>
+            <div class="rule-interactive-desc">Monograma y favicon → <strong>bch_logo.png</strong></div>
           </div>
         </div>
       </div>
@@ -321,6 +358,14 @@
           </div>
 
           <div>
+            <h4 style="font-size:13px; font-weight:700; color:var(--bch-navy); margin-bottom:4px;">URL CDN Vercel (Producción)</h4>
+            <div class="code-snippet-box">
+              <span id="modalCdnUrl" style="font-size:12px; word-break:break-all;">https://mkt-visa.vercel.app/...</span>
+              <button class="copy-snippet-btn" onclick="copySnippet('modalCdnUrl')">Copiar</button>
+            </div>
+          </div>
+
+          <div>
             <h4 style="font-size:13px; font-weight:700; color:var(--bch-navy); margin-bottom:4px;">Ruta Relativa en Proyecto</h4>
             <div class="code-snippet-box">
               <span id="modalRelPath">assets/...</span>
@@ -407,6 +452,26 @@
     function copyText(text, label = "Ruta copiada") {
       navigator.clipboard.writeText(text).then(() => {
         showToast(`¡${label}!`);
+      });
+    }
+
+    function copySystemPrompt() {
+      const prompt = `Eres el Selector Especializado de Iconografía para Medios de Pago de Banco de Chile y Visa.
+Tu objetivo es analizar el requerimiento del usuario, identificar el concepto semántico dominante y devolver el ícono oficial más preciso de la librería BCH (42 activos disponibles).
+
+Directivas de Operación:
+1. SIEMPRE utiliza las URLs absolutas de producción en Vercel con prefijo: https://mkt-visa.vercel.app/assets/bch/...
+2. Aplica la Prioridad Semántica: Acción > Condición/Mecánica > Rubro > Producto > Contexto.
+3. Distingue estrictamente:
+   - Cashback (09) vs Descuento (24)
+   - Activación (05) vs Primera Compra (06) vs Reactivación (07)
+   - Meta Transacciones (08) vs Meta Facturación (26)
+   - Ecommerce Nacional (03) vs Ecommerce Internacional (28)
+   - Card on File (22) vs Pago Recurrente (23)
+4. Devuelve la respuesta en formato JSON con: icon_id, icon_name, filename, cdn_url, html_tag, reason, confidence.`;
+
+      navigator.clipboard.writeText(prompt).then(() => {
+        showToast("¡Prompt de Sistema LLM copiado!");
       });
     }
 
@@ -510,7 +575,8 @@
       }
 
       grid.innerHTML = filtered.map(asset => {
-        const htmlSnippet = `&lt;img src="${asset.rel_path}" width="64" alt="${asset.title}"&gt;`;
+        const cdnUrl = asset.cdn_url || (`https://mkt-visa.vercel.app/${asset.rel_path}`);
+        const htmlSnippet = `&lt;img src=&quot;${cdnUrl}&quot; width=&quot;64&quot; alt=&quot;${asset.title}&quot;&gt;`;
         return `
           <div class="asset-card">
             <div class="asset-preview" onclick="openAssetModalByFilename('${asset.filename}')">
@@ -529,13 +595,13 @@
               </div>
 
               <div class="asset-actions">
-                <button class="btn-card" onclick="copyText('&lt;img src=&quot;${asset.rel_path}&quot; width=&quot;64&quot; alt=&quot;${asset.title}&quot;&gt;', 'Tag HTML copiado')" title="Copiar tag HTML">
+                <button class="btn-card" onclick="copyText('&lt;img src=&quot;${cdnUrl}&quot; width=&quot;64&quot; alt=&quot;${asset.title}&quot;&gt;', 'Tag HTML con CDN copiado')" title="Copiar tag HTML con URL directa Vercel">
                   📋 &lt;img&gt;
                 </button>
-                <button class="btn-card" onclick="copyText('${asset.rel_path}', 'Ruta relativa copiada')" title="Copiar ruta relativa">
-                  🔗 Ruta
+                <button class="btn-card" onclick="copyText('${cdnUrl}', 'URL CDN copiada')" title="Copiar URL directa Vercel">
+                  🌐 URL CDN
                 </button>
-                <button class="btn-card" onclick="openAssetModalByFilename('${asset.filename}')">
+                <button class="btn-card" onclick="openAssetModalByFilename('${asset.filename}')" title="Ver reglas y detalles">
                   🔍 Detalle
                 </button>
                 <a href="${asset.rel_path}" download="${asset.filename}" class="btn-card highlight" style="text-decoration:none;">
@@ -553,13 +619,16 @@
       const asset = window.BANK_ASSETS.find(a => a.filename === filename);
       if (!asset) return;
 
+      const cdnUrl = asset.cdn_url || (`https://mkt-visa.vercel.app/${asset.rel_path}`);
+
       document.getElementById('modalTitle').innerText = asset.title;
       document.getElementById('modalImg').src = asset.rel_path;
       document.getElementById('modalBankBadge').innerText = asset.bank;
       document.getElementById('modalCategoryBadge').innerText = asset.category;
       document.getElementById('modalRule').innerText = asset.rule || asset.concept || 'Uso institucional oficial.';
+      document.getElementById('modalCdnUrl').innerText = cdnUrl;
       document.getElementById('modalRelPath').innerText = asset.rel_path;
-      document.getElementById('modalHtmlSnippet').innerText = `<img src="${asset.rel_path}" width="64" height="64" alt="${asset.title}">`;
+      document.getElementById('modalHtmlSnippet').innerText = `<img src="${cdnUrl}" width="64" height="64" alt="${asset.title}">`;
       document.getElementById('modalDownloadBtn').href = asset.rel_path;
       document.getElementById('modalDownloadBtn').download = asset.filename;
 

@@ -2,6 +2,12 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/assets/bch/:path*",
+      "destination": "/assets/banco_de_chile/:path*"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

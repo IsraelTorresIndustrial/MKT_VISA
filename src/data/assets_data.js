@@ -2,6 +2,7 @@ window.BANK_ASSETS = [
   {
     "filename": "01_tarjeta.png",
     "rel_path": "assets/banco_de_chile/icons/01_tarjeta.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/01_tarjeta.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -32,6 +33,7 @@ window.BANK_ASSETS = [
   {
     "filename": "02_pago_presencial_pos.png",
     "rel_path": "assets/banco_de_chile/icons/02_pago_presencial_pos.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/02_pago_presencial_pos.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -60,6 +62,7 @@ window.BANK_ASSETS = [
   {
     "filename": "03_ecommerce.png",
     "rel_path": "assets/banco_de_chile/icons/03_ecommerce.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/03_ecommerce.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -88,6 +91,7 @@ window.BANK_ASSETS = [
   {
     "filename": "04_wallet_pago_movil.png",
     "rel_path": "assets/banco_de_chile/icons/04_wallet_pago_movil.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/04_wallet_pago_movil.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -117,6 +121,7 @@ window.BANK_ASSETS = [
   {
     "filename": "05_activacion.png",
     "rel_path": "assets/banco_de_chile/icons/05_activacion.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/05_activacion.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -145,6 +150,7 @@ window.BANK_ASSETS = [
   {
     "filename": "06_primera_compra.png",
     "rel_path": "assets/banco_de_chile/icons/06_primera_compra.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/06_primera_compra.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -173,6 +179,7 @@ window.BANK_ASSETS = [
   {
     "filename": "07_reactivacion.png",
     "rel_path": "assets/banco_de_chile/icons/07_reactivacion.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/07_reactivacion.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -201,6 +208,7 @@ window.BANK_ASSETS = [
   {
     "filename": "08_meta_de_transacciones.png",
     "rel_path": "assets/banco_de_chile/icons/08_meta_de_transacciones.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/08_meta_de_transacciones.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -230,6 +238,7 @@ window.BANK_ASSETS = [
   {
     "filename": "09_cashback.png",
     "rel_path": "assets/banco_de_chile/icons/09_cashback.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/09_cashback.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -259,6 +268,7 @@ window.BANK_ASSETS = [
   {
     "filename": "10_dolares_premio.png",
     "rel_path": "assets/banco_de_chile/icons/10_dolares_premio.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/10_dolares_premio.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -289,6 +299,7 @@ window.BANK_ASSETS = [
   {
     "filename": "11_supermercado.png",
     "rel_path": "assets/banco_de_chile/icons/11_supermercado.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/11_supermercado.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -318,6 +329,7 @@ window.BANK_ASSETS = [
   {
     "filename": "12_gastronomia_restaurantes.png",
     "rel_path": "assets/banco_de_chile/icons/12_gastronomia_restaurantes.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/12_gastronomia_restaurantes.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -347,6 +359,7 @@ window.BANK_ASSETS = [
   {
     "filename": "13_cafe_cafeterias.png",
     "rel_path": "assets/banco_de_chile/icons/13_cafe_cafeterias.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/13_cafe_cafeterias.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -376,6 +389,7 @@ window.BANK_ASSETS = [
   {
     "filename": "14_combustible.png",
     "rel_path": "assets/banco_de_chile/icons/14_combustible.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/14_combustible.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -405,6 +419,7 @@ window.BANK_ASSETS = [
   {
     "filename": "15_farmacia_salud.png",
     "rel_path": "assets/banco_de_chile/icons/15_farmacia_salud.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/15_farmacia_salud.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -433,6 +448,7 @@ window.BANK_ASSETS = [
   {
     "filename": "16_retail_shopping.png",
     "rel_path": "assets/banco_de_chile/icons/16_retail_shopping.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/16_retail_shopping.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -462,6 +478,7 @@ window.BANK_ASSETS = [
   {
     "filename": "17_tecnologia.png",
     "rel_path": "assets/banco_de_chile/icons/17_tecnologia.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/17_tecnologia.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -490,6 +507,7 @@ window.BANK_ASSETS = [
   {
     "filename": "18_delivery.png",
     "rel_path": "assets/banco_de_chile/icons/18_delivery.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/18_delivery.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -519,6 +537,7 @@ window.BANK_ASSETS = [
   {
     "filename": "19_viajes_turismo.png",
     "rel_path": "assets/banco_de_chile/icons/19_viajes_turismo.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/19_viajes_turismo.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -548,6 +567,7 @@ window.BANK_ASSETS = [
   {
     "filename": "20_entretenimiento_musica.png",
     "rel_path": "assets/banco_de_chile/icons/20_entretenimiento_musica.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/20_entretenimiento_musica.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -577,6 +597,7 @@ window.BANK_ASSETS = [
   {
     "filename": "21_contactless.png",
     "rel_path": "assets/banco_de_chile/icons/21_contactless.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/21_contactless.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -606,6 +627,7 @@ window.BANK_ASSETS = [
   {
     "filename": "22_card_on_file_cof.png",
     "rel_path": "assets/banco_de_chile/icons/22_card_on_file_cof.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/22_card_on_file_cof.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -634,6 +656,7 @@ window.BANK_ASSETS = [
   {
     "filename": "23_pago_recurrente.png",
     "rel_path": "assets/banco_de_chile/icons/23_pago_recurrente.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/23_pago_recurrente.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -663,6 +686,7 @@ window.BANK_ASSETS = [
   {
     "filename": "24_descuento.png",
     "rel_path": "assets/banco_de_chile/icons/24_descuento.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/24_descuento.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -692,6 +716,7 @@ window.BANK_ASSETS = [
   {
     "filename": "25_cuotas_sin_interes_csi.png",
     "rel_path": "assets/banco_de_chile/icons/25_cuotas_sin_interes_csi.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/25_cuotas_sin_interes_csi.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -721,6 +746,7 @@ window.BANK_ASSETS = [
   {
     "filename": "26_meta_de_facturacion.png",
     "rel_path": "assets/banco_de_chile/icons/26_meta_de_facturacion.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/26_meta_de_facturacion.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -750,6 +776,7 @@ window.BANK_ASSETS = [
   {
     "filename": "27_compra_internacional_crossborder.png",
     "rel_path": "assets/banco_de_chile/icons/27_compra_internacional_crossborder.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/27_compra_internacional_crossborder.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -779,6 +806,7 @@ window.BANK_ASSETS = [
   {
     "filename": "28_ecommerce_internacional.png",
     "rel_path": "assets/banco_de_chile/icons/28_ecommerce_internacional.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/28_ecommerce_internacional.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -807,6 +835,7 @@ window.BANK_ASSETS = [
   {
     "filename": "29_lounge_salon_vip.png",
     "rel_path": "assets/banco_de_chile/icons/29_lounge_salon_vip.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/29_lounge_salon_vip.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -836,6 +865,7 @@ window.BANK_ASSETS = [
   {
     "filename": "30_traslado_aeropuerto.png",
     "rel_path": "assets/banco_de_chile/icons/30_traslado_aeropuerto.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/icons/30_traslado_aeropuerto.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -865,6 +895,7 @@ window.BANK_ASSETS = [
   {
     "filename": "01_bch_icono_ticket_viaje_ncde7f.png",
     "rel_path": "assets/banco_de_chile/travel/01_bch_icono_ticket_viaje_ncde7f.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/travel/01_bch_icono_ticket_viaje_ncde7f.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -889,6 +920,7 @@ window.BANK_ASSETS = [
   {
     "filename": "02_bch_icono_dolares_premio_pplf0o.png",
     "rel_path": "assets/banco_de_chile/travel/02_bch_icono_dolares_premio_pplf0o.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/travel/02_bch_icono_dolares_premio_pplf0o.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -913,6 +945,7 @@ window.BANK_ASSETS = [
   {
     "filename": "03_bch_icono_cuotas_viaje_kml5fp.png",
     "rel_path": "assets/banco_de_chile/travel/03_bch_icono_cuotas_viaje_kml5fp.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/travel/03_bch_icono_cuotas_viaje_kml5fp.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -937,6 +970,7 @@ window.BANK_ASSETS = [
   {
     "filename": "04_bch_icono_tasa_preferencial_viajes_qwzxxt.png",
     "rel_path": "assets/banco_de_chile/travel/04_bch_icono_tasa_preferencial_viajes_qwzxxt.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/travel/04_bch_icono_tasa_preferencial_viajes_qwzxxt.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -961,6 +995,7 @@ window.BANK_ASSETS = [
   {
     "filename": "05_bch_icono_tarjeta_activada_extranjero_h03q2v.png",
     "rel_path": "assets/banco_de_chile/travel/05_bch_icono_tarjeta_activada_extranjero_h03q2v.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/travel/05_bch_icono_tarjeta_activada_extranjero_h03q2v.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -985,6 +1020,7 @@ window.BANK_ASSETS = [
   {
     "filename": "06_bch_icono_traslado_aeropuerto_r9goav.png",
     "rel_path": "assets/banco_de_chile/travel/06_bch_icono_traslado_aeropuerto_r9goav.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/travel/06_bch_icono_traslado_aeropuerto_r9goav.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -1009,6 +1045,7 @@ window.BANK_ASSETS = [
   {
     "filename": "07_bch_icono_avion_despegue_gcez6a.png",
     "rel_path": "assets/banco_de_chile/travel/07_bch_icono_avion_despegue_gcez6a.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/travel/07_bch_icono_avion_despegue_gcez6a.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -1033,6 +1070,7 @@ window.BANK_ASSETS = [
   {
     "filename": "08_bch_icono_hotel_premium_aylvme.png",
     "rel_path": "assets/banco_de_chile/travel/08_bch_icono_hotel_premium_aylvme.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/travel/08_bch_icono_hotel_premium_aylvme.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -1057,6 +1095,7 @@ window.BANK_ASSETS = [
   {
     "filename": "09_bch_icono_maleta_viaje_ntmoww.png",
     "rel_path": "assets/banco_de_chile/travel/09_bch_icono_maleta_viaje_ntmoww.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/travel/09_bch_icono_maleta_viaje_ntmoww.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -1081,6 +1120,7 @@ window.BANK_ASSETS = [
   {
     "filename": "10_bch_icono_bono_bienvenida_iaohbl.png",
     "rel_path": "assets/banco_de_chile/travel/10_bch_icono_bono_bienvenida_iaohbl.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/travel/10_bch_icono_bono_bienvenida_iaohbl.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -1105,6 +1145,7 @@ window.BANK_ASSETS = [
   {
     "filename": "banco_de_chile.png",
     "rel_path": "assets/banco_de_chile/logos/banco_de_chile.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/logos/banco_de_chile.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1440,
@@ -1129,6 +1170,7 @@ window.BANK_ASSETS = [
   {
     "filename": "bch_logo.png",
     "rel_path": "assets/banco_de_chile/logos/bch_logo.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/bch/logos/bch_logo.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1521,
@@ -1153,6 +1195,7 @@ window.BANK_ASSETS = [
   {
     "filename": "visa_blue.png",
     "rel_path": "assets/visa/logos/visa_blue.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/visa/logos/visa_blue.png",
     "bank": "Visa",
     "format": "PNG",
     "width": 3840,
@@ -1176,6 +1219,7 @@ window.BANK_ASSETS = [
   {
     "filename": "visa_logo_white.png",
     "rel_path": "assets/visa/logos/visa_logo_white.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/visa/logos/visa_logo_white.png",
     "bank": "Visa",
     "format": "PNG",
     "width": 208,
@@ -1199,6 +1243,7 @@ window.BANK_ASSETS = [
   {
     "filename": "visa_vector.png",
     "rel_path": "assets/visa/logos/visa_vector.png",
+    "cdn_url": "https://mkt-visa.vercel.app/assets/visa/logos/visa_vector.png",
     "bank": "Visa",
     "format": "PNG",
     "width": 208,
@@ -1220,5 +1265,3 @@ window.BANK_ASSETS = [
     "is_featured": false
   }
 ];
-
-window.BCH_DECISION_MATRIX_MD = "# Banco de Chile · Icon Decision Matrix\n## Sistema de decisión para selección de iconografía en campañas de medios de pago\n\n**Versión:** 1.0  \n**Ámbito:** Banco de Chile · Medios de Pago · Visa  \n**Objetivo:** permitir que cualquier LLM, agente o sistema de diseño seleccione de forma consistente el icono más adecuado según el objetivo, mecánica, comportamiento, rubro o contexto de una campaña.\n\n---\n\n# 1. Principio general\n\nLa librería está compuesta por 30 iconos agrupados en tres familias:\n\n1. **Medios de Pago & Ciclo de Uso**  \n   Representan el medio de pago, el momento del journey o el comportamiento que se busca generar.\n\n2. **Rubros de Consumo**  \n   Representan el contexto de gasto o categoría comercial donde ocurre la compra.\n\n3. **Mecánicas, Crossborder & Travel**  \n   Representan una condición comercial, modalidad de uso o experiencia específica.\n\nLa selección del icono debe responder primero a la siguiente pregunta:\n\n> **¿Qué concepto necesita entender el usuario en menos de 2 segundos?**\n\nNo seleccionar un icono porque “se ve bonito”.  \nSeleccionarlo porque representa el significado principal del bloque o mensaje.\n\n---\n\n# 2. Regla de prioridad semántica\n\nCuando una comunicación contenga varios conceptos, elegir el icono según este orden:\n\n1. **Acción principal del cliente**\n2. **Mecánica o condición de la campaña**\n3. **Rubro**\n4. **Producto**\n5. **Contexto o experiencia**\n\nEjemplo:\n\n> “Obtén 30% de descuento en supermercados pagando con tu Tarjeta de Crédito.”\n\nSi el bloque explica el beneficio → **24_descuento**  \nSi el bloque explica dónde usarlo → **11_supermercado**  \nSi el bloque explica el medio de pago → **01_tarjeta**\n\nNo intentar representar todo con un solo icono.\n\n---\n\n# 3. Regla de un concepto por icono\n\nCada icono debe representar una sola idea principal.\n\nCorrecto:\n\n- Tarjeta → medio de pago\n- Supermercado → rubro\n- Cashback → recompensa\n- Reactivación → comportamiento\n- Ecommerce internacional → canal + contexto internacional\n\nIncorrecto:\n\n- Usar “cashback” para representar cualquier descuento\n- Usar “ecommerce” para cualquier compra\n- Usar “travel” para cualquier transacción internacional\n- Usar “tarjeta” cuando existe un icono más específico para el comportamiento\n\n---\n\n# 4. Regla de especificidad\n\nSiempre preferir el icono más específico disponible.\n\nEjemplos:\n\n- Compra online internacional → **28_ecommerce_internacional**, no **03_ecommerce**\n- Compra presencial internacional → **27_compra_internacional_crossborder**\n- Pago periódico automático → **23_pago_recurrente**, no **01_tarjeta**\n- Tarjeta guardada → **22_card_on_file_cof**, no **04_wallet_pago_movil**\n- Uso de Lounge → **29_lounge_salon_vip**, no **19_viajes_turismo**\n\n---\n\n# 5. Árbol de decisión rápido\n\n```text\n¿El mensaje trata sobre un medio de pago?\n│\n├── Sí → ¿Qué modalidad?\n│   ├── Tarjeta genérica → 01_tarjeta\n│   ├── POS / compra física → 02_pago_presencial_pos\n│   ├── Ecommerce nacional → 03_ecommerce\n│   ├── Wallet / pago móvil → 04_wallet_pago_movil\n│   ├── Contactless → 21_contactless\n│   ├── Card on File → 22_card_on_file_cof\n│   └── Pago recurrente → 23_pago_recurrente\n│\n¿El mensaje trata sobre etapa o comportamiento del cliente?\n│\n├── Activación → 05_activacion\n├── Primera compra → 06_primera_compra\n├── Reactivación → 07_reactivacion\n├── Meta de transacciones → 08_meta_de_transacciones\n└── Meta de facturación → 26_meta_de_facturacion\n│\n¿El mensaje trata sobre incentivo?\n│\n├── Cashback → 09_cashback\n├── Dólares-Premio → 10_dolares_premio\n├── Descuento → 24_descuento\n└── Cuotas sin interés → 25_cuotas_sin_interes_csi\n│\n¿El mensaje trata sobre un rubro?\n│\n├── Supermercado → 11\n├── Gastronomía → 12\n├── Café → 13\n├── Combustible → 14\n├── Farmacia → 15\n├── Retail → 16\n├── Tecnología → 17\n├── Delivery → 18\n├── Viajes → 19\n└── Entretenimiento → 20\n│\n¿El mensaje es internacional o Travel?\n│\n├── Compra internacional genérica/presencial → 27\n├── Ecommerce internacional → 28\n├── Lounge → 29\n└── Traslado aeropuerto → 30\n```\n\n---\n\n# 6. Matriz maestra de decisión\n\n| ID | Nombre archivo | Concepto principal | Usar cuando | No usar cuando | Combinaciones frecuentes |\n|---|---|---|---|---|---|\n| 01 | `01_tarjeta.png` | Tarjeta como medio de pago | El mensaje habla genéricamente de Tarjeta de Crédito/Débito, producto, portafolio o “Tus Tarjetas del Chile” | Existe un comportamiento o modalidad más específica | 24 descuento, 09 cashback, 11–20 rubros |\n| 02 | `02_pago_presencial_pos.png` | Compra presencial | Compra en comercio físico, caja, POS, presencial, punto de venta | Ecommerce, wallet o crossborder online | 11–20 rubros, 27 crossborder |\n| 03 | `03_ecommerce.png` | Compra online nacional/genérica | Ecommerce, compra online, CNP, web/app de comercio | Compra internacional específica | 24 descuento, 17 tecnología, 18 delivery |\n| 04 | `04_wallet_pago_movil.png` | Wallet / pago móvil | Apple Pay, Google Pay, billetera digital, enrolamiento en wallet, pago desde celular | Card on File, pago recurrente o POS tradicional | 05 activación, 21 contactless |\n| 05 | `05_activacion.png` | Activación de tarjeta/producto | Activar, habilitar, completar onboarding, tarjeta activa | Primera compra o reactivación de inactivos | 04 wallet, 06 primera compra |\n| 06 | `06_primera_compra.png` | Primer uso | Primera compra, primer uso, primera transacción, incentivo inicial | Cliente que ya venía usando y vuelve | 09 cashback, 11–20 rubros, 27/28 crossborder |\n| 07 | `07_reactivacion.png` | Reactivación | Inactivos, “vuelve a usar”, recuperación de actividad, retomar uso | Activación de tarjeta nueva | 09 cashback, 24 descuento, rubros |\n| 08 | `08_meta_de_transacciones.png` | Meta por cantidad de compras | 5 compras, 10 transacciones, 25 transacciones, frecuencia | Meta monetaria o facturación | 01 tarjeta, 05 activación |\n| 09 | `09_cashback.png` | Devolución de dinero | Cashback, devolución, reintegro, abono, bonificación monetaria | Descuento inmediato en precio | 06 primera compra, 07 reactivación, rubros |\n| 10 | `10_dolares_premio.png` | Dólares-Premio | Acumulación DP, canje DP, rewards BCH, Travel asociado a DP | Cashback genérico o descuento | 19 viajes, 29 lounge, 30 traslado |\n| 11 | `11_supermercado.png` | Supermercado | Supermercados, alimentos, compras del hogar, consumo cotidiano | Gastronomía o delivery | 24 descuento, 09 cashback |\n| 12 | `12_gastronomia_restaurantes.png` | Restaurantes | Restaurantes, cenas, comidas fuera del hogar, gastronomía | Café específico o delivery | 24 descuento, 01 tarjeta |\n| 13 | `13_cafe_cafeterias.png` | Café / cafeterías | Cafeterías, Starbucks-like, Dunkin-like, consumo frecuente de café | Restaurantes generales | 24 descuento, 07 reactivación |\n| 14 | `14_combustible.png` | Combustible | Estaciones de servicio, gasolina, bencina, ahorro por litro | Movilidad general sin combustible | 24 descuento, 09 cashback |\n| 15 | `15_farmacia_salud.png` | Farmacia / salud | Farmacias, productos de salud, bienestar cotidiano | Seguros o asistencia médica de viaje | 24 descuento |\n| 16 | `16_retail_shopping.png` | Retail / shopping | Vestuario, tiendas, malls, compras generales, moda | Ecommerce si el canal online es lo central | 24 descuento, 25 CSI |\n| 17 | `17_tecnologia.png` | Tecnología | Electrónica, notebooks, celulares, gadgets, tiendas tech | Ecommerce genérico sin foco en tecnología | 25 CSI, 03 ecommerce |\n| 18 | `18_delivery.png` | Delivery | Pedidos por app, comida a domicilio, despacho | Gastronomía presencial | 03 ecommerce, 24 descuento |\n| 19 | `19_viajes_turismo.png` | Viajes / turismo | Viajes, vuelos, turismo, vacaciones, Travel genérico | Lounge o traslado aeropuerto específicos | 10 DP, 27 crossborder |\n| 20 | `20_entretenimiento_musica.png` | Entretenimiento | Conciertos, música, cine, eventos, panoramas | Travel o gastronomía | 24 descuento |\n| 21 | `21_contactless.png` | Pago contactless | Tap to pay, NFC, “acerca tu tarjeta”, pago sin contacto | Wallet si el foco está en el celular | 02 POS, 04 wallet |\n| 22 | `22_card_on_file_cof.png` | Tarjeta guardada | Card on File, enrolar tarjeta en comercio/app, credencial almacenada | Suscripción recurrente o wallet | 03 ecommerce, 05 activación |\n| 23 | `23_pago_recurrente.png` | Pago recurrente | Suscripciones, pagos automáticos, cargos periódicos | Tarjeta simplemente guardada sin periodicidad | 22 COF, 03 ecommerce |\n| 24 | `24_descuento.png` | Descuento | % descuento, precio rebajado, “hasta 40%”, promoción directa | Cashback o bonificación posterior | 11–20 rubros |\n| 25 | `25_cuotas_sin_interes_csi.png` | Cuotas sin interés | 3/6/12 CSI, compra en cuotas, financiamiento sin interés | Descuento o cashback | 16 retail, 17 tecnología, 01 tarjeta |\n| 26 | `26_meta_de_facturacion.png` | Meta monetaria | Factura $X, alcanza monto mínimo, spend target, gasto acumulado | Meta por número de transacciones | 01 tarjeta, 09 cashback |\n| 27 | `27_compra_internacional_crossborder.png` | Compra internacional | Crossborder genérico, compra fuera de Chile, presencial internacional, gasto extranjero | Ecommerce internacional específicamente | 02 POS, 19 viajes |\n| 28 | `28_ecommerce_internacional.png` | Ecommerce internacional | Compra online en comercio extranjero, CNP internacional | Compra física internacional | 03 ecommerce, 24 descuento |\n| 29 | `29_lounge_salon_vip.png` | Lounge / salón VIP | Acceso a salón VIP, Visa Airport Companion, beneficios de aeropuerto premium | Travel genérico | 19 viajes, 10 DP |\n| 30 | `30_traslado_aeropuerto.png` | Traslado aeropuerto | Transvip-like, transporte hacia/desde aeropuerto, traslado incluido | Movilidad urbana general | 19 viajes, 10 DP |\n\n---\n\n# 7. Reglas por familia\n\n## 7.1 Medios de Pago & Ciclo de Uso\n\nUsar esta familia cuando el foco del mensaje sea:\n\n- cómo paga el cliente;\n- qué producto usa;\n- qué etapa del journey se busca mover;\n- qué comportamiento debe completar.\n\nPrioridad típica:\n\n```text\nProducto genérico → Tarjeta\nCanal físico → POS\nCanal digital → Ecommerce / Wallet\nMomento inicial → Activación / Primera compra\nCliente inactivo → Reactivación\nMeta → Transacciones o Facturación\nRecompensa → Cashback o Dólares-Premio\n```\n\n---\n\n## 7.2 Rubros de Consumo\n\nUsar esta familia cuando la pregunta principal sea:\n\n> “¿Dónde puede usar la tarjeta o dónde aplica el beneficio?”\n\nNo usar rubros para explicar una mecánica.\n\nEjemplo:\n\n> “30% de descuento en restaurantes”\n\nBloque “30%” → `24_descuento`  \nBloque “restaurantes” → `12_gastronomia_restaurantes`\n\n---\n\n## 7.3 Mecánicas, Crossborder & Travel\n\nUsar esta familia cuando exista una condición o experiencia específica:\n\n- contactless;\n- COF;\n- recurrencia;\n- descuento;\n- CSI;\n- meta monetaria;\n- internacional;\n- lounge;\n- traslado.\n\nEsta familia tiene prioridad sobre rubros cuando la condición es el mensaje principal.\n\n---\n\n# 8. Criterios de desempate\n\n## Cashback vs Descuento\n\n**Cashback**\n- devolución posterior;\n- abono;\n- reintegro;\n- “recibe $X”;\n- “te devolvemos”.\n\n→ `09_cashback`\n\n**Descuento**\n- reducción inmediata;\n- “30% dto.”;\n- precio rebajado.\n\n→ `24_descuento`\n\n---\n\n## Activación vs Primera Compra\n\n**Activación**\n- tarjeta habilitada;\n- completar proceso;\n- producto listo para usar.\n\n→ `05_activacion`\n\n**Primera compra**\n- primer uso real de la tarjeta;\n- primera transacción.\n\n→ `06_primera_compra`\n\n---\n\n## Activación vs Reactivación\n\n**Activación**\n- producto nuevo.\n\n**Reactivación**\n- producto existente que dejó de utilizarse.\n\n---\n\n## Ecommerce vs Ecommerce Internacional\n\n**Ecommerce**\n- online, sin dimensión internacional explícita.\n\n→ `03_ecommerce`\n\n**Ecommerce internacional**\n- sitio extranjero;\n- compra fuera de Chile;\n- moneda extranjera;\n- crossborder online.\n\n→ `28_ecommerce_internacional`\n\n---\n\n## Compra internacional vs Viaje\n\n**Compra internacional**\n- foco en la transacción.\n\n→ `27_compra_internacional_crossborder`\n\n**Viaje**\n- foco en experiencia/destino.\n\n→ `19_viajes_turismo`\n\n---\n\n## COF vs Pago recurrente\n\n**COF**\n- tarjeta almacenada;\n- credencial guardada.\n\n→ `22_card_on_file_cof`\n\n**Pago recurrente**\n- cobro automático periódico.\n\n→ `23_pago_recurrente`\n\n---\n\n## Meta de transacciones vs Meta de facturación\n\n**Meta de transacciones**\n- cantidad.\n\nEjemplo: “Realiza 5 compras”.\n\n→ `08_meta_de_transacciones`\n\n**Meta de facturación**\n- monto.\n\nEjemplo: “Acumula $300.000 en compras”.\n\n→ `26_meta_de_facturacion`\n\n---\n\n# 9. Combinaciones recomendadas\n\nCuando una maqueta permita múltiples iconos, usar máximo 2–3 por módulo.\n\n## Activación temprana\n\n```text\nM0 Bienvenida / Activación\n05_activacion\n\nM1 Wallet\n04_wallet_pago_movil\n\nM1 Card on File\n22_card_on_file_cof\n\nM2 Meta de compras\n08_meta_de_transacciones\n\nM3 Habitualidad\n23_pago_recurrente o 08_meta_de_transacciones\nsegún la mecánica real\n```\n\n---\n\n## Inactivos\n\n```text\nConcepto principal:\n07_reactivacion\n\nSi existe incentivo:\n+ 09_cashback\no\n+ 24_descuento\n\nSi existe rubro:\n+ 11–20 según corresponda\n```\n\n---\n\n## Mantención de actividad\n\n```text\nMeta por monto:\n26_meta_de_facturacion\n\nMeta por frecuencia:\n08_meta_de_transacciones\n```\n\n---\n\n## Crossborder Ecommerce\n\n```text\n28_ecommerce_internacional\n```\n\nOpcional:\n\n```text\n+ 24_descuento\n+ 06_primera_compra\n```\n\n---\n\n## Crossborder Presencial\n\n```text\n27_compra_internacional_crossborder\n```\n\nOpcional:\n\n```text\n+ 02_pago_presencial_pos\n+ 06_primera_compra\n```\n\n---\n\n## Travel\n\n```text\n19_viajes_turismo\n10_dolares_premio\n29_lounge_salon_vip\n30_traslado_aeropuerto\n```\n\nSeleccionar solo los beneficios efectivamente incluidos.\n\n---\n\n## Cuotas sin interés\n\n```text\n25_cuotas_sin_interes_csi\n```\n\nOpcional por rubro:\n\n```text\n+ 16_retail_shopping\n+ 17_tecnologia\n+ 11_supermercado\n```\n\n---\n\n# 10. Reglas visuales para un LLM\n\nEl LLM no debe modificar el significado base del icono.\n\nPuede:\n\n- cambiar tamaño;\n- ubicarlo en cards;\n- usarlo junto a texto;\n- combinarlo con otro icono complementario;\n- usar fondo claro u oscuro compatible;\n- agregar labels externos.\n\nNo debe:\n\n- recolorear arbitrariamente;\n- agregar logos dentro del icono;\n- cambiar símbolos internos;\n- convertir cashback en descuento;\n- alterar un rubro para representar otro;\n- usar más de 3 iconos en un mismo bloque salvo una matriz/catálogo;\n- usar un icono meramente decorativo si existe otro semánticamente correcto.\n\n---\n\n# 11. Selección por palabras clave\n\n## Tarjeta\n`tarjeta`, `TC`, `TD`, `medio de pago`, `card`\n\n→ `01_tarjeta`\n\n## Pago presencial\n`presencial`, `POS`, `tienda física`, `caja`\n\n→ `02_pago_presencial_pos`\n\n## Ecommerce\n`ecommerce`, `online`, `internet`, `CNP`\n\n→ `03_ecommerce`\n\n## Wallet\n`wallet`, `billetera`, `Apple Pay`, `Google Pay`, `pago móvil`\n\n→ `04_wallet_pago_movil`\n\n## Activación\n`activar`, `habilitar`, `onboarding`, `tarjeta activa`\n\n→ `05_activacion`\n\n## Primera compra\n`primera compra`, `primer uso`, `primera transacción`\n\n→ `06_primera_compra`\n\n## Reactivación\n`inactivo`, `reactivar`, `volver a usar`, `retoma`\n\n→ `07_reactivacion`\n\n## Meta transacciones\n`5 compras`, `25 transacciones`, `frecuencia`, `cantidad de compras`\n\n→ `08_meta_de_transacciones`\n\n## Cashback\n`cashback`, `devolución`, `reintegro`, `abono`\n\n→ `09_cashback`\n\n## Dólares-Premio\n`DP`, `Dólares-Premio`, `acumula DP`, `canje`\n\n→ `10_dolares_premio`\n\n## Supermercado\n`supermercado`, `alimentos`, `groceries`\n\n→ `11_supermercado`\n\n## Gastronomía\n`restaurante`, `gastronomía`, `cena`\n\n→ `12_gastronomia_restaurantes`\n\n## Café\n`café`, `cafetería`, `Starbucks`, `Dunkin`\n\n→ `13_cafe_cafeterias`\n\n## Combustible\n`combustible`, `bencina`, `gasolina`, `estación de servicio`\n\n→ `14_combustible`\n\n## Farmacia\n`farmacia`, `salud`, `medicamentos`\n\n→ `15_farmacia_salud`\n\n## Retail\n`retail`, `shopping`, `vestuario`, `mall`\n\n→ `16_retail_shopping`\n\n## Tecnología\n`tecnología`, `electrónica`, `notebook`, `celular`\n\n→ `17_tecnologia`\n\n## Delivery\n`delivery`, `despacho`, `pedido a domicilio`\n\n→ `18_delivery`\n\n## Viajes\n`viaje`, `turismo`, `vacaciones`, `Travel`\n\n→ `19_viajes_turismo`\n\n## Entretenimiento\n`concierto`, `música`, `cine`, `evento`, `panorama`\n\n→ `20_entretenimiento_musica`\n\n## Contactless\n`contactless`, `NFC`, `tap`, `sin contacto`\n\n→ `21_contactless`\n\n## COF\n`COF`, `Card on File`, `tarjeta guardada`, `credencial almacenada`\n\n→ `22_card_on_file_cof`\n\n## Recurrente\n`suscripción`, `pago automático`, `recurrente`, `cargo mensual`\n\n→ `23_pago_recurrente`\n\n## Descuento\n`descuento`, `% dto`, `rebaja`\n\n→ `24_descuento`\n\n## CSI\n`cuotas sin interés`, `CSI`, `3 cuotas`, `6 cuotas`, `12 cuotas`\n\n→ `25_cuotas_sin_interes_csi`\n\n## Meta facturación\n`meta facturación`, `gasta $`, `acumula $`, `spend target`\n\n→ `26_meta_de_facturacion`\n\n## Crossborder\n`internacional`, `crossborder`, `extranjero`, `fuera de Chile`\n\n→ `27_compra_internacional_crossborder`\n\n## Ecommerce internacional\n`ecommerce internacional`, `web extranjera`, `compra online internacional`\n\n→ `28_ecommerce_internacional`\n\n## Lounge\n`lounge`, `salón VIP`, `Visa Airport Companion`\n\n→ `29_lounge_salon_vip`\n\n## Traslado aeropuerto\n`Transvip`, `traslado aeropuerto`, `transfer aeropuerto`\n\n→ `30_traslado_aeropuerto`\n\n---\n\n# 12. Prompt de sistema recomendado para agentes\n\n```text\nEres un selector de iconografía para campañas de medios de pago Banco de Chile.\n\nTu tarea es identificar el concepto principal de cada bloque y asignar el icono más específico disponible de la librería BCH de 30 iconos.\n\nReglas:\n1. Prioriza significado sobre estética.\n2. Usa un solo icono principal por concepto.\n3. Prefiere siempre el icono más específico.\n4. Diferencia correctamente cashback vs descuento.\n5. Diferencia activación vs primera compra vs reactivación.\n6. Diferencia meta de transacciones vs meta de facturación.\n7. Diferencia ecommerce nacional vs ecommerce internacional.\n8. Diferencia COF vs pago recurrente.\n9. Usa rubros solo cuando el contexto de consumo sea relevante.\n10. No inventes nuevos iconos si existe uno adecuado en la librería.\n\nAl responder entrega:\n- icon_id\n- icon_name\n- filename\n- reason\n- secondary_icon opcional\n- confidence entre 0 y 1\n```\n\n---\n\n# 13. Formato de salida recomendado\n\n```json\n{\n  \"icon_id\": 28,\n  \"icon_name\": \"Ecommerce internacional\",\n  \"filename\": \"28_ecommerce_internacional.png\",\n  \"reason\": \"La campaña incentiva una compra online en comercios extranjeros.\",\n  \"secondary_icon\": \"24_descuento.png\",\n  \"confidence\": 0.98\n}\n```\n\n---\n\n# 14. Ejemplos de decisión\n\n### Caso 1\n\n**Input**\n\n> “Obtén 30% de descuento en tu primera compra internacional online.”\n\n**Salida**\n\n```json\n{\n  \"icon_id\": 28,\n  \"icon_name\": \"Ecommerce internacional\",\n  \"filename\": \"28_ecommerce_internacional.png\",\n  \"reason\": \"El contexto principal es una compra online internacional.\",\n  \"secondary_icons\": [\n    \"06_primera_compra.png\",\n    \"24_descuento.png\"\n  ],\n  \"confidence\": 0.99\n}\n```\n\n---\n\n### Caso 2\n\n**Input**\n\n> “Haz 5 compras durante el mes y recibe cashback.”\n\n**Salida**\n\n```json\n{\n  \"icon_id\": 8,\n  \"icon_name\": \"Meta de transacciones\",\n  \"filename\": \"08_meta_de_transacciones.png\",\n  \"reason\": \"La condición principal es alcanzar una cantidad específica de compras.\",\n  \"secondary_icons\": [\n    \"09_cashback.png\"\n  ],\n  \"confidence\": 0.99\n}\n```\n\n---\n\n### Caso 3\n\n**Input**\n\n> “Vuelve a usar tu Tarjeta de Crédito y recibe un beneficio.”\n\n**Salida**\n\n```json\n{\n  \"icon_id\": 7,\n  \"icon_name\": \"Reactivación\",\n  \"filename\": \"07_reactivacion.png\",\n  \"reason\": \"La campaña busca recuperar el uso de una tarjeta previamente inactiva.\",\n  \"confidence\": 0.98\n}\n```\n\n---\n\n### Caso 4\n\n**Input**\n\n> “Paga en 6 cuotas sin interés en tecnología.”\n\n**Salida**\n\n```json\n{\n  \"icon_id\": 25,\n  \"icon_name\": \"Cuotas sin interés\",\n  \"filename\": \"25_cuotas_sin_interes_csi.png\",\n  \"reason\": \"La mecánica comercial principal son las cuotas sin interés.\",\n  \"secondary_icons\": [\n    \"17_tecnologia.png\"\n  ],\n  \"confidence\": 0.99\n}\n```\n\n---\n\n### Caso 5\n\n**Input**\n\n> “Accede a salones VIP en tus próximos viajes.”\n\n**Salida**\n\n```json\n{\n  \"icon_id\": 29,\n  \"icon_name\": \"Lounge / Salón VIP\",\n  \"filename\": \"29_lounge_salon_vip.png\",\n  \"reason\": \"El beneficio específico comunicado es el acceso a lounge.\",\n  \"secondary_icons\": [\n    \"19_viajes_turismo.png\"\n  ],\n  \"confidence\": 0.99\n}\n```\n\n---\n\n# 15. Principio final\n\n> **El icono debe ayudar a entender el mensaje antes de leer el copy.**\n\nSi un LLM tiene dudas entre dos iconos, debe elegir el que represente de forma más específica:\n\n1. la acción requerida;\n2. la condición de la campaña;\n3. el contexto real de uso.\n\nLa librería no busca decorar.  \nBusca construir un lenguaje visual consistente para campañas, PPT, landings, emails, dashboards y prototipos de medios de pago Banco de Chile.\n";
