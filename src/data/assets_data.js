@@ -1,7 +1,7 @@
 window.BANK_ASSETS = [
   {
     "filename": "01_tarjeta.png",
-    "rel_path": "assets/bch/icons/01_tarjeta.png",
+    "rel_path": "assets/banco_de_chile/icons/01_tarjeta.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -31,7 +31,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "02_pago_presencial_pos.png",
-    "rel_path": "assets/bch/icons/02_pago_presencial_pos.png",
+    "rel_path": "assets/banco_de_chile/icons/02_pago_presencial_pos.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -59,7 +59,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "03_ecommerce.png",
-    "rel_path": "assets/bch/icons/03_ecommerce.png",
+    "rel_path": "assets/banco_de_chile/icons/03_ecommerce.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -87,7 +87,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "04_wallet_pago_movil.png",
-    "rel_path": "assets/bch/icons/04_wallet_pago_movil.png",
+    "rel_path": "assets/banco_de_chile/icons/04_wallet_pago_movil.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -116,7 +116,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "05_activacion.png",
-    "rel_path": "assets/bch/icons/05_activacion.png",
+    "rel_path": "assets/banco_de_chile/icons/05_activacion.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -144,7 +144,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "06_primera_compra.png",
-    "rel_path": "assets/bch/icons/06_primera_compra.png",
+    "rel_path": "assets/banco_de_chile/icons/06_primera_compra.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -172,7 +172,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "07_reactivacion.png",
-    "rel_path": "assets/bch/icons/07_reactivacion.png",
+    "rel_path": "assets/banco_de_chile/icons/07_reactivacion.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -200,7 +200,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "08_meta_de_transacciones.png",
-    "rel_path": "assets/bch/icons/08_meta_de_transacciones.png",
+    "rel_path": "assets/banco_de_chile/icons/08_meta_de_transacciones.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -229,7 +229,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "09_cashback.png",
-    "rel_path": "assets/bch/icons/09_cashback.png",
+    "rel_path": "assets/banco_de_chile/icons/09_cashback.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -258,7 +258,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "10_dolares_premio.png",
-    "rel_path": "assets/bch/icons/10_dolares_premio.png",
+    "rel_path": "assets/banco_de_chile/icons/10_dolares_premio.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -288,7 +288,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "11_supermercado.png",
-    "rel_path": "assets/bch/icons/11_supermercado.png",
+    "rel_path": "assets/banco_de_chile/icons/11_supermercado.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -317,7 +317,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "12_gastronomia_restaurantes.png",
-    "rel_path": "assets/bch/icons/12_gastronomia_restaurantes.png",
+    "rel_path": "assets/banco_de_chile/icons/12_gastronomia_restaurantes.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -346,7 +346,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "13_cafe_cafeterias.png",
-    "rel_path": "assets/bch/icons/13_cafe_cafeterias.png",
+    "rel_path": "assets/banco_de_chile/icons/13_cafe_cafeterias.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -375,7 +375,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "14_combustible.png",
-    "rel_path": "assets/bch/icons/14_combustible.png",
+    "rel_path": "assets/banco_de_chile/icons/14_combustible.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -404,7 +404,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "15_farmacia_salud.png",
-    "rel_path": "assets/bch/icons/15_farmacia_salud.png",
+    "rel_path": "assets/banco_de_chile/icons/15_farmacia_salud.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -432,7 +432,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "16_retail_shopping.png",
-    "rel_path": "assets/bch/icons/16_retail_shopping.png",
+    "rel_path": "assets/banco_de_chile/icons/16_retail_shopping.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -461,7 +461,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "17_tecnologia.png",
-    "rel_path": "assets/bch/icons/17_tecnologia.png",
+    "rel_path": "assets/banco_de_chile/icons/17_tecnologia.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -489,7 +489,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "18_delivery.png",
-    "rel_path": "assets/bch/icons/18_delivery.png",
+    "rel_path": "assets/banco_de_chile/icons/18_delivery.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -518,7 +518,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "19_viajes_turismo.png",
-    "rel_path": "assets/bch/icons/19_viajes_turismo.png",
+    "rel_path": "assets/banco_de_chile/icons/19_viajes_turismo.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -547,7 +547,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "20_entretenimiento_musica.png",
-    "rel_path": "assets/bch/icons/20_entretenimiento_musica.png",
+    "rel_path": "assets/banco_de_chile/icons/20_entretenimiento_musica.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -576,7 +576,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "21_contactless.png",
-    "rel_path": "assets/bch/icons/21_contactless.png",
+    "rel_path": "assets/banco_de_chile/icons/21_contactless.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -605,7 +605,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "22_card_on_file_cof.png",
-    "rel_path": "assets/bch/icons/22_card_on_file_cof.png",
+    "rel_path": "assets/banco_de_chile/icons/22_card_on_file_cof.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -633,7 +633,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "23_pago_recurrente.png",
-    "rel_path": "assets/bch/icons/23_pago_recurrente.png",
+    "rel_path": "assets/banco_de_chile/icons/23_pago_recurrente.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -662,7 +662,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "24_descuento.png",
-    "rel_path": "assets/bch/icons/24_descuento.png",
+    "rel_path": "assets/banco_de_chile/icons/24_descuento.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -691,7 +691,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "25_cuotas_sin_interes_csi.png",
-    "rel_path": "assets/bch/icons/25_cuotas_sin_interes_csi.png",
+    "rel_path": "assets/banco_de_chile/icons/25_cuotas_sin_interes_csi.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -720,7 +720,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "26_meta_de_facturacion.png",
-    "rel_path": "assets/bch/icons/26_meta_de_facturacion.png",
+    "rel_path": "assets/banco_de_chile/icons/26_meta_de_facturacion.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -749,7 +749,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "27_compra_internacional_crossborder.png",
-    "rel_path": "assets/bch/icons/27_compra_internacional_crossborder.png",
+    "rel_path": "assets/banco_de_chile/icons/27_compra_internacional_crossborder.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -778,7 +778,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "28_ecommerce_internacional.png",
-    "rel_path": "assets/bch/icons/28_ecommerce_internacional.png",
+    "rel_path": "assets/banco_de_chile/icons/28_ecommerce_internacional.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -806,7 +806,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "29_lounge_salon_vip.png",
-    "rel_path": "assets/bch/icons/29_lounge_salon_vip.png",
+    "rel_path": "assets/banco_de_chile/icons/29_lounge_salon_vip.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -835,7 +835,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "30_traslado_aeropuerto.png",
-    "rel_path": "assets/bch/icons/30_traslado_aeropuerto.png",
+    "rel_path": "assets/banco_de_chile/icons/30_traslado_aeropuerto.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -864,7 +864,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "01_bch_icono_ticket_viaje_ncde7f.png",
-    "rel_path": "assets/bch/travel/01_bch_icono_ticket_viaje_ncde7f.png",
+    "rel_path": "assets/banco_de_chile/travel/01_bch_icono_ticket_viaje_ncde7f.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -888,7 +888,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "02_bch_icono_dolares_premio_pplf0o.png",
-    "rel_path": "assets/bch/travel/02_bch_icono_dolares_premio_pplf0o.png",
+    "rel_path": "assets/banco_de_chile/travel/02_bch_icono_dolares_premio_pplf0o.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -912,7 +912,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "03_bch_icono_cuotas_viaje_kml5fp.png",
-    "rel_path": "assets/bch/travel/03_bch_icono_cuotas_viaje_kml5fp.png",
+    "rel_path": "assets/banco_de_chile/travel/03_bch_icono_cuotas_viaje_kml5fp.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -936,7 +936,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "04_bch_icono_tasa_preferencial_viajes_qwzxxt.png",
-    "rel_path": "assets/bch/travel/04_bch_icono_tasa_preferencial_viajes_qwzxxt.png",
+    "rel_path": "assets/banco_de_chile/travel/04_bch_icono_tasa_preferencial_viajes_qwzxxt.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -960,7 +960,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "05_bch_icono_tarjeta_activada_extranjero_h03q2v.png",
-    "rel_path": "assets/bch/travel/05_bch_icono_tarjeta_activada_extranjero_h03q2v.png",
+    "rel_path": "assets/banco_de_chile/travel/05_bch_icono_tarjeta_activada_extranjero_h03q2v.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -984,7 +984,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "06_bch_icono_traslado_aeropuerto_r9goav.png",
-    "rel_path": "assets/bch/travel/06_bch_icono_traslado_aeropuerto_r9goav.png",
+    "rel_path": "assets/banco_de_chile/travel/06_bch_icono_traslado_aeropuerto_r9goav.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -1008,7 +1008,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "07_bch_icono_avion_despegue_gcez6a.png",
-    "rel_path": "assets/bch/travel/07_bch_icono_avion_despegue_gcez6a.png",
+    "rel_path": "assets/banco_de_chile/travel/07_bch_icono_avion_despegue_gcez6a.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -1032,7 +1032,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "08_bch_icono_hotel_premium_aylvme.png",
-    "rel_path": "assets/bch/travel/08_bch_icono_hotel_premium_aylvme.png",
+    "rel_path": "assets/banco_de_chile/travel/08_bch_icono_hotel_premium_aylvme.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -1056,7 +1056,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "09_bch_icono_maleta_viaje_ntmoww.png",
-    "rel_path": "assets/bch/travel/09_bch_icono_maleta_viaje_ntmoww.png",
+    "rel_path": "assets/banco_de_chile/travel/09_bch_icono_maleta_viaje_ntmoww.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -1080,7 +1080,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "10_bch_icono_bono_bienvenida_iaohbl.png",
-    "rel_path": "assets/bch/travel/10_bch_icono_bono_bienvenida_iaohbl.png",
+    "rel_path": "assets/banco_de_chile/travel/10_bch_icono_bono_bienvenida_iaohbl.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1254,
@@ -1104,7 +1104,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "banco_de_chile.png",
-    "rel_path": "assets/bch/logos/banco_de_chile.png",
+    "rel_path": "assets/banco_de_chile/logos/banco_de_chile.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1440,
@@ -1128,7 +1128,7 @@ window.BANK_ASSETS = [
   },
   {
     "filename": "bch_logo.png",
-    "rel_path": "assets/bch/logos/bch_logo.png",
+    "rel_path": "assets/banco_de_chile/logos/bch_logo.png",
     "bank": "Banco de Chile",
     "format": "PNG",
     "width": 1521,
@@ -1159,10 +1159,10 @@ window.BANK_ASSETS = [
     "height": 2160,
     "size_kb": "14.0 KB",
     "size_bytes": 14378,
-    "title": "Visa Logo (visa_blue.png)",
+    "title": "Visa (visa_blue.png)",
     "category": "Logotipos",
     "family": "Visa Brand Standards",
-    "concept": "Logotipo oficial Visa para co-branding",
+    "concept": "Recurso oficial Visa (logos)",
     "rubro": "Branding",
     "rule": "Logotipo oficial Visa para cabeceras y tarjetas co-branded.",
     "tags": [
@@ -1182,10 +1182,10 @@ window.BANK_ASSETS = [
     "height": 68,
     "size_kb": "5.9 KB",
     "size_bytes": 6050,
-    "title": "Visa Logo (visa_logo_white.png)",
+    "title": "Visa (visa_logo_white.png)",
     "category": "Logotipos",
     "family": "Visa Brand Standards",
-    "concept": "Logotipo oficial Visa para co-branding",
+    "concept": "Recurso oficial Visa (logos)",
     "rubro": "Branding",
     "rule": "Logotipo oficial Visa para cabeceras y tarjetas co-branded.",
     "tags": [
@@ -1205,10 +1205,10 @@ window.BANK_ASSETS = [
     "height": 68,
     "size_kb": "7.0 KB",
     "size_bytes": 7156,
-    "title": "Visa Logo (visa_vector.png)",
+    "title": "Visa (visa_vector.png)",
     "category": "Logotipos",
     "family": "Visa Brand Standards",
-    "concept": "Logotipo oficial Visa para co-branding",
+    "concept": "Recurso oficial Visa (logos)",
     "rubro": "Branding",
     "rule": "Logotipo oficial Visa para cabeceras y tarjetas co-branded.",
     "tags": [

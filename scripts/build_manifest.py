@@ -314,11 +314,11 @@ def get_file_info(filepath, rel_path, bank, category_default):
         "size_bytes": size_bytes
     }
 
-# 1. BCH 30 Icons (Stream-Alpha)
+# 1. Banco de Chile — 30 Íconos Oficiales
 for fn, meta in BCH_30_METADATA.items():
-    fp = os.path.join(BASE_DIR, "bch/icons", fn)
+    fp = os.path.join(BASE_DIR, "banco_de_chile/icons", fn)
     if os.path.exists(fp):
-        info = get_file_info(fp, f"assets/bch/icons/{fn}", "Banco de Chile", "Íconos 3D")
+        info = get_file_info(fp, f"assets/banco_de_chile/icons/{fn}", "Banco de Chile", "Íconos 3D")
         info.update({
             "title": meta["title"],
             "category": "Íconos 3D",
@@ -331,14 +331,14 @@ for fn, meta in BCH_30_METADATA.items():
         })
         manifest.append(info)
 
-# 2. BCH Travel Icons (Stream-Alpha)
-travel_dir = os.path.join(BASE_DIR, "bch/travel")
+# 2. Banco de Chile — Travel Icons
+travel_dir = os.path.join(BASE_DIR, "banco_de_chile/travel")
 if os.path.exists(travel_dir):
     for fn in sorted(os.listdir(travel_dir)):
         if fn.endswith(".png"):
             fp = os.path.join(travel_dir, fn)
             clean_title = fn.replace("_ncde7f.png", "").replace("_pplf0o.png", "").replace("_kml5fp.png", "").replace("_qwzxxt.png", "").replace("_h03q2v.png", "").replace("_r9goav.png", "").replace("_gcez6a.png", "").replace("_aylvme.png", "").replace("_ntmoww.png", "").replace("_iaohbl.png", "").replace(".png", "").replace("bch_icono_", "").replace("_", " ").title()
-            info = get_file_info(fp, f"assets/bch/travel/{fn}", "Banco de Chile", "Travel & Turismo")
+            info = get_file_info(fp, f"assets/banco_de_chile/travel/{fn}", "Banco de Chile", "Travel & Turismo")
             info.update({
                 "title": clean_title,
                 "category": "Travel & Turismo",
@@ -351,13 +351,13 @@ if os.path.exists(travel_dir):
             })
             manifest.append(info)
 
-# 3. Logos Banco de Chile
-bch_logos_dir = os.path.join(BASE_DIR, "bch/logos")
+# 3. Banco de Chile — Logos
+bch_logos_dir = os.path.join(BASE_DIR, "banco_de_chile/logos")
 if os.path.exists(bch_logos_dir):
     for fn in sorted(os.listdir(bch_logos_dir)):
-        if not fn.startswith("."):
+        if not fn.startswith(".") and not fn.endswith(".gitkeep"):
             fp = os.path.join(bch_logos_dir, fn)
-            info = get_file_info(fp, f"assets/bch/logos/{fn}", "Banco de Chile", "Logotipos")
+            info = get_file_info(fp, f"assets/banco_de_chile/logos/{fn}", "Banco de Chile", "Logotipos")
             info.update({
                 "title": f"Logo Banco de Chile ({fn})",
                 "category": "Logotipos",
@@ -370,24 +370,55 @@ if os.path.exists(bch_logos_dir):
             })
             manifest.append(info)
 
-# 4. Visa Logos (Marca oficial)
-visa_logos_dir = os.path.join(BASE_DIR, "visa/logos")
-if os.path.exists(visa_logos_dir):
-    for fn in sorted(os.listdir(visa_logos_dir)):
-        if not fn.startswith("."):
-            fp = os.path.join(visa_logos_dir, fn)
-            info = get_file_info(fp, f"assets/visa/logos/{fn}", "Visa", "Logotipos")
-            info.update({
-                "title": f"Visa Logo ({fn})",
-                "category": "Logotipos",
-                "family": "Visa Brand Standards",
-                "concept": "Logotipo oficial Visa para co-branding",
-                "rubro": "Branding",
-                "rule": "Logotipo oficial Visa para cabeceras y tarjetas co-branded.",
-                "tags": ["visa", "logo", "branding", "wordmark"],
-                "is_featured": False
-            })
-            manifest.append(info)
+# 4. Galicia — Escaneo automático de assets
+galicia_subfolders = [
+    ("icons", "Íconos 3D", "Íconos Galicia"),
+    ("logos", "Logotipos", "Identidad Galicia"),
+    ("creatives", "Banners Hero", "Creatividades Galicia")
+]
+for sub, cat, fam in galicia_subfolders:
+    sdir = os.path.join(BASE_DIR, "galicia", sub)
+    if os.path.exists(sdir):
+        for fn in sorted(os.listdir(sdir)):
+            if not fn.startswith(".") and not fn.endswith(".gitkeep") and os.path.isfile(os.path.join(sdir, fn)):
+                fp = os.path.join(sdir, fn)
+                info = get_file_info(fp, f"assets/galicia/{sub}/{fn}", "Galicia", cat)
+                info.update({
+                    "title": f"Galicia - {fn}",
+                    "category": cat,
+                    "family": fam,
+                    "concept": f"Recurso oficial de Galicia ({sub})",
+                    "rubro": "Galicia",
+                    "rule": f"Activo corporativo oficial para piezas de Banco Galicia.",
+                    "tags": ["galicia", "banco galicia", sub, "branding"],
+                    "is_featured": False
+                })
+                manifest.append(info)
+
+# 5. Visa — Escaneo automático de assets
+visa_subfolders = [
+    ("icons", "Íconos 3D", "Visa Icons"),
+    ("logos", "Logotipos", "Visa Brand Standards"),
+    ("creatives", "Banners Hero", "Visa Creatives")
+]
+for sub, cat, fam in visa_subfolders:
+    sdir = os.path.join(BASE_DIR, "visa", sub)
+    if os.path.exists(sdir):
+        for fn in sorted(os.listdir(sdir)):
+            if not fn.startswith(".") and not fn.endswith(".gitkeep") and os.path.isfile(os.path.join(sdir, fn)):
+                fp = os.path.join(sdir, fn)
+                info = get_file_info(fp, f"assets/visa/{sub}/{fn}", "Visa", cat)
+                info.update({
+                    "title": f"Visa ({fn})",
+                    "category": cat,
+                    "family": fam,
+                    "concept": f"Recurso oficial Visa ({sub})",
+                    "rubro": "Branding",
+                    "rule": "Logotipo oficial Visa para cabeceras y tarjetas co-branded.",
+                    "tags": ["visa", "logo", "branding", "wordmark"],
+                    "is_featured": False
+                })
+                manifest.append(info)
 
 os.makedirs(os.path.dirname(MANIFEST_PATH), exist_ok=True)
 with open(MANIFEST_PATH, "w", encoding="utf-8") as f:

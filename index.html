@@ -53,7 +53,7 @@
 
     <!-- Quick Actions -->
     <div class="nav-right">
-      <a href="assets/bch/BCH_Icon_Decision_Matrix_v1.md" download="BCH_Icon_Decision_Matrix_v1.md" class="btn-pill btn-secondary" title="Descargar la matriz oficial en Markdown">
+      <a href="assets/banco_de_chile/BCH_Icon_Decision_Matrix_v1.md" download="BCH_Icon_Decision_Matrix_v1.md" class="btn-pill btn-secondary" title="Descargar la matriz oficial en Markdown">
         <span>📄 Matriz (.md)</span>
       </a>
       <button class="btn-pill btn-primary" onclick="showView('builder')">
@@ -119,9 +119,10 @@
 
         <!-- Bank Filter Chips -->
         <div class="chips-row">
-          <span class="chip-group-label">Entidad:</span>
+          <span class="chip-group-label">Proyecto / Entidad:</span>
           <button class="chip active" data-bank="all" onclick="filterByBank('all')">Todos</button>
           <button class="chip" data-bank="Banco de Chile" onclick="filterByBank('Banco de Chile')">Banco de Chile</button>
+          <button class="chip" data-bank="Galicia" onclick="filterByBank('Galicia')">Galicia</button>
           <button class="chip" data-bank="Visa" onclick="filterByBank('Visa')">Visa</button>
         </div>
 
@@ -156,7 +157,7 @@
             <h1>Banco de Chile · Icon Decision Matrix</h1>
             <p style="color:var(--text-muted);">Sistema de decisión para selección de iconografía en campañas de medios de pago</p>
           </div>
-          <a href="assets/bch/BCH_Icon_Decision_Matrix_v1.md" download class="btn-pill btn-primary">
+          <a href="assets/banco_de_chile/BCH_Icon_Decision_Matrix_v1.md" download class="btn-pill btn-primary">
             <span>💾 Descargar Documento .md</span>
           </a>
         </div>
@@ -488,13 +489,23 @@
       countEl.innerText = `Mostrando ${filtered.length} de ${window.BANK_ASSETS.length} activos`;
 
       if (filtered.length === 0) {
-        grid.innerHTML = `
-          <div style="grid-column: 1/-1; text-align:center; padding:60px 20px; color:var(--text-muted);">
-            <div style="font-size:40px; margin-bottom:12px;">🔍</div>
-            <h3 style="font-size:18px; font-weight:700; color:var(--bch-navy);">No se encontraron recursos</h3>
-            <p>Intenta con otros términos como "tarjeta", "descuento", "pos", "travel" o selecciona otro banco.</p>
-          </div>
-        `;
+        if (currentBankFilter.toLowerCase() === 'galicia') {
+          grid.innerHTML = `
+            <div style="grid-column: 1/-1; text-align:center; padding:60px 20px; color:var(--text-muted); background:#FFFFFF; border:1px solid var(--border-light); border-radius:var(--radius-lg);">
+              <div style="font-size:44px; margin-bottom:12px;">📁</div>
+              <h3 style="font-size:18px; font-weight:700; color:var(--bch-navy); margin-bottom:8px;">Carpeta Galicia Lista para Recibir Activos</h3>
+              <p style="max-width:540px; margin:0 auto; line-height:1.5;">La carpeta <code>assets/galicia/</code> (con subcarpetas <code>icons/</code>, <code>logos/</code> y <code>creatives/</code>) ya está creada y configurada. Cuando agregues tus piezas allí, se indexarán automáticamente.</p>
+            </div>
+          `;
+        } else {
+          grid.innerHTML = `
+            <div style="grid-column: 1/-1; text-align:center; padding:60px 20px; color:var(--text-muted);">
+              <div style="font-size:40px; margin-bottom:12px;">🔍</div>
+              <h3 style="font-size:18px; font-weight:700; color:var(--bch-navy);">No se encontraron recursos</h3>
+              <p>Intenta con otros términos como "tarjeta", "descuento", "pos", "travel" o selecciona otro banco.</p>
+            </div>
+          `;
+        }
         return;
       }
 

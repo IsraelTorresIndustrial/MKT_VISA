@@ -23,22 +23,22 @@ window.EMAIL_PRESETS = {
     "productSubtitle": "TU NUEVO PLAN",
     "productTitle": "Plan Travel Infinite",
     "productDescription": "Más beneficios para tus compras y una experiencia Travel más completa.",
-    "cardImage": "assets/bch/logos/banco_de_chile.png",
+    "cardImage": "assets/banco_de_chile/logos/banco_de_chile.png",
     "benefits": [
       {
-        "icon": "assets/bch/icons/10_dolares_premio.png",
+        "icon": "assets/banco_de_chile/icons/10_dolares_premio.png",
         "badge": "1,2%",
         "title": "Dólares-Premio",
         "description": "de acumulación comunicada para el plan en cada compra."
       },
       {
-        "icon": "assets/bch/icons/29_lounge_salon_vip.png",
+        "icon": "assets/banco_de_chile/icons/29_lounge_salon_vip.png",
         "badge": "12",
         "title": "Accesos Salones VIP",
         "description": "al año en salas Pacific Club y aeropuertos preferentes."
       },
       {
-        "icon": "assets/bch/icons/30_traslado_aeropuerto.png",
+        "icon": "assets/banco_de_chile/icons/30_traslado_aeropuerto.png",
         "badge": "4",
         "title": "Traslados Aeropuerto",
         "description": "al año para iniciar tu viaje con total comodidad."
@@ -69,22 +69,22 @@ window.EMAIL_PRESETS = {
     "productSubtitle": "BENEFICIO EXCLUSIVO",
     "productTitle": "Vuelve a usar tu Tarjeta del Chile",
     "productDescription": "Aprovecha tus beneficios y acumula recompensas desde tu próxima compra.",
-    "cardImage": "assets/bch/logos/banco_de_chile.png",
+    "cardImage": "assets/banco_de_chile/logos/banco_de_chile.png",
     "benefits": [
       {
-        "icon": "assets/bch/icons/24_descuento.png",
+        "icon": "assets/banco_de_chile/icons/24_descuento.png",
         "badge": "30% OFF",
         "title": "Descuento en 1ª Compra",
         "description": "Válido en todos los comercios presenciales y online con tope de $20.000."
       },
       {
-        "icon": "assets/bch/icons/25_cuotas_sin_interes_csi.png",
+        "icon": "assets/banco_de_chile/icons/25_cuotas_sin_interes_csi.png",
         "badge": "3 a 12",
         "title": "Cuotas Sin Interés",
         "description": "En rubros seleccionados y compras del mes sin costo de financiamiento."
       },
       {
-        "icon": "assets/bch/icons/09_cashback.png",
+        "icon": "assets/banco_de_chile/icons/09_cashback.png",
         "badge": "$10.000",
         "title": "Dólares-Premio Extra",
         "description": "Abonados directamente al cumplir tu meta transaccional comunicada."
@@ -118,19 +118,19 @@ window.EMAIL_PRESETS = {
     "cardImage": "assets/visa/logos/visa_blue.png",
     "benefits": [
       {
-        "icon": "assets/bch/icons/27_compra_internacional_crossborder.png",
+        "icon": "assets/banco_de_chile/icons/27_compra_internacional_crossborder.png",
         "badge": "GLOBAL",
         "title": "Compras Internacionales",
         "description": "Paga en moneda extranjera con el mejor tipo de cambio interbancario."
       },
       {
-        "icon": "assets/bch/icons/28_ecommerce_internacional.png",
+        "icon": "assets/banco_de_chile/icons/28_ecommerce_internacional.png",
         "badge": "ONLINE",
         "title": "Ecommerce Internacional",
         "description": "Seguridad tokenizada para tus compras en Amazon, AliExpress y streaming."
       },
       {
-        "icon": "assets/bch/icons/21_contactless.png",
+        "icon": "assets/banco_de_chile/icons/21_contactless.png",
         "badge": "NFC",
         "title": "Pago Sin Contacto",
         "description": "Acerca tu tarjeta o dispositivo móvil en terminales POS de todo el mundo."

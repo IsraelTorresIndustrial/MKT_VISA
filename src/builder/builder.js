@@ -146,7 +146,7 @@ window.BuilderStudio = {
       return;
     }
     this.state.benefits.push({
-      icon: "assets/bch/icons/01_tarjeta.png",
+      icon: "assets/banco_de_chile/icons/01_tarjeta.png",
       badge: "NUEVO",
       title: "Nuevo Beneficio",
       description: "Detalle del beneficio para el cliente."
