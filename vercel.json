@@ -6,6 +6,10 @@
     {
       "source": "/assets/bch/:path*",
       "destination": "/assets/banco_de_chile/:path*"
+    },
+    {
+      "source": "/assets/visa/:path*",
+      "destination": "/assets/visa/:path*"
     }
   ],
   "headers": [
