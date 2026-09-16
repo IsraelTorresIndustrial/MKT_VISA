@@ -2,7 +2,7 @@
 > **Autor:** Israel Torres  
 > **Proyecto:** MKT_VISA  
 > **Ámbito:** Banco de Chile · Medios de Pago · Visa · Travel Club  
-> **Disponibilidad:** **100% Verificado (72 Activos Digitales Oficiales (42 3D/Travel/Logos + 30 2D))** con descripciones morfológicas hiperdetalladas para LLMs con o sin visión, reglas de negocio, intenciones de campaña y URLs públicas directas de producción en Vercel (`https://mkt-visa.vercel.app/assets/bch/...`).
+> **Disponibilidad:** **100% Verificado (80 Activos Digitales Oficiales (42 3D/Travel/Logos + 30 2D + 8 2D Grupo 4))** con descripciones morfológicas hiperdetalladas para LLMs con o sin visión, reglas de negocio, intenciones de campaña y URLs públicas directas de producción en Vercel (`https://mkt-visa.vercel.app/assets/bch/...`).
 
 ---
 
@@ -1150,7 +1150,7 @@ Guía rápida para resolver ambivalencias comunes en requerimientos de marketing
 ## 🤖 PROMPT DE SISTEMA LISTO PARA INYECTAR EN AGENTES LLM
 ```text
 Eres el Selector Determinista de Iconografía para Medios de Pago de Banco de Chile y Visa.
-Tu tarea es analizar el requerimiento textual del usuario, extraer el concepto semántico dominante y devolver el ícono oficial más adecuado de la biblioteca BCH (72 activos verificados).
+Tu tarea es analizar el requerimiento textual del usuario, extraer el concepto semántico dominante y devolver el ícono oficial más adecuado de la biblioteca BCH (80 activos verificados).
 
 Reglas Obligatorias:
 1. NUNCA inventes nombres de archivo ni rutas relativas locales.
@@ -1219,3 +1219,62 @@ https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/{carpeta}/{filename}
 ### ⚡ Regla de Selección 2D vs 3D para LLMs y Diseñadores:
 - **Usar versión 3D (`assets/bch/icons/...`)**: Cuando el diseño principal use componentes 3D renderizados, degradados con volumen, tarjetas metálicas o piezas hero ricas en textura.
 - **Usar versión 2D (`assets/bch/iconos_bch_2d_30/...`)**: Cuando la interfaz o email siga una guía de diseño plana (*Flat Design*), infografías sencillas, badges circulares pequeños (< 32px) o comunicaciones corporativas sobrias.
+
+
+---
+
+## 🎨 GRUPO 4 · ÍCONOS 2D EXTENDIDOS — CONTEXTOS ESPECÍFICOS, INNOVACIÓN & CANALES
+
+> **Rango:** 31–40 · **Disponibles físicamente:** 31–38 (39 y 40 pendientes de subida)  
+> **CDN base:** `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/{filename}`
+
+Este grupo **complementa** y **no reemplaza** la biblioteca base de 30 íconos 2D. Activar cuando el mensaje requiere mayor precisión contextual que los rubros generales del Grupo 2 o las mecánicas del Grupo 3.
+
+### 🔑 Principio de especificidad:
+> Si el mensaje puede usar un ícono más específico del Grupo 4, siempre preferirlo sobre el genérico del Grupo base.
+
+### 📋 Catálogo Grupo 4:
+
+| ID | Archivo | Concepto | CDN URL | Usar cuando |
+|---|---|---|---|---|
+| 31 | `31_inteligencia_artificial.png` | Inteligencia Artificial | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/31_inteligencia_artificial.png` | IA, chatbot, automatización inteligente, experiencias AI |
+| 32 | `32_streaming_suscripciones.png` | Streaming & Suscripciones | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/32_streaming_suscripciones.png` | Netflix, Spotify, plataformas de contenido, mensualidades digitales |
+| 33 | `33_cine.png` | Cine | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/33_cine.png` | Películas, entradas al cine, Cinema |
+| 34 | `34_conciertos_musica_en_vivo.png` | Conciertos & Música en Vivo | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/34_conciertos_musica_en_vivo.png` | Recitales, festivales, preventas, shows |
+| 35 | `35_moda_vestuario.png` | Moda & Vestuario | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/35_moda_vestuario.png` | Ropa, moda, fashion, retail textil |
+| 36 | `36_hogar.png` | Hogar & Deco | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/36_hogar.png` | Casa, muebles, decoración, línea blanca, mejoramiento del hogar |
+| 37 | `37_mascotas.png` | Mascotas | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/37_mascotas.png` | Veterinaria, pet shop, animales, perros, gatos |
+| 38 | `38_salud_clinica_medico.png` | Salud Clínica & Médico | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/38_salud_clinica_medico.png` | Clínicas, médico, consultas, prestación de salud |
+| 39 | `39_seguridad_proteccion.png` *(pendiente)* | Seguridad & Protección | — | Compra segura, antifraude, respaldo, protección |
+| 40 | `40_app_canal_digital.png` *(pendiente)* | App Canal Digital | — | App Mi Banco, autogestión, canal digital |
+
+### ⚡ Diferencias críticas Grupo 4 vs Base:
+
+| Situación | ❌ No usar | ✅ Usar Grupo 4 |
+|---|---|---|
+| Campaña habla de IA | `17_tecnologia` | `31_inteligencia_artificial` |
+| Pago en plataformas streaming | `23_pago_recurrente` | `32_streaming_suscripciones` |
+| Descuento en cine | `20_entretenimiento_musica` | `33_cine` |
+| Preventa concierto | `20_entretenimiento_musica` | `34_conciertos_musica_en_vivo` |
+| Beneficio en moda/ropa | `16_retail_shopping` | `35_moda_vestuario` |
+| Compras para el hogar | `16_retail_shopping` | `36_hogar` |
+| Beneficio en veterinaria | `15_farmacia_salud` | `37_mascotas` |
+| Atención médica/clínica | `15_farmacia_salud` | `38_salud_clinica_medico` |
+| Compra segura online | `01_tarjeta_visa` | `39_seguridad_proteccion` |
+| App del banco (autogestión) | `04_wallet_pago_movil` | `40_app_canal_digital` |
+
+### 🔢 Keywords de Activación Grupo 4:
+
+| Keywords | Ícono |
+|---|---|
+| `IA`, `inteligencia artificial`, `chatbot`, `asistente AI`, `automatización` | 31 |
+| `streaming`, `suscripción`, `plataforma digital`, `mensualidad contenido` | 32 |
+| `cine`, `película`, `cinema`, `entrada cine` | 33 |
+| `concierto`, `recital`, `festival`, `preventa show`, `música en vivo` | 34 |
+| `moda`, `vestuario`, `ropa`, `fashion` | 35 |
+| `hogar`, `muebles`, `casa`, `decoración`, `línea blanca` | 36 |
+| `mascotas`, `veterinaria`, `pet`, `perro`, `gato` | 37 |
+| `clínica`, `médico`, `consulta`, `salud asistencial` | 38 |
+| `seguridad`, `protección`, `antifraude`, `compra segura` | 39 |
+| `app`, `canal digital`, `app Mi Banco`, `autogestión` | 40 |
+
