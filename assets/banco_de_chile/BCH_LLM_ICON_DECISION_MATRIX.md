@@ -1245,8 +1245,8 @@ Este grupo **complementa** y **no reemplaza** la biblioteca base de 30 íconos 2
 | 36 | `36_hogar.png` | Hogar & Deco | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/36_hogar.png` | Casa, muebles, decoración, línea blanca, mejoramiento del hogar |
 | 37 | `37_mascotas.png` | Mascotas | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/37_mascotas.png` | Veterinaria, pet shop, animales, perros, gatos |
 | 38 | `38_salud_clinica_medico.png` | Salud Clínica & Médico | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/38_salud_clinica_medico.png` | Clínicas, médico, consultas, prestación de salud |
-| 39 | `39_seguridad_proteccion.png` *(pendiente)* | Seguridad & Protección | — | Compra segura, antifraude, respaldo, protección |
-| 40 | `40_app_canal_digital.png` *(pendiente)* | App Canal Digital | — | App Mi Banco, autogestión, canal digital |
+| 39 | `39_seguridad_proteccion.png` | Seguridad & Protección | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/39_seguridad_proteccion.png` | Compra segura, antifraude, respaldo, protección |
+| 40 | `40_app_canal_digital.png` | App Canal Digital | `https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/iconos_bch_2d_grupo4_10/40_app_canal_digital.png` | App Mi Banco, autogestión, canal digital |
 
 ### ⚡ Diferencias críticas Grupo 4 vs Base:
 
