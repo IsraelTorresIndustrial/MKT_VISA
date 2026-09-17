@@ -1185,3 +1185,18 @@ body {
   font-size: 11px;
   color: var(--text-muted);
 }
+
+/* ── Dev-only rebuild button ── */
+.btn-dev {
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.btn-dev:hover { background: #15803d; }
+.btn-dev.loading {
+  opacity: 0.7;
+  cursor: wait;
+}

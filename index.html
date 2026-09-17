@@ -66,6 +66,10 @@
           </a>
         </div>
       </div>
+      <!-- DEV ONLY: Rebuild button — visible solo en localhost -->
+      <button class="btn-pill btn-dev" id="devRebuildBtn" onclick="rebuildManifest()" title="Reconstruir assets_data.js corriendo build_manifest.py" style="display:none;">
+        <span id="devRebuildLabel">🔄 Actualizar</span>
+      </button>
       <button class="btn-pill btn-primary" onclick="showView('builder')">
         <span>⚡ Armar Email</span>
       </button>
@@ -810,11 +814,48 @@ Directivas de Operación:
       window.exportEmailProjectZip(html, name);
     }
 
+    // ── Dev: rebuild manifest ──────────────────────────────────────────────
+    async function rebuildManifest() {
+      const btn   = document.getElementById('devRebuildBtn');
+      const label = document.getElementById('devRebuildLabel');
+      btn.classList.add('loading');
+      label.textContent = '⏳ Reconstruyendo…';
+
+      try {
+        const res  = await fetch('/rebuild', { method: 'POST' });
+        const data = await res.json();
+
+        if (data.ok) {
+          label.textContent = '✅ Listo — recarga la página';
+          showToast('✅ Manifest actualizado. Recarga para ver los cambios.', '✅');
+          // Auto-reload after 1.5s so new assets_data.js loads
+          setTimeout(() => location.reload(), 1500);
+        } else {
+          label.textContent = '❌ Error — revisa consola';
+          showToast('❌ Error al reconstruir. Revisa la terminal.', '❌');
+          console.error('[build_manifest]', data.output);
+        }
+      } catch (e) {
+        label.textContent = '🔄 Actualizar';
+        showToast('⚠️ No se pudo conectar con dev_server.py', '⚠️');
+        console.warn('[rebuild]', e);
+      } finally {
+        btn.classList.remove('loading');
+        setTimeout(() => { label.textContent = '🔄 Actualizar'; }, 4000);
+      }
+    }
+
     // Initialize on DOM load
     document.addEventListener('DOMContentLoaded', () => {
       renderMarquee();
       renderAssets();
       window.BuilderStudio.init();
+
+      // Mostrar botón rebuild solo en localhost
+      const isLocal = ['localhost', '127.0.0.1', '::1'].includes(location.hostname);
+      if (isLocal) {
+        document.getElementById('devRebuildBtn').style.display = 'inline-flex';
+      }
     });
   </script>
 </body>
