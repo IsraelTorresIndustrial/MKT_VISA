@@ -54,16 +54,33 @@
     <!-- Quick Actions -->
     <div class="nav-right">
       <div style="position:relative; display:inline-block;" id="matrixDropdownWrapper">
-        <button class="btn-pill btn-secondary" onclick="toggleMatrixDropdown()" title="Descargar Matrices LLM (.md)">
-          <span>📄 Matrices LLM ▾</span>
+        <button class="btn-pill btn-secondary" onclick="toggleMatrixDropdown()" title="Descargar Documentación y Guías para LLMs (.md)">
+          <span>📄 Guías & Prompts LLM ▾</span>
         </button>
-        <div id="matrixDropdownMenu" style="display:none; position:absolute; right:0; top:110%; background:#fff; border:1px solid #e2e8f0; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.12); min-width:260px; z-index:999; padding:6px;">
+        <div id="matrixDropdownMenu" style="display:none; position:absolute; right:0; top:110%; background:#fff; border:1px solid #e2e8f0; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.12); min-width:280px; z-index:999; padding:8px;">
+          <div class="dropdown-header">🧠 Matrices de Decisión (Íconos)</div>
           <a href="assets/banco_de_chile/BCH_LLM_ICON_DECISION_MATRIX.md" download class="matrix-drop-item">
-            <span>🏦</span> Banco de Chile (.md)
+            <span>🏦</span> Matriz Banco de Chile (.md)
           </a>
           <a href="assets/visa/VISA_LLM_ICON_DECISION_MATRIX.md" download class="matrix-drop-item">
-            <span>💳</span> Visa Icons (.md)
+            <span>💳</span> Matriz Visa Icons (.md)
           </a>
+          
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-header">✉️ Email Maker (HTML & Prompts)</div>
+          <a href="assets/banco_de_chile/BCH_HTML_EMAIL_LLM_GUIDE.md" download class="matrix-drop-item">
+            <span>📧</span> Email Maker BCH (.md)
+          </a>
+          <a href="assets/visa/VISA_HTML_EMAIL_LLM_GUIDE.md" download class="matrix-drop-item">
+            <span>💳</span> Email Maker Visa (.md)
+          </a>
+          
+          <div class="dropdown-divider"></div>
+          <div style="padding:4px;">
+            <button class="btn-pill btn-primary" style="width:100%; justify-content:center; font-size:12px;" onclick="openEmailMakerModal('BCH')">
+              <span>🤖 Ver Prompts Email Maker</span>
+            </button>
+          </div>
         </div>
       </div>
       <!-- DEV ONLY: Rebuild button — visible solo en localhost -->
@@ -186,8 +203,11 @@
               <p style="color:var(--text-muted); font-size:14px;">Catálogo maestro y reglas de inferencia para 42 activos verificados con URLs públicas de producción Vercel</p>
             </div>
             <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn-pill btn-secondary" onclick="openEmailMakerModal('BCH')" title="Ver prompt y guía para creación de emails HTML con LLM">
+                <span>✉️ Prompt Email Maker BCH</span>
+              </button>
               <button class="btn-pill btn-secondary" onclick="copySystemPromptBCH()" title="Copiar prompt de sistema optimizado para agentes">
-                <span>📋 Copiar Prompt de Sistema</span>
+                <span>📋 Copiar Prompt Matriz</span>
               </button>
               <a href="assets/banco_de_chile/BCH_LLM_ICON_DECISION_MATRIX.md" download="BCH_LLM_ICON_DECISION_MATRIX.md" class="btn-pill btn-primary">
                 <span>💾 Descargar Guía .md Completa</span>
@@ -300,8 +320,11 @@
               <p style="color:var(--text-muted); font-size:14px;">155 iconos SVG curados por categoría · Vectores escalables oficiales Visa · CDN Vercel Edge</p>
             </div>
             <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn-pill btn-secondary" onclick="openEmailMakerModal('Visa')" title="Ver prompt y guía para creación de emails HTML Visa con LLM">
+                <span>✉️ Prompt Email Maker Visa</span>
+              </button>
               <button class="btn-pill btn-secondary" onclick="copySystemPromptVisa()" title="Copiar prompt de sistema Visa">
-                <span>📋 Copiar Prompt de Sistema</span>
+                <span>📋 Copiar Prompt Matriz</span>
               </button>
               <a href="assets/visa/VISA_LLM_ICON_DECISION_MATRIX.md" download="VISA_LLM_ICON_DECISION_MATRIX.md" class="btn-pill btn-primary" style="background:#1A1F71;">
                 <span>💾 Descargar Guía .md Completa</span>
@@ -359,7 +382,8 @@
               </button>
             </div>
 
-            <div style="display:flex; gap:8px;">
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <button class="btn-card" onclick="openEmailMakerModal('BCH')" title="Ver prompt maestro y snippets para generar emails con LLMs">🤖 Prompts Email LLM</button>
               <button class="btn-card" id="tabBtnPreview" onclick="BuilderStudio.setTab('preview')">👁️ Vista Previa</button>
               <button class="btn-card" id="tabBtnCode" onclick="BuilderStudio.setTab('code')">&lt;/&gt; Código HTML</button>
               <button class="btn-card" onclick="BuilderStudio.copyHtml()">📋 Copiar HTML</button>
@@ -464,6 +488,178 @@
     </div>
   </div>
 
+  <!-- Email Maker Prompt Modal -->
+  <div class="modal-overlay" id="emailMakerPromptModal" onclick="closeModalOnOverlay(event)">
+    <div class="prompt-modal-box">
+      <div class="prompt-modal-header">
+        <div>
+          <h3 style="font-size:17px; font-weight:800; color:var(--bch-navy); margin:0 0 4px;">✉️ Prompts & Guías para Email Maker HTML (LLMs)</h3>
+          <p style="font-size:12px; color:var(--text-muted); margin:0;">Inyecta este conocimiento en ChatGPT, Claude, Gemini o Cursor para maquetar correos HTML perfectos con íconos oficiales</p>
+        </div>
+        <button class="modal-close" onclick="closeEmailMakerModal()">&times;</button>
+      </div>
+
+      <!-- Modal Tabs -->
+      <div style="display:flex; gap:6px; padding:0 24px; border-bottom:1px solid var(--border-light); background:#F8FAFC;">
+        <button class="prompt-tab-btn active" id="emailPromptTabBCH" onclick="switchEmailPromptTab('BCH')">
+          🏦 Banco de Chile (HTML)
+        </button>
+        <button class="prompt-tab-btn" id="emailPromptTabVisa" onclick="switchEmailPromptTab('Visa')">
+          💳 Visa (HTML Co-Branded)
+        </button>
+        <button class="prompt-tab-btn" id="emailPromptTabSnippets" onclick="switchEmailPromptTab('Snippets')">
+          🧱 Componentes HTML Email
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="prompt-modal-body">
+        <!-- TAB BCH -->
+        <div id="emailTabPanelBCH">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+            <div style="font-size:13px; font-weight:700; color:var(--bch-navy);">Prompt de Sistema Maestro · Banco de Chile</div>
+            <div style="display:flex; gap:8px;">
+              <button class="btn-card highlight" onclick="copyEmailMakerPromptBCH()">📋 Copiar Prompt BCH</button>
+              <a href="assets/banco_de_chile/BCH_HTML_EMAIL_LLM_GUIDE.md" download="BCH_HTML_EMAIL_LLM_GUIDE.md" class="btn-card" style="text-decoration:none;">💾 Descargar .md</a>
+            </div>
+          </div>
+          <pre class="prompt-code-area" id="promptTextBCH">Eres el Diseñador Experto de Emails HTML para Banco de Chile y Visa.
+Tu misión es generar correos electrónicos en HTML puro, 100% responsivos y table-based, seleccionando con máxima precisión los íconos oficiales de Banco de Chile y aplicando el estándar corporativo.
+
+REGLAS OBLIGATORIAS:
+1. ARQUITECTURA HTML: Usa exclusivamente tablas HTML (&lt;table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"&gt;) con ancho máximo de 600px centrado. Cero Flexbox, cero CSS Grid, cero variables CSS.
+2. ICONOGRAFÍA CANÓNICA: Utiliza siempre URLs absolutas con prefijo https://mkt-visa.vercel.app/assets/bch/...
+3. SELECCIÓN 3D VS 2D:
+   - Usa 3D (https://mkt-visa.vercel.app/assets/bch/icons/{id}.png) para el beneficio Hero destacado o tarjeta protagonista.
+   - Usa 2D (https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/{carpeta}/{id}.png) para grillas de 2 o 3 columnas de beneficios y listas.
+4. DIFERENCIAS SEMÁNTICAS CRÍTICAS:
+   - Para Inteligencia Artificial: usa 31_inteligencia_artificial.png (NO 17_tecnologia).
+   - Para Streaming (Netflix, Spotify): usa 32_streaming_suscripciones.png (NO 23_pago_recurrente).
+   - Para Cine: usa 33_cine.png (NO 20_entretenimiento).
+   - Para Conciertos/Preventas: usa 34_conciertos_musica_en_vivo.png (NO 20_entretenimiento).
+   - Para Moda/Ropa: usa 35_moda_vestuario.png (NO 16_retail).
+   - Para Hogar/Muebles: usa 36_hogar.png (NO 16_retail).
+   - Para Mascotas/Veterinaria: usa 37_mascotas.png (NO 15_farmacia).
+   - Para Salud Clínica/Médica: usa 38_salud_clinica_medico.png (NO 15_farmacia).
+   - Para Seguridad/Antifraude: usa 39_seguridad_proteccion.png (NO 01_tarjeta).
+   - Para App del Banco/Autogestión: usa 40_app_canal_digital.png (NO 04_wallet).
+5. FORMATO DE IMAGEN EN EMAIL: Cada &lt;img&gt; debe incluir width="48" height="48" border="0" style="display:block; margin:0 auto; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;".
+6. PALETA INSTITUCIONAL BCH:
+   - Azul Marino Principal: #002464
+   - Azul Primario BCH: #0032A0
+   - Fondo de Pieza: #F8FAFC
+   - Card Background: #FFFFFF (borde #E2E8F0)
+   - Texto Principal: #0F172A
+   - Texto Secundario: #475569</pre>
+        </div>
+
+        <!-- TAB VISA -->
+        <div id="emailTabPanelVisa" style="display:none;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+            <div style="font-size:13px; font-weight:700; color:#1A1F71;">Prompt de Sistema Maestro · Visa</div>
+            <div style="display:flex; gap:8px;">
+              <button class="btn-card highlight" onclick="copyEmailMakerPromptVisa()">📋 Copiar Prompt Visa</button>
+              <a href="assets/visa/VISA_HTML_EMAIL_LLM_GUIDE.md" download="VISA_HTML_EMAIL_LLM_GUIDE.md" class="btn-card" style="text-decoration:none;">💾 Descargar .md</a>
+            </div>
+          </div>
+          <pre class="prompt-code-area" id="promptTextVisa">Eres el Especialista en Email Marketing y Diseño HTML para Visa.
+Tu tarea es construir correos HTML table-based compatibles con todos los clientes de correo, usando la iconografía oficial Visa (158 íconos curados) y la paleta de marca 2025.
+
+DIRECTIVAS:
+1. URLs CDN: Siempre usa https://mkt-visa.vercel.app/assets/visa/icons/assets/visa-icons/svg/visa/{nombre}-high.svg.
+2. ESTRUCTURA: Tabla HTML centrada de 600px con estilos inline (table-based bulletproof). Cero Flexbox/Grid.
+3. PALETA VISA:
+   - Visa Navy: #021E4C
+   - Visa Blue: #1434CB
+   - Visa Gold: #FCC015
+   - Surface Light: #F4F6FE
+4. ICONOS DESTACADOS:
+   - Pagos: card-generic-high.svg, tap-high.svg, pos-high.svg, qr-high.svg
+   - Transacciones: money-send-high.svg, mobile-transfer-high.svg, receipt-high.svg, fast-high.svg
+   - Seguridad: security-protection-high.svg, security-lock-high.svg, fraud-high.svg, token-high.svg
+   - Viajes: global-high.svg, transit-airplane-high.svg, travel-notifications-high.svg
+   - Comercio: offers-deal-high.svg, reward-high.svg, bonus-points-high.svg, cart-high.svg
+5. CTA BULLETPROOF: Botón centrado con fondo #1434CB, padding:14px 32px, border-radius:24px, color:#FFFFFF.</pre>
+        </div>
+
+        <!-- TAB SNIPPETS -->
+        <div id="emailTabPanelSnippets" style="display:none;">
+          <div style="display:grid; gap:16px;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                <span style="font-size:12px; font-weight:700; color:var(--bch-navy);">Header con Logo Banco de Chile (600px)</span>
+                <button class="btn-card" onclick="copySnippet('snippetHeaderBch')">Copiar</button>
+              </div>
+              <pre class="prompt-code-area" id="snippetHeaderBch" style="max-height:140px;">&lt;table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#002464;"&gt;
+  &lt;tr&gt;
+    &lt;td align="center" style="padding:24px 20px;"&gt;
+      &lt;table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" style="max-width:600px; width:100%;"&gt;
+        &lt;tr&gt;
+          &lt;td align="left" valign="middle"&gt;
+            &lt;img src="https://mkt-visa.vercel.app/assets/bch/logos/banco_de_chile.png" alt="Banco de Chile" width="140" border="0" style="display:block; border:0; outline:none;" /&gt;
+          &lt;/td&gt;
+          &lt;td align="right" valign="middle" style="font-family:'Arial', Helvetica, sans-serif; font-size:12px; color:#FFFFFF; opacity:0.85;"&gt;
+            Medios de Pago · Visa
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+            </div>
+
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                <span style="font-size:12px; font-weight:700; color:var(--bch-navy);">Grilla de 2 Columnas de Beneficios (2D Icons)</span>
+                <button class="btn-card" onclick="copySnippet('snippetGrid2Bch')">Copiar</button>
+              </div>
+              <pre class="prompt-code-area" id="snippetGrid2Bch" style="max-height:160px;">&lt;table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#F8FAFC; padding:24px 0;"&gt;
+  &lt;tr&gt;
+    &lt;td align="center"&gt;
+      &lt;table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" style="max-width:600px; width:100%;"&gt;
+        &lt;tr&gt;
+          &lt;td width="288" valign="top" style="padding:0 8px 16px 0;"&gt;
+            &lt;table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#FFFFFF; border:1px solid #E2E8F0; border-radius:12px; padding:20px; text-align:center;"&gt;
+              &lt;tr&gt;&lt;td align="center" style="padding-bottom:12px;"&gt;&lt;img src="https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/11_supermercado.png" alt="Supermercados" width="48" height="48" border="0" style="display:block; margin:0 auto;" /&gt;&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td align="center" style="font-family:'Arial', sans-serif; font-size:18px; font-weight:bold; color:#002464; padding-bottom:4px;"&gt;Hasta 30% OFF&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td align="center" style="font-family:'Arial', sans-serif; font-size:13px; color:#475569; line-height:1.4;"&gt;En supermercados adheridos con tus tarjetas BCH.&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+          &lt;td width="288" valign="top" style="padding:0 0 16px 8px;"&gt;
+            &lt;table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#FFFFFF; border:1px solid #E2E8F0; border-radius:12px; padding:20px; text-align:center;"&gt;
+              &lt;tr&gt;&lt;td align="center" style="padding-bottom:12px;"&gt;&lt;img src="https://mkt-visa.vercel.app/assets/bch/iconos_bch_2d_30/02_rubros_consumo/14_combustible.png" alt="Combustible" width="48" height="48" border="0" style="display:block; margin:0 auto;" /&gt;&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td align="center" style="font-family:'Arial', sans-serif; font-size:18px; font-weight:bold; color:#002464; padding-bottom:4px;"&gt;$100 dcto / litro&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td align="center" style="font-family:'Arial', sans-serif; font-size:13px; color:#475569; line-height:1.4;"&gt;Los jueves en estaciones Shell y Copec con Mi Pago.&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+            </div>
+
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                <span style="font-size:12px; font-weight:700; color:var(--bch-navy);">Botón CTA Bulletproof (Compatible Outlook)</span>
+                <button class="btn-card" onclick="copySnippet('snippetCtaBch')">Copiar</button>
+              </div>
+              <pre class="prompt-code-area" id="snippetCtaBch" style="max-height:120px;">&lt;table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin:24px auto;"&gt;
+  &lt;tr&gt;
+    &lt;td align="center" bgcolor="#0032A0" style="border-radius:24px;"&gt;
+      &lt;a href="https://portales.bancochile.cl/beneficios" target="_blank" style="font-family:'Arial', Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#FFFFFF; text-decoration:none; display:inline-block; padding:14px 32px; border-radius:24px; border:1px solid #0032A0;"&gt;
+        Conoce Todos los Beneficios →
+      &lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Asset Picker Modal (for Builder Studio) -->
   <div class="modal-overlay" id="assetPickerModal" onclick="closeModalOnOverlay(event)">
     <div class="modal-box" style="max-width:700px;">
@@ -557,6 +753,45 @@ Directivas de Operación:
 5. Para renderizar en HTML: <img src="URL" width="40" height="40" alt="NOMBRE"> o <object type="image/svg+xml" data="URL" width="40" height="40"></object>
 6. Devuelve JSON con: icon_name, filename, cdn_url, category, html_snippet, reason.`;
       navigator.clipboard.writeText(prompt).then(() => showToast("¡Prompt de Sistema Visa copiado!"));
+    }
+
+    // Email Maker Prompt Modal Controller
+    function openEmailMakerModal(bank = 'BCH') {
+      const modal = document.getElementById('emailMakerPromptModal');
+      if (!modal) return;
+      modal.classList.add('active');
+      switchEmailPromptTab(bank);
+    }
+
+    function closeEmailMakerModal() {
+      const modal = document.getElementById('emailMakerPromptModal');
+      if (modal) modal.classList.remove('active');
+    }
+
+    function switchEmailPromptTab(tab) {
+      document.getElementById('emailTabPanelBCH').style.display = tab === 'BCH' ? 'block' : 'none';
+      document.getElementById('emailTabPanelVisa').style.display = tab === 'Visa' ? 'block' : 'none';
+      document.getElementById('emailTabPanelSnippets').style.display = tab === 'Snippets' ? 'block' : 'none';
+
+      document.getElementById('emailPromptTabBCH').classList.toggle('active', tab === 'BCH');
+      document.getElementById('emailPromptTabVisa').classList.toggle('active', tab === 'Visa');
+      document.getElementById('emailPromptTabSnippets').classList.toggle('active', tab === 'Snippets');
+    }
+
+    function copyEmailMakerPromptBCH() {
+      const el = document.getElementById('promptTextBCH');
+      if (!el) return;
+      navigator.clipboard.writeText(el.innerText.trim()).then(() => {
+        showToast("¡Prompt Email Maker BCH copiado para tu LLM!", "✉️");
+      });
+    }
+
+    function copyEmailMakerPromptVisa() {
+      const el = document.getElementById('promptTextVisa');
+      if (!el) return;
+      navigator.clipboard.writeText(el.innerText.trim()).then(() => {
+        showToast("¡Prompt Email Maker Visa copiado para tu LLM!", "💳");
+      });
     }
 
     // Matrix Tab Switcher
