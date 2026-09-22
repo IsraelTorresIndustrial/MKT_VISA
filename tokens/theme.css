@@ -355,19 +355,22 @@ body {
 
 .marquee-row-badge {
   flex-shrink: 0;
-  font-size: 10px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 4px 10px;
-  border-radius: 6px;
-  background: var(--bg-subtle);
-  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  color: var(--navy-dark);
   margin-right: 12px;
   margin-left: 16px;
-  z-index: 3;
-  border: 1px solid var(--border-light);
+  z-index: 10;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .marquee-track {
@@ -378,15 +381,15 @@ body {
 }
 
 .marquee-track.row-1 {
-  animation: marqueeScroll 46s linear infinite;
+  animation: marqueeScroll 95s linear infinite;
 }
 
 .marquee-track.row-2 {
-  animation: marqueeScrollReverse 50s linear infinite;
+  animation: marqueeScrollReverse 105s linear infinite;
 }
 
 .marquee-track.row-3 {
-  animation: marqueeScroll 42s linear infinite;
+  animation: marqueeScroll 88s linear infinite;
 }
 
 .marquee-track:hover {

@@ -138,12 +138,15 @@
       <!-- Continuous Marquee Ribbon (3 Thematic Rows) -->
       <div class="hero-marquee-wrapper" id="heroMarqueeWrapper">
         <div class="marquee-row">
+          <span class="marquee-row-badge" id="marqueeBadge1">Fila 1</span>
           <div class="marquee-track row-1" id="marqueeTrack1"></div>
         </div>
         <div class="marquee-row">
+          <span class="marquee-row-badge" id="marqueeBadge2">Fila 2</span>
           <div class="marquee-track row-2" id="marqueeTrack2"></div>
         </div>
         <div class="marquee-row">
+          <span class="marquee-row-badge" id="marqueeBadge3">Fila 3</span>
           <div class="marquee-track row-3" id="marqueeTrack3"></div>
         </div>
       </div>
@@ -967,49 +970,81 @@ Directivas de Operación:
       const t1 = document.getElementById('marqueeTrack1');
       const t2 = document.getElementById('marqueeTrack2');
       const t3 = document.getElementById('marqueeTrack3');
+      const b1 = document.getElementById('marqueeBadge1');
+      const b2 = document.getElementById('marqueeBadge2');
+      const b3 = document.getElementById('marqueeBadge3');
       if (!t1 || !t2 || !t3 || !window.BANK_ASSETS) return;
 
       const assets = window.BANK_ASSETS;
       let row1 = [], row2 = [], row3 = [];
+      let label1 = '', label2 = '', label3 = '';
 
       if (bank === 'Banco de Chile') {
         // Row 1: Medios de Pago & Onboarding (3D)
         row1 = assets.filter(a => a.bank === 'Banco de Chile' && a.category === 'Íconos 3D');
+        label1 = '🇨🇱 Medios de Pago 3D';
 
         // Row 2: Rubros de Consumo & 2D Suite
         row2 = assets.filter(a => a.bank === 'Banco de Chile' && a.category === 'Íconos 2D');
+        label2 = '🛍️ Rubros de Consumo 2D';
 
         // Row 3: Travel, Mecánicas & Innovación G4
-        row3 = assets.filter(a => a.bank === 'Banco de Chile' && (a.category === 'Travel & Turismo' || a.family.includes('Grupo 4') || a.family.includes('Crossborder')));
+        row3 = assets.filter(a => a.bank === 'Banco de Chile' && (a.category === 'Travel & Turismo' || a.family.includes('Grupo 4') || a.family.includes('Crossborder') || a.category === 'Logotipos'));
+        label3 = '✈️ Travel & Innovación G4';
       } else if (bank === 'Galicia') {
-        // Row 1: Servicios Básicos & Conectividad
-        row1 = assets.filter(a => a.bank === 'Galicia' && (a.family.includes('Servicios') || a.filename.includes('wi_fi') || a.filename.includes('celular')));
+        // Row 1: Servicios Básicos & Pagos (Luz, Gas, Agua, Calendario Vencimiento, Wi-Fi, Celular, Rayo)
+        row1 = assets.filter(a => a.bank === 'Galicia' && (
+          a.family.includes('Servicios') || 
+          ['luz_lampara.png', 'gas.png', 'canilla.png', 'auriculares_2.png', 'rayo.png', 'wi_fi.png', 'celular.png'].includes(a.filename)
+        ));
+        label1 = '⚡ Servicios & Vencimientos';
         
-        // Row 2: Seguros & Protección Galicia
-        row2 = assets.filter(a => a.bank === 'Galicia' && a.family.includes('Seguros'));
+        // Row 2: Seguros & Protección Galicia (Auto, Hogar, Vida, Seguros, Paraguas, Primeros Auxilios)
+        row2 = assets.filter(a => a.bank === 'Galicia' && (
+          a.family.includes('Seguros') || 
+          ['seguro_auto.png', 'seguro_hogar.png', 'seguro_vida.png', 'seguros.png', 'paraguas.png', 'primeros_auxilios.png'].includes(a.filename)
+        ));
+        label2 = '🛡️ Galicia Seguros';
 
-        // Row 3: Entretenimiento, Cine, Shows & Headers
-        row3 = assets.filter(a => a.bank === 'Galicia' && (a.family.includes('Entretenimiento') || a.category === 'Banners Hero' || a.category === 'Logotipos'));
+        // Row 3: Entretenimiento, Banners Hero & Identidad (Cine, Pochoclos, Teatro, Entradas, Micrófono, Auriculares, Headers, Logo)
+        row3 = assets.filter(a => a.bank === 'Galicia' && (
+          a.family.includes('Entretenimiento') || 
+          a.category === 'Banners Hero' || 
+          a.category === 'Logotipos' || 
+          ['cine.png', 'cine_2.png', 'pochoclos.png', 'pochoclos_2.png', 'teatro.png', 'entradas.png', 'entradas_2.png', 'microfono.png', 'microfono_2.png', 'auriculares.png', 'logo_galicia_header.png'].includes(a.filename) ||
+          a.filename.startsWith('header_')
+        ));
+        label3 = '🎟️ Cultura & Banners Hero';
       } else if (bank === 'Visa') {
-        // Row 1: Pagos & Transacciones
+        // Row 1: Pagos, Transacciones & Wallet
         row1 = assets.filter(a => a.bank === 'Visa' && ['Pagos', 'Transacciones', 'Cuenta y Wallet'].includes(a.category));
+        label1 = '💳 Pagos & Transacciones';
 
         // Row 2: Seguridad, Auth & Divisas
         row2 = assets.filter(a => a.bank === 'Visa' && ['Seguridad', 'Divisas', 'Identidad', 'Dispositivos'].includes(a.category));
+        label2 = '🔒 Seguridad & Divisas';
 
         // Row 3: Viajes, Comercio, Analítica & Comunicación
         row3 = assets.filter(a => a.bank === 'Visa' && ['Viajes', 'Comercio', 'Analítica', 'Comunicación', 'UI'].includes(a.category));
+        label3 = '✈️ Viajes & Analítica';
       } else {
         // 'all' -> Multi-bank showcase por tipo / entidad
         // Row 1: Banco de Chile (3D & 2D Destacados)
         row1 = assets.filter(a => a.bank === 'Banco de Chile' && (a.category === 'Íconos 3D' || a.is_featured));
+        label1 = '🇨🇱 Banco de Chile';
 
-        // Row 2: Banco Galicia (Servicios, Seguros & Entretenimiento)
+        // Row 2: Banco Galicia (Servicios, Seguros, Cultura & Banners)
         row2 = assets.filter(a => a.bank === 'Galicia');
+        label2 = '🦁 Banco Galicia';
 
         // Row 3: Visa SVG Icons (Pagos, Seguridad, Viajes, Comercio) & Travel
         row3 = assets.filter(a => a.bank === 'Visa' && ['Pagos', 'Seguridad', 'Viajes', 'Comercio'].includes(a.category));
+        label3 = '💳 Visa Oficial';
       }
+
+      if (b1) b1.textContent = label1;
+      if (b2) b2.textContent = label2;
+      if (b3) b3.textContent = label3;
 
       function buildRowHtml(items) {
         if (!items || items.length === 0) return '';
