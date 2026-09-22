@@ -135,10 +135,16 @@
         </div>
       </div>
 
-      <!-- Continuous Marquee Ribbon of Featured BCH Icons -->
-      <div class="hero-marquee-wrapper">
-        <div class="marquee-track" id="marqueeTrack">
-          <!-- Dynamically populated -->
+      <!-- Continuous Marquee Ribbon (3 Thematic Rows) -->
+      <div class="hero-marquee-wrapper" id="heroMarqueeWrapper">
+        <div class="marquee-row">
+          <div class="marquee-track row-1" id="marqueeTrack1"></div>
+        </div>
+        <div class="marquee-row">
+          <div class="marquee-track row-2" id="marqueeTrack2"></div>
+        </div>
+        <div class="marquee-row">
+          <div class="marquee-track row-3" id="marqueeTrack3"></div>
         </div>
       </div>
     </section>
@@ -956,25 +962,79 @@ Directivas de Operación:
       }).join('');
     }
 
-    // Render continuous marquee ribbon
-    function renderMarquee() {
-      const track = document.getElementById('marqueeTrack');
-      if (!track || !window.BANK_ASSETS) return;
+    // Render 3 continuous thematic marquee ribbons
+    function renderMarquee(bank = currentBankFilter) {
+      const t1 = document.getElementById('marqueeTrack1');
+      const t2 = document.getElementById('marqueeTrack2');
+      const t3 = document.getElementById('marqueeTrack3');
+      if (!t1 || !t2 || !t3 || !window.BANK_ASSETS) return;
 
-      const featured = window.BANK_ASSETS.filter(a => a.is_featured && a.category === "Íconos 3D");
-      const list = [...featured, ...featured]; // Duplicate for seamless infinite loop
+      const assets = window.BANK_ASSETS;
+      let row1 = [], row2 = [], row3 = [];
 
-      track.innerHTML = list.map(item => `
-        <div class="marquee-item" onclick="openAssetModalByFilename('${item.filename}')">
-          <div class="marquee-icon-box">
-            <img src="${item.rel_path}" alt="${item.title}">
+      if (bank === 'Banco de Chile') {
+        // Row 1: Medios de Pago & Onboarding (3D)
+        row1 = assets.filter(a => a.bank === 'Banco de Chile' && a.category === 'Íconos 3D');
+
+        // Row 2: Rubros de Consumo & 2D Suite
+        row2 = assets.filter(a => a.bank === 'Banco de Chile' && a.category === 'Íconos 2D');
+
+        // Row 3: Travel, Mecánicas & Innovación G4
+        row3 = assets.filter(a => a.bank === 'Banco de Chile' && (a.category === 'Travel & Turismo' || a.family.includes('Grupo 4') || a.family.includes('Crossborder')));
+      } else if (bank === 'Galicia') {
+        // Row 1: Servicios Básicos & Conectividad
+        row1 = assets.filter(a => a.bank === 'Galicia' && (a.family.includes('Servicios') || a.filename.includes('wi_fi') || a.filename.includes('celular')));
+        
+        // Row 2: Seguros & Protección Galicia
+        row2 = assets.filter(a => a.bank === 'Galicia' && a.family.includes('Seguros'));
+
+        // Row 3: Entretenimiento, Cine, Shows & Headers
+        row3 = assets.filter(a => a.bank === 'Galicia' && (a.family.includes('Entretenimiento') || a.category === 'Banners Hero' || a.category === 'Logotipos'));
+      } else if (bank === 'Visa') {
+        // Row 1: Pagos & Transacciones
+        row1 = assets.filter(a => a.bank === 'Visa' && ['Pagos', 'Transacciones', 'Cuenta y Wallet'].includes(a.category));
+
+        // Row 2: Seguridad, Auth & Divisas
+        row2 = assets.filter(a => a.bank === 'Visa' && ['Seguridad', 'Divisas', 'Identidad', 'Dispositivos'].includes(a.category));
+
+        // Row 3: Viajes, Comercio, Analítica & Comunicación
+        row3 = assets.filter(a => a.bank === 'Visa' && ['Viajes', 'Comercio', 'Analítica', 'Comunicación', 'UI'].includes(a.category));
+      } else {
+        // 'all' -> Multi-bank showcase por tipo / entidad
+        // Row 1: Banco de Chile (3D & 2D Destacados)
+        row1 = assets.filter(a => a.bank === 'Banco de Chile' && (a.category === 'Íconos 3D' || a.is_featured));
+
+        // Row 2: Banco Galicia (Servicios, Seguros & Entretenimiento)
+        row2 = assets.filter(a => a.bank === 'Galicia');
+
+        // Row 3: Visa SVG Icons (Pagos, Seguridad, Viajes, Comercio) & Travel
+        row3 = assets.filter(a => a.bank === 'Visa' && ['Pagos', 'Seguridad', 'Viajes', 'Comercio'].includes(a.category));
+      }
+
+      function buildRowHtml(items) {
+        if (!items || items.length === 0) return '';
+        let list = [...items];
+        while (list.length < 12) {
+          list = [...list, ...items];
+        }
+        list = [...list, ...list]; // Doble para loop infinito fluido (-50% transform)
+
+        return list.map(item => `
+          <div class="marquee-item" onclick="openAssetModalByFilename('${item.filename}')" title="${item.title} (${item.bank})">
+            <div class="marquee-icon-box">
+              <img src="${item.rel_path}" alt="${item.title}" loading="lazy" onerror="this.style.opacity=0.3">
+            </div>
+            <div>
+              <div class="marquee-name">${item.title}</div>
+              <div class="marquee-tag">${item.bank} · ${item.category}</div>
+            </div>
           </div>
-          <div>
-            <div class="marquee-name">${item.title}</div>
-            <div class="marquee-tag">${item.rubro || item.family}</div>
-          </div>
-        </div>
-      `).join('');
+        `).join('');
+      }
+
+      t1.innerHTML = buildRowHtml(row1);
+      t2.innerHTML = buildRowHtml(row2);
+      t3.innerHTML = buildRowHtml(row3);
     }
 
     // Filter by Bank
@@ -984,6 +1044,7 @@ Directivas de Operación:
         btn.classList.toggle('active', btn.getAttribute('data-bank') === bank);
       });
       renderAssets();
+      renderMarquee(bank);
     }
 
     function setBankFilter(bank) {
