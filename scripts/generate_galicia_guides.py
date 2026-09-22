@@ -1,4 +1,17 @@
-# 🦁 Banco Galicia · Matriz de Decisión de Iconografía & Headers para LLMs
+#!/usr/bin/env python3
+"""
+generate_galicia_guides.py — Generador de Guías de Iconografía y Decisión para Banco Galicia
+Genera:
+  - assets/galicia/GALICIA_LLM_ICON_DECISION_MATRIX.md
+  - assets/galicia/GALICIA_HTML_EMAIL_LLM_GUIDE.md
+"""
+
+import pathlib
+
+REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
+GALICIA_DIR = REPO_ROOT / "assets" / "galicia"
+
+galicia_matrix = """# 🦁 Banco Galicia · Matriz de Decisión de Iconografía & Headers para LLMs
 > **Versión:** 1.0 (Producción Vercel Edge)  
 > **Ámbito:** Banco Galicia · Galicia Seguros · Promociones Permanentes Visa · Pagos de Servicios · Entretenimiento  
 > **Objetivo:** Instruir a Modelos de Lenguaje (LLMs) para seleccionar con 100% de precisión los íconos oficiales, headers sin texto y logotipos de Banco Galicia con sus URLs CDN canónicas.
@@ -132,3 +145,14 @@ DIRECTIVAS ESTRICTAS:
    - Logo Cabecera → logo_galicia_header.png
    - Header Promos Hero → header_promos_visa_permanentes_07.png (o _10 compacto)
 ```
+"""
+
+# Write files
+(GALICIA_DIR / "GALICIA_LLM_ICON_DECISION_MATRIX.md").write_text(galicia_matrix, encoding='utf-8')
+(GALICIA_DIR / "GALICIA_HTML_EMAIL_LLM_GUIDE.md").write_text(galicia_matrix, encoding='utf-8')
+(REPO_ROOT / "GALICIA_HTML_EMAIL_LLM_GUIDE.md").write_text(galicia_matrix, encoding='utf-8')
+
+print("✅ Guías de Banco Galicia generadas exitosamente:")
+print("   - assets/galicia/GALICIA_LLM_ICON_DECISION_MATRIX.md")
+print("   - assets/galicia/GALICIA_HTML_EMAIL_LLM_GUIDE.md")
+print("   - GALICIA_HTML_EMAIL_LLM_GUIDE.md (raíz)")

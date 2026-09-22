@@ -57,9 +57,10 @@ BANK_CONFIG = {
         ("banco_de_chile/logos",            "Logotipos",        "Identidad Corporativa",            True,  False, False),
     ],
     "Galicia": [
-        ("galicia/icons",     "Íconos 3D",    "Íconos Galicia",        False, False, False),
-        ("galicia/logos",     "Logotipos",    "Identidad Galicia",     False, False, False),
-        ("galicia/creatives", "Banners Hero", "Creatividades Galicia", False, False, False),
+        ("galicia/icons",     "Íconos 3D",    "Iconografía Galicia",       True,  False, False),
+        ("galicia/headers",   "Banners Hero", "Headers sin Texto Galicia", True,  False, False),
+        ("galicia/logos",     "Logotipos",    "Identidad Galicia",        True,  False, False),
+        ("galicia/creatives", "Banners Hero", "Creatividades Galicia",     False, False, False),
     ],
     "Visa": [
         ("visa/icons/assets/visa-icons/svg/visa", "SVG", "Visa Icons Official SVG", False, True, False),
@@ -188,6 +189,193 @@ METADATA_TABLE = {
     "38_salud_clinica_medico.png": {"title":"Salud Clínica & Médico","category":"Íconos 2D","family":"Grupo 4 · Contextos Específicos, Innovación & Canales","concept":"Atención médica, clínicas y prestación de salud","rubro":"Salud Clínica","rule":"Usar para clínicas, médicos, consultas. Para farmacia/medicamentos usar 15.","tags":["clinica","medico","consulta","salud asistencial","2d","bch"],"is_featured":False},
     "39_seguridad_proteccion.png": {"title":"Seguridad & Protección","category":"Íconos 2D","family":"Grupo 4 · Contextos Específicos, Innovación & Canales","concept":"Compra segura, antifraude y protección","rubro":"Seguridad","rule":"Usar cuando el mensaje central es seguridad, protección o compra segura.","tags":["seguridad","proteccion","antifraude","compra segura","respaldo","2d","bch"],"is_featured":False},
     "40_app_canal_digital.png": {"title":"App Canal Digital","category":"Íconos 2D","family":"Grupo 4 · Contextos Específicos, Innovación & Canales","concept":"App del banco, autogestión y canal digital","rubro":"Canal Digital","rule":"Usar cuando el foco es la app del banco o autogestión. Si el foco es PAGAR con celular, usar 04.","tags":["app","canal digital","app mi banco","autogestion","celular banco","2d","bch"],"is_featured":False},
+
+
+    # ── GALICIA ICONS (Servicios, Seguros, Entretenimiento) ─────────────────
+    "wi_fi.png": {
+        "title": "Wi-Fi & Internet", "category": "Íconos 3D", "family": "Servicios & Conectividad",
+        "concept": "Conectividad a Internet, banda ancha, fibra óptica y abonos hogareños",
+        "rubro": "Servicios", "rule": "Usar para promociones en abonos de internet, pago de Wi-Fi, conectividad.",
+        "tags": ["wifi","internet","conectividad","servicios","galicia","fibra"], "is_featured": True
+    },
+    "auriculares.png": {
+        "title": "Auriculares & Streaming Audio", "category": "Íconos 3D", "family": "Entretenimiento & Audio",
+        "concept": "Música, podcasts, suscripciones de audio y plataformas de streaming (Spotify)",
+        "rubro": "Entretenimiento", "rule": "Usar para suscripciones de streaming musical, podcasts, compra de audio.",
+        "tags": ["auriculares","musica","streaming","spotify","audio","galicia"], "is_featured": True
+    },
+    "auriculares_2.png": {
+        "title": "Auriculares (Variante 2)", "category": "Íconos 3D", "family": "Entretenimiento & Audio",
+        "concept": "Música y audio en variante con ángulo alternativo",
+        "rubro": "Entretenimiento", "rule": "Variante gráfica de auriculares para composiciones o grillas.",
+        "tags": ["auriculares","musica","audio","galicia"], "is_featured": False
+    },
+    "canilla.png": {
+        "title": "Agua & Servicios Sanitarios", "category": "Íconos 3D", "family": "Servicios Básicos",
+        "concept": "Pago de facturas de agua potable, AySA, expensas y saneamiento",
+        "rubro": "Servicios Públicos", "rule": "Usar para pago de servicios de agua, facturas sanitarias y expensas.",
+        "tags": ["canilla","agua","aysa","servicios","cuentas","galicia"], "is_featured": True
+    },
+    "celular.png": {
+        "title": "Telefonía Móvil & Recargas", "category": "Íconos 3D", "family": "Servicios & Conectividad",
+        "concept": "Telefonía celular, planes móviles, recargas de saldo (Personal, Claro, Movistar)",
+        "rubro": "Telefonía", "rule": "Usar para recarga de celulares, abonos móviles o pagos desde la app Galicia.",
+        "tags": ["celular","telefonia","recargas","movil","personal","claro","movistar","galicia"], "is_featured": True
+    },
+    "cine.png": {
+        "title": "Cine & Películas", "category": "Íconos 3D", "family": "Entretenimiento & Salidas",
+        "concept": "Salas de cine, entradas 2x1, estrenos de cartelera (Cinemark, Hoyts, Showcase)",
+        "rubro": "Cine", "rule": "Usar para descuentos en cines, entradas 2x1 y promociones en boletería.",
+        "tags": ["cine","peliculas","cinemark","hoyts","entradas","galicia"], "is_featured": True
+    },
+    "cine_2.png": {
+        "title": "Cine (Variante 2)", "category": "Íconos 3D", "family": "Entretenimiento & Salidas",
+        "concept": "Claqueta de cine en variante perspectiva",
+        "rubro": "Cine", "rule": "Variante de claqueta de cine para promociones audiovisuales.",
+        "tags": ["cine","peliculas","galicia"], "is_featured": False
+    },
+    "entradas.png": {
+        "title": "Entradas & Tickets", "category": "Íconos 3D", "family": "Entretenimiento & Salidas",
+        "concept": "Tickets, preventas exclusivas a shows, recitales y eventos (AllAccess, Ticketek)",
+        "rubro": "Espectáculos", "rule": "Usar para compra de tickets, preventas exclusivas Galicia y festivales.",
+        "tags": ["entradas","tickets","preventa","shows","recitales","galicia"], "is_featured": True
+    },
+    "entradas_2.png": {
+        "title": "Entradas (Variante 2)", "category": "Íconos 3D", "family": "Entretenimiento & Salidas",
+        "concept": "Boletos de espectáculos en variante dúo",
+        "rubro": "Espectáculos", "rule": "Variante de tickets para promociones dobles o 2x1.",
+        "tags": ["entradas","tickets","2x1","galicia"], "is_featured": False
+    },
+    "gas.png": {
+        "title": "Gas Natural & Energía", "category": "Íconos 3D", "family": "Servicios Básicos",
+        "concept": "Pago de facturas de gas natural, Metrogas, Naturgy, garrafas",
+        "rubro": "Servicios Públicos", "rule": "Usar para pago de servicios de gas y calefacción.",
+        "tags": ["gas","metrogas","naturgy","servicios","calefaccion","galicia"], "is_featured": True
+    },
+    "luz_lampara.png": {
+        "title": "Electricidad & Luz", "category": "Íconos 3D", "family": "Servicios Básicos",
+        "concept": "Pago de facturas de luz, Edenor, Edesur, consumo eléctrico",
+        "rubro": "Servicios Públicos", "rule": "Usar para pago de facturas de electricidad y servicios de luz.",
+        "tags": ["luz","electricidad","edenor","edesur","lampara","servicios","galicia"], "is_featured": True
+    },
+    "microfono.png": {
+        "title": "Stand-up & Shows en Vivo", "category": "Íconos 3D", "family": "Entretenimiento & Salidas",
+        "concept": "Shows de comedia, recitales, música en vivo y stand-up",
+        "rubro": "Espectáculos", "rule": "Usar para espectáculos de stand-up, festivales y recitales en vivo.",
+        "tags": ["microfono","standup","recitales","comedia","shows","galicia"], "is_featured": True
+    },
+    "microfono_2.png": {
+        "title": "Micrófono (Variante 2)", "category": "Íconos 3D", "family": "Entretenimiento & Salidas",
+        "concept": "Micrófono en ángulo alternativo para shows",
+        "rubro": "Espectáculos", "rule": "Variante gráfica de micrófono para espectáculos en vivo.",
+        "tags": ["microfono","shows","galicia"], "is_featured": False
+    },
+    "paraguas.png": {
+        "title": "Protección & Contingencias", "category": "Íconos 3D", "family": "Seguros & Coberturas",
+        "concept": "Protección integral, cobertura ante imprevistos, asistencia ante emergencias",
+        "rubro": "Seguros", "rule": "Usar para conceptos de respaldo, protección financiera y asistencia general.",
+        "tags": ["paraguas","proteccion","seguros","respaldo","galicia"], "is_featured": True
+    },
+    "pochoclos.png": {
+        "title": "Pochoclos & Candy Bar", "category": "Íconos 3D", "family": "Entretenimiento & Salidas",
+        "concept": "Candy bar de cines, popcorn, combos de snacks y entretenimiento",
+        "rubro": "Cine & Snacks", "rule": "Usar para beneficios en candy bar de cines y combos de pochoclos.",
+        "tags": ["pochoclos","popcorn","candybar","cine","snacks","galicia"], "is_featured": True
+    },
+    "pochoclos_2.png": {
+        "title": "Pochoclos (Variante 2)", "category": "Íconos 3D", "family": "Entretenimiento & Salidas",
+        "concept": "Balde de pochoclos en perspectiva frontal",
+        "rubro": "Cine & Snacks", "rule": "Variante de pochoclos para grillas y bloques de beneficios.",
+        "tags": ["pochoclos","popcorn","galicia"], "is_featured": False
+    },
+    "primeros_auxilios.png": {
+        "title": "Primeros Auxilios & Salud", "category": "Íconos 3D", "family": "Seguros & Coberturas",
+        "concept": "Asistencia médica, coberturas de salud, emergencias y botiquín",
+        "rubro": "Salud & Seguros", "rule": "Usar para seguros de salud, asistencia médica en viajes o emergencias.",
+        "tags": ["primeros auxilios","salud","emergencias","botiquin","seguros","galicia"], "is_featured": True
+    },
+    "rayo.png": {
+        "title": "Energía & Pago Express", "category": "Íconos 3D", "family": "Servicios & Transacciones",
+        "concept": "Energía, velocidad de pago, recarga flash, transacciones instantáneas",
+        "rubro": "Transacciones", "rule": "Usar para destacar velocidad de pago, recargas instantáneas o energía.",
+        "tags": ["rayo","energia","rapido","express","pago","galicia"], "is_featured": True
+    },
+    "seguro_auto.png": {
+        "title": "Seguro Automotor", "category": "Íconos 3D", "family": "Seguros & Coberturas",
+        "concept": "Póliza de seguro automotor, cobertura de vehículos, asistencia en ruta",
+        "rubro": "Seguros", "rule": "Usar para campañas de Galicia Seguros de auto y asistencia mecánica.",
+        "tags": ["seguro auto","automotor","vehiculo","poliza","galicia seguros","galicia"], "is_featured": True
+    },
+    "seguro_hogar.png": {
+        "title": "Seguro de Hogar", "category": "Íconos 3D", "family": "Seguros & Coberturas",
+        "concept": "Póliza de combinado familiar, seguro de vivienda, protección contra robos/incendio",
+        "rubro": "Seguros", "rule": "Usar para Galicia Seguros de hogar y protección patrimonial.",
+        "tags": ["seguro hogar","vivienda","casa","combinado familiar","galicia seguros","galicia"], "is_featured": True
+    },
+    "seguro_vida.png": {
+        "title": "Seguro de Vida", "category": "Íconos 3D", "family": "Seguros & Coberturas",
+        "concept": "Póliza de vida, protección económica familiar, respaldo a seres queridos",
+        "rubro": "Seguros", "rule": "Usar para seguros de vida y bienestar familiar.",
+        "tags": ["seguro vida","vida","proteccion familiar","respaldo","galicia seguros","galicia"], "is_featured": True
+    },
+    "seguros.png": {
+        "title": "Galicia Seguros Integral", "category": "Íconos 3D", "family": "Seguros & Coberturas",
+        "concept": "Portafolio integral de pólizas y coberturas Galicia Seguros",
+        "rubro": "Seguros", "rule": "Usar para el ecosistema completo de seguros y protección.",
+        "tags": ["seguros","polizas","galicia seguros","coberturas","galicia"], "is_featured": True
+    },
+    "teatro.png": {
+        "title": "Teatro & Artes Escénicas", "category": "Íconos 3D", "family": "Entretenimiento & Salidas",
+        "concept": "Obras de teatro, espectáculos en Calle Corrientes, comedia musical y cultura",
+        "rubro": "Cultura & Teatro", "rule": "Usar para descuentos en teatros, espectáculos culturales y musicales.",
+        "tags": ["teatro","obras","calle corrientes","espectaculos","cultura","galicia"], "is_featured": True
+    },
+
+    # ── GALICIA HEADERS (Banners Hero Sin Texto) ───────────────────────────
+    "header_promos_visa_permanentes_07.png": {
+        "title": "Header Promos Visa Permanentes #07", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Banner hero 1100x504 sin texto para promociones permanentes Galicia + Visa",
+        "rubro": "Header / Banners", "rule": "Cabecera visual limpia para correos promocionales con titular dinámico.",
+        "tags": ["header","banner","promos","visa","galicia","hero","sin texto"], "is_featured": True
+    },
+    "header_promos_visa_permanentes_08.png": {
+        "title": "Header Promos Visa Permanentes #08", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Banner hero 1100x504 sin texto para beneficios destacados Galicia + Visa",
+        "rubro": "Header / Banners", "rule": "Cabecera visual para campañas de beneficios permanentes.",
+        "tags": ["header","banner","promos","visa","galicia","hero","sin texto"], "is_featured": True
+    },
+    "header_promos_visa_permanentes_09.png": {
+        "title": "Header Promos Visa Permanentes #09", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Banner hero 1100x502 sin texto para ofertas y descuentos recurrentes",
+        "rubro": "Header / Banners", "rule": "Cabecera visual con área libre para texto de oferta.",
+        "tags": ["header","banner","promos","visa","galicia","hero","sin texto"], "is_featured": True
+    },
+    "header_promos_visa_permanentes_10.png": {
+        "title": "Header Promos Visa Permanentes #10 (Compacto)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Banner hero 1100x463 compacto sin texto para cabecera ligera",
+        "rubro": "Header / Banners", "rule": "Cabecera compacta para emails con contenido extenso inferior.",
+        "tags": ["header","banner","compacto","visa","galicia","hero","sin texto"], "is_featured": True
+    },
+    "header_promos_visa_permanentes_11.png": {
+        "title": "Header Promos Visa Permanentes #11 (Compacto)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Banner hero 1100x463 compacto sin texto con composición naranja/blanca",
+        "rubro": "Header / Banners", "rule": "Cabecera compacta para campañas de fidelización o ahorro.",
+        "tags": ["header","banner","compacto","visa","galicia","hero","sin texto"], "is_featured": True
+    },
+    "header_promos_visa_permanentes_12.png": {
+        "title": "Header Promos Visa Permanentes #12 (Compacto)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Banner hero 1100x463 compacto sin texto para avisos y notificaciones de beneficios",
+        "rubro": "Header / Banners", "rule": "Cabecera compacta minimalista para piezas transaccionales/promocionales.",
+        "tags": ["header","banner","compacto","visa","galicia","hero","sin texto"], "is_featured": True
+    },
+
+    # ── GALICIA LOGOS ──────────────────────────────────────────────────────
+    "logo_galicia_header.png": {
+        "title": "Logo Banco Galicia (Header)", "category": "Logotipos", "family": "Identidad Galicia",
+        "concept": "Logotipo institucional oficial Banco Galicia para cabecera de emails",
+        "rubro": "Branding", "rule": "Cabecera principal de correos institucionales de Banco Galicia.",
+        "tags": ["logo","branding","galicia","banco galicia","header"], "is_featured": True
+    },
 
     # ── BCH Logos ────────────────────────────────────────────────────────
     "banco_de_chile.png": {"title":"Logo Banco de Chile","category":"Logotipos","family":"Identidad Corporativa","concept":"Logotipo institucional wordmark azul","rubro":"Branding","rule":"Cabecera principal de emails o pie institucional.","tags":["logo","branding","bch","banco de chile","wordmark"],"is_featured":True},

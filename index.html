@@ -62,14 +62,20 @@
           <a href="assets/banco_de_chile/BCH_LLM_ICON_DECISION_MATRIX.md" download class="matrix-drop-item">
             <span>🏦</span> Matriz Banco de Chile (.md)
           </a>
+          <a href="assets/galicia/GALICIA_LLM_ICON_DECISION_MATRIX.md" download class="matrix-drop-item">
+            <span>🦁</span> Matriz Banco Galicia (.md)
+          </a>
           <a href="assets/visa/VISA_LLM_ICON_DECISION_MATRIX.md" download class="matrix-drop-item">
             <span>💳</span> Matriz Visa Icons (.md)
           </a>
           
           <div class="dropdown-divider"></div>
-          <div class="dropdown-header">✉️ Email Maker (HTML & Prompts)</div>
+          <div class="dropdown-header">✉️ Email Maker (Íconos & URLs CDN)</div>
           <a href="assets/banco_de_chile/BCH_HTML_EMAIL_LLM_GUIDE.md" download class="matrix-drop-item">
             <span>📧</span> Email Maker BCH (.md)
+          </a>
+          <a href="assets/galicia/GALICIA_HTML_EMAIL_LLM_GUIDE.md" download class="matrix-drop-item">
+            <span>🦁</span> Email Maker Galicia (.md)
           </a>
           <a href="assets/visa/VISA_HTML_EMAIL_LLM_GUIDE.md" download class="matrix-drop-item">
             <span>💳</span> Email Maker Visa (.md)
@@ -77,7 +83,7 @@
           
           <div class="dropdown-divider"></div>
           <div style="padding:4px;">
-            <button class="btn-pill btn-primary" style="width:100%; justify-content:center; font-size:12px;" onclick="openEmailMakerModal('BCH')">
+            <button class="btn-pill btn-primary" style="width:100%; justify-content:center; font-size:12px;" onclick="openEmailMakerModal('Galicia')">
               <span>🤖 Ver Prompts Email Maker</span>
             </button>
           </div>
@@ -111,20 +117,20 @@
 
       <!-- KPI Statistics Grid -->
       <div class="stats-grid">
-        <div class="stat-card" onclick="setCategoryFilter('Íconos 3D'); showView('assets');">
+        <div class="stat-card" onclick="setCategoryFilter('Íconos 3D'); setBankFilter('Banco de Chile'); showView('assets');">
           <div class="stat-value blue">30</div>
           <div class="stat-label">Íconos 3D Banco de Chile</div>
         </div>
-        <div class="stat-card" onclick="setCategoryFilter('Íconos 2D'); showView('assets');">
-          <div class="stat-value cyan">30</div>
+        <div class="stat-card" onclick="setCategoryFilter('Íconos 2D'); setBankFilter('Banco de Chile'); showView('assets');">
+          <div class="stat-value cyan">40</div>
           <div class="stat-label">Íconos 2D Banco de Chile</div>
         </div>
-        <div class="stat-card" onclick="setCategoryFilter('Travel & Turismo'); showView('assets');">
-          <div class="stat-value">10</div>
-          <div class="stat-label">Íconos Travel Club</div>
+        <div class="stat-card" onclick="setBankFilter('Galicia'); showView('assets');">
+          <div class="stat-value" style="color:#E35205;">30</div>
+          <div class="stat-label">Activos Banco Galicia</div>
         </div>
         <div class="stat-card" onclick="setBankFilter('Visa'); showView('assets');">
-          <div class="stat-value gold">155</div>
+          <div class="stat-value gold">158</div>
           <div class="stat-label">Iconos SVG Visa</div>
         </div>
       </div>
@@ -188,6 +194,9 @@
       <div style="display:flex; gap:10px; margin-bottom:24px; border-bottom:2px solid var(--border-light); padding-bottom:0;">
         <button class="matrix-tab active" id="matrixTabBCH" onclick="switchMatrixTab('BCH')">
           🏦 Banco de Chile
+        </button>
+        <button class="matrix-tab" id="matrixTabGalicia" onclick="switchMatrixTab('Galicia')">
+          🦁 Banco Galicia
         </button>
         <button class="matrix-tab" id="matrixTabVisa" onclick="switchMatrixTab('Visa')">
           💳 Visa Icons (SVG)
@@ -357,6 +366,55 @@
         </div>
       </div>
 
+      <!-- ── GALICIA MATRIX ── -->
+      <div id="matrixPanelGalicia" class="matrix-panel" style="display:none;">
+        <div class="matrix-container">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; flex-wrap:wrap; gap:16px;">
+            <div>
+              <h1 style="font-size:24px; font-weight:800; color:#E35205; margin-bottom:6px;">Banco Galicia · Iconos & Headers para IA & LLMs</h1>
+              <p style="color:var(--text-muted); font-size:14px;">30 activos oficiales (23 Íconos 3D, 6 Headers Hero sin texto, 1 Logotipo) · CDN Vercel Edge</p>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn-pill btn-secondary" onclick="openEmailMakerModal('Galicia')" title="Ver prompt de selección de íconos para Banco Galicia">
+                <span>✉️ Prompt Email Maker Galicia</span>
+              </button>
+              <button class="btn-pill btn-secondary" onclick="copySystemPromptGalicia()" title="Copiar prompt de sistema para Banco Galicia">
+                <span>📋 Copiar Prompt Matriz</span>
+              </button>
+              <a href="assets/galicia/GALICIA_LLM_ICON_DECISION_MATRIX.md" download="GALICIA_LLM_ICON_DECISION_MATRIX.md" class="btn-pill btn-primary" style="background:#E35205;">
+                <span>💾 Descargar Guía .md Completa</span>
+              </a>
+            </div>
+          </div>
+
+          <div style="background:rgba(227,82,5,0.04); border:1px solid rgba(227,82,5,0.15); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:24px;">
+            <div style="font-weight:700; color:#E35205; font-size:14px; margin-bottom:6px;">⚡ URLs CDN Canónicas para Banco Galicia:</div>
+            <code style="background:#fff; border:1px solid var(--border-light); padding:6px 12px; border-radius:6px; font-family:var(--font-mono); font-size:13px; color:#E35205; display:block; word-break:break-all; margin-bottom:6px;">
+              Íconos: https://mkt-visa.vercel.app/assets/galicia/icons/{filename}.png
+            </code>
+            <code style="background:#fff; border:1px solid var(--border-light); padding:6px 12px; border-radius:6px; font-family:var(--font-mono); font-size:13px; color:#E35205; display:block; word-break:break-all;">
+              Headers: https://mkt-visa.vercel.app/assets/galicia/headers/{filename}.png
+            </code>
+            <p style="font-size:12px; color:var(--text-muted); margin-top:8px; line-height:1.4;">
+              Canal alfa RGBA limpio en íconos 3D y banners hero 1100px retina-ready listos para producción.
+            </p>
+          </div>
+
+          <!-- Galicia Category Grid -->
+          <h2>Categorías de Activos Galicia</h2>
+          <p>Haz clic en una categoría para filtrar:</p>
+          <div class="matrix-interactive-rules" id="galiciaCategoryCards">
+            <!-- Populated dynamically -->
+          </div>
+
+          <!-- Galicia Asset Grid Preview -->
+          <h2 style="margin-top:32px;">Vista Previa · <span id="galiciaMatrixCatLabel">Todos los Activos</span></h2>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(130px,1fr)); gap:12px;" id="galiciaMatrixGrid">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- ================================================================= -->
@@ -504,6 +562,9 @@
         <button class="prompt-tab-btn active" id="emailPromptTabBCH" onclick="switchEmailPromptTab('BCH')">
           🏦 Banco de Chile (Íconos & URLs CDN)
         </button>
+        <button class="prompt-tab-btn" id="emailPromptTabGalicia" onclick="switchEmailPromptTab('Galicia')">
+          🦁 Banco Galicia (Íconos & Headers)
+        </button>
         <button class="prompt-tab-btn" id="emailPromptTabVisa" onclick="switchEmailPromptTab('Visa')">
           💳 Visa (Íconos SVG & URLs CDN)
         </button>
@@ -545,6 +606,45 @@ DIRECTIVAS ESTRICTAS DE ICONOGRAFÍA:
    - Cuotas sin interés → 25_cuotas_sin_interes_csi.png
    - Logo Banco de Chile → https://mkt-visa.vercel.app/assets/bch/logos/banco_de_chile.png
 4. INSERCIÓN: Devuelve la etiqueta HTML &lt;img src="URL" alt="Nombre" width="48" height="48" border="0" /&gt; con la URL CDN exacta.</pre>
+        </div>
+
+        <!-- TAB GALICIA -->
+        <div id="emailTabPanelGalicia" style="display:none;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+            <div style="font-size:13px; font-weight:700; color:#E35205;">Prompt de Selección de Íconos & Headers · Banco Galicia</div>
+            <div style="display:flex; gap:8px;">
+              <button class="btn-card highlight" onclick="copyEmailMakerPromptGalicia()">📋 Copiar Prompt Galicia</button>
+              <a href="assets/galicia/GALICIA_HTML_EMAIL_LLM_GUIDE.md" download="GALICIA_HTML_EMAIL_LLM_GUIDE.md" class="btn-card" style="text-decoration:none;">💾 Descargar .md</a>
+            </div>
+          </div>
+          <pre class="prompt-code-area" id="promptTextGalicia">Eres el Selector de Iconografía y Recursos Oficiales de Banco Galicia.
+Tu misión es asignar a cada beneficio, servicio o mensaje el ícono exacto de Banco Galicia o el header correspondiente, devolviendo su URL CDN de producción en Vercel.
+
+DIRECTIVAS ESTRICTAS:
+1. URL CDN OBLIGATORIA: Usa siempre el prefijo https://mkt-visa.vercel.app/assets/galicia/...
+2. INSERCIÓN DE ÍCONOS: Devuelve &lt;img src="URL" alt="Nombre" width="48" height="48" border="0" /&gt;.
+3. INSERCIÓN DE HEADERS: Devuelve &lt;img src="URL" alt="Promociones Galicia Visa" width="550" border="0" style="display:block; width:100%; max-width:550px;" /&gt;.
+4. ASIGNACIÓN POR RUBRO:
+   - Luz / Electricidad → https://mkt-visa.vercel.app/assets/galicia/icons/luz_lampara.png
+   - Gas Natural → https://mkt-visa.vercel.app/assets/galicia/icons/gas.png
+   - Agua / AySA → https://mkt-visa.vercel.app/assets/galicia/icons/canilla.png
+   - Internet / Wi-Fi → https://mkt-visa.vercel.app/assets/galicia/icons/wi_fi.png
+   - Celular / Recargas → https://mkt-visa.vercel.app/assets/galicia/icons/celular.png
+   - Energía / Pago Rápido → https://mkt-visa.vercel.app/assets/galicia/icons/rayo.png
+   - Seguro Auto → https://mkt-visa.vercel.app/assets/galicia/icons/seguro_auto.png
+   - Seguro Hogar → https://mkt-visa.vercel.app/assets/galicia/icons/seguro_hogar.png
+   - Seguro Vida → https://mkt-visa.vercel.app/assets/galicia/icons/seguro_vida.png
+   - Seguros General → https://mkt-visa.vercel.app/assets/galicia/icons/seguros.png
+   - Primeros Auxilios / Salud → https://mkt-visa.vercel.app/assets/galicia/icons/primeros_auxilios.png
+   - Respaldo / Imprevistos → https://mkt-visa.vercel.app/assets/galicia/icons/paraguas.png
+   - Cine → https://mkt-visa.vercel.app/assets/galicia/icons/cine.png
+   - Candy Bar / Pochoclos → https://mkt-visa.vercel.app/assets/galicia/icons/pochoclos.png
+   - Teatro → https://mkt-visa.vercel.app/assets/galicia/icons/teatro.png
+   - Entradas / Tickets → https://mkt-visa.vercel.app/assets/galicia/icons/entradas.png
+   - Stand-up / Shows → https://mkt-visa.vercel.app/assets/galicia/icons/microfono.png
+   - Auriculares / Música → https://mkt-visa.vercel.app/assets/galicia/icons/auriculares.png
+   - Logo Cabecera → https://mkt-visa.vercel.app/assets/galicia/logos/logo_galicia_header.png
+   - Header Promos Hero → https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_07.png (o _10 compacto)</pre>
         </div>
 
         <!-- TAB VISA -->
@@ -663,6 +763,23 @@ Directivas de Operación:
       navigator.clipboard.writeText(prompt).then(() => showToast("¡Prompt de Sistema Visa copiado!"));
     }
 
+    function copySystemPromptGalicia() {
+      const prompt = `Eres el Selector Especializado de Iconografía y Recursos Oficiales de Banco Galicia.
+Tu objetivo es asociar cada beneficio, servicio básico, póliza de seguro o evento de entretenimiento al ícono o header exacto de Banco Galicia (30 activos disponibles).
+
+Directivas de Operación:
+1. SIEMPRE utiliza las URLs absolutas de producción en Vercel con prefijo: https://mkt-visa.vercel.app/assets/galicia/...
+2. Íconos 3D: https://mkt-visa.vercel.app/assets/galicia/icons/{filename}.png (width="48" height="48")
+3. Headers Sin Texto: https://mkt-visa.vercel.app/assets/galicia/headers/{filename}.png (width="550")
+4. Logo Institucional: https://mkt-visa.vercel.app/assets/galicia/logos/logo_galicia_header.png
+5. Clasificación Semántica:
+   - Servicios Básicos: luz_lampara.png, gas.png, canilla.png, wi_fi.png, celular.png, rayo.png
+   - Seguros Galicia: seguro_auto.png, seguro_hogar.png, seguro_vida.png, seguros.png, primeros_auxilios.png, paraguas.png
+   - Entretenimiento: cine.png, pochoclos.png, teatro.png, entradas.png, microfono.png, auriculares.png
+6. Devuelve la etiqueta HTML <img> con la URL CDN canónica.`;
+      navigator.clipboard.writeText(prompt).then(() => showToast("¡Prompt de Sistema Galicia copiado!", "🦁"));
+    }
+
     // Email Maker Prompt Modal Controller
     function openEmailMakerModal(bank = 'BCH') {
       const modal = document.getElementById('emailMakerPromptModal');
@@ -678,9 +795,11 @@ Directivas de Operación:
 
     function switchEmailPromptTab(tab) {
       document.getElementById('emailTabPanelBCH').style.display = tab === 'BCH' ? 'block' : 'none';
+      document.getElementById('emailTabPanelGalicia').style.display = tab === 'Galicia' ? 'block' : 'none';
       document.getElementById('emailTabPanelVisa').style.display = tab === 'Visa' ? 'block' : 'none';
 
       document.getElementById('emailPromptTabBCH').classList.toggle('active', tab === 'BCH');
+      document.getElementById('emailPromptTabGalicia').classList.toggle('active', tab === 'Galicia');
       document.getElementById('emailPromptTabVisa').classList.toggle('active', tab === 'Visa');
     }
 
@@ -688,7 +807,15 @@ Directivas de Operación:
       const el = document.getElementById('promptTextBCH');
       if (!el) return;
       navigator.clipboard.writeText(el.innerText.trim()).then(() => {
-        showToast("¡Prompt Email Maker BCH copiado para tu LLM!", "✉️");
+        showToast("¡Prompt Email Maker BCH copiado!", "✉️");
+      });
+    }
+
+    function copyEmailMakerPromptGalicia() {
+      const el = document.getElementById('promptTextGalicia');
+      if (!el) return;
+      navigator.clipboard.writeText(el.innerText.trim()).then(() => {
+        showToast("¡Prompt Email Maker Galicia copiado!", "🦁");
       });
     }
 
@@ -696,16 +823,21 @@ Directivas de Operación:
       const el = document.getElementById('promptTextVisa');
       if (!el) return;
       navigator.clipboard.writeText(el.innerText.trim()).then(() => {
-        showToast("¡Prompt Email Maker Visa copiado para tu LLM!", "💳");
+        showToast("¡Prompt Email Maker Visa copiado!", "💳");
       });
     }
 
     // Matrix Tab Switcher
     function switchMatrixTab(tab) {
       document.getElementById('matrixPanelBCH').style.display = tab === 'BCH' ? 'block' : 'none';
+      document.getElementById('matrixPanelGalicia').style.display = tab === 'Galicia' ? 'block' : 'none';
       document.getElementById('matrixPanelVisa').style.display = tab === 'Visa' ? 'block' : 'none';
+
       document.getElementById('matrixTabBCH').classList.toggle('active', tab === 'BCH');
+      document.getElementById('matrixTabGalicia').classList.toggle('active', tab === 'Galicia');
       document.getElementById('matrixTabVisa').classList.toggle('active', tab === 'Visa');
+
+      if (tab === 'Galicia') renderGaliciaMatrix();
       if (tab === 'Visa') renderVisaMatrix();
     }
 
@@ -768,6 +900,56 @@ Directivas de Operación:
         return `
           <div class="visa-mini-card" onclick="copyText('${cdnUrl}', 'URL CDN Visa copiada')" title="${cdnUrl}">
             <img src="${a.rel_path}" alt="${name}" loading="lazy" onerror="this.style.opacity=0.3">
+            <div class="visa-mini-name">${name}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Galicia Matrix Renderer
+    let galiciaMatrixCurrentCat = 'all';
+    function renderGaliciaMatrix(cat = 'all') {
+      galiciaMatrixCurrentCat = cat;
+      const grid = document.getElementById('galiciaMatrixGrid');
+      const catCards = document.getElementById('galiciaCategoryCards');
+      const label = document.getElementById('galiciaMatrixCatLabel');
+      if (!grid || !window.BANK_ASSETS) return;
+
+      const galiciaAssets = window.BANK_ASSETS.filter(a => a.bank === 'Galicia');
+
+      // Build categories
+      const catMap = {};
+      galiciaAssets.forEach(a => {
+        catMap[a.category] = (catMap[a.category] || 0) + 1;
+      });
+
+      const catEmojis = {
+        'Íconos 3D': '⚡', 'Banners Hero': '🖼️', 'Logotipos': '🦁'
+      };
+
+      catCards.innerHTML = `
+        <div class="visa-cat-card ${cat === 'all' ? 'active' : ''}" onclick="renderGaliciaMatrix('all')">
+          <div class="cat-name">🗂️ Todos</div>
+          <div class="cat-count">${galiciaAssets.length} activos</div>
+        </div>
+        ${Object.entries(catMap).sort().map(([name, count]) => `
+          <div class="visa-cat-card ${cat === name ? 'active' : ''}" onclick="renderGaliciaMatrix('${name}')">
+            <div class="cat-name">${catEmojis[name] || '🔹'} ${name}</div>
+            <div class="cat-count">${count} activos</div>
+          </div>
+        `).join('')}
+      `;
+
+      const filtered = cat === 'all' ? galiciaAssets : galiciaAssets.filter(a => a.category === cat);
+      label.textContent = cat === 'all' ? 'Todos los Activos' : cat;
+
+      grid.innerHTML = filtered.map(a => {
+        const cdnUrl = a.cdn_url;
+        const name = a.title || a.filename;
+        const isHeader = a.category === 'Banners Hero';
+        return `
+          <div class="visa-mini-card" style="${isHeader ? 'grid-column: span 2; height: auto;' : ''}" onclick="openAssetModalByFilename('${a.filename}')" title="${cdnUrl}">
+            <img src="${a.rel_path}" alt="${name}" loading="lazy" style="${isHeader ? 'width: 100%; height: 80px; object-fit: cover; border-radius: 6px;' : ''}" onerror="this.style.opacity=0.3">
             <div class="visa-mini-name">${name}</div>
           </div>
         `;

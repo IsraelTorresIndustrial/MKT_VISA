@@ -10,6 +10,10 @@
     {
       "source": "/assets/visa/:path*",
       "destination": "/assets/visa/:path*"
+    },
+    {
+      "source": "/assets/galicia/:path*",
+      "destination": "/assets/galicia/:path*"
     }
   ],
   "headers": [
