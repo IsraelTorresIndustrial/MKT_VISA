@@ -150,7 +150,18 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ## 🖼️ 6. DOSSIER EXHAUSTIVO: HEADERS HERO SIN TEXTO CON TRANSPARENCIA RGBA (2292PX RETINA)
 
-### 🔹 [H07] `header_promos_visa_permanentes_07.png` · Café, Desayunos & Rutinas Diarias (PNG Transparente)
+> [!NOTE]
+> **Mapeo de Nombres de Archivo (Subida Original vs. Nombre Canónico CDN):**  
+> Para facilitar la identificación en el explorador de archivos local y en la nube, los 6 headers disponen de enlaces simbólicos en `assets/galicia/headers/`:
+> - `galicia_Promos Visa Permanentes copia 7.png` ➔ `header_promos_visa_permanentes_07.png`
+> - `galicia_Promos Visa Permanentes copia 8.png` ➔ `header_promos_visa_permanentes_08.png`
+> - `galicia_Promos Visa Permanentes copia 9.png` ➔ `header_promos_visa_permanentes_09.png`
+> - `galicia_Promos Visa Permanentes copia 10.png` ➔ `header_promos_visa_permanentes_10.png`
+> - `galicia_Promos Visa Permanentes copia 11.png` ➔ `header_promos_visa_permanentes_11.png`
+> - `galicia_Promos Visa Permanentes copia 12.png` ➔ `header_promos_visa_permanentes_12.png`  
+> Ambos nombres acceden al **mismo archivo PNG RGBA de 2292 px con canal alfa de transparencia**.
+
+### 🔹 [H07] `header_promos_visa_permanentes_07.png` (alias: `galicia_Promos Visa Permanentes copia 7.png`) · Café, Desayunos & Rutinas Diarias (PNG Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_07.png`
 - **Snippet HTML:**
   ```html
@@ -170,7 +181,7 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-### 🔹 [H08] `header_promos_visa_permanentes_08.png` · Compras en Tienda Física & Cuotas (PNG Transparente)
+### 🔹 [H08] `header_promos_visa_permanentes_08.png` (alias: `galicia_Promos Visa Permanentes copia 8.png`) · Compras en Tienda Física & Cuotas (PNG Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_08.png`
 - **Snippet HTML:**
   ```html
@@ -190,7 +201,7 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-### 🔹 [H09] `header_promos_visa_permanentes_09.png` · Contactless, Billeteras Móviles & Tap to Pay (PNG Transparente)
+### 🔹 [H09] `header_promos_visa_permanentes_09.png` (alias: `galicia_Promos Visa Permanentes copia 9.png`) · Contactless, Billeteras Móviles & Tap to Pay (PNG Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_09.png`
 - **Snippet HTML:**
   ```html
@@ -210,7 +221,7 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-### 🔹 [H10] `header_promos_visa_permanentes_10.png` · Ecommerce & Envíos (Compacto Silueteado Transparente)
+### 🔹 [H10] `header_promos_visa_permanentes_10.png` (alias: `galicia_Promos Visa Permanentes copia 10.png`) · Ecommerce & Envíos (Compacto Silueteado Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_10.png`
 - **Snippet HTML:**
   ```html
@@ -230,7 +241,7 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-### 🔹 [H11] `header_promos_visa_permanentes_11.png` · Ilustrado Minimalista Claro (Compacto Transparente)
+### 🔹 [H11] `header_promos_visa_permanentes_11.png` (alias: `galicia_Promos Visa Permanentes copia 11.png`) · Ilustrado Minimalista Claro (Compacto Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_11.png`
 - **Snippet HTML:**
   ```html
@@ -250,7 +261,7 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-### 🔹 [H12] `header_promos_visa_permanentes_12.png` · Ilustrado Naranja Galicia Shock (Compacto Transparente)
+### 🔹 [H12] `header_promos_visa_permanentes_12.png` (alias: `galicia_Promos Visa Permanentes copia 12.png`) · Ilustrado Naranja Galicia Shock (Compacto Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_12.png`
 - **Snippet HTML:**
   ```html

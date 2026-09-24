@@ -179,6 +179,7 @@
           <button class="chip" data-category="Íconos 3D" onclick="filterByCategory('Íconos 3D')">Íconos 3D</button>
           <button class="chip" data-category="Íconos 2D" onclick="filterByCategory('Íconos 2D')">Íconos 2D (40)</button>
           <button class="chip" data-category="Travel & Turismo" onclick="filterByCategory('Travel & Turismo')">Travel & Turismo</button>
+          <button class="chip" data-category="Banners Hero" onclick="filterByCategory('Banners Hero')">🖼️ Banners Hero (6)</button>
           <button class="chip" data-category="Logotipos" onclick="filterByCategory('Logotipos')">Logotipos</button>
         </div>
       </div>
@@ -507,13 +508,28 @@
         <button class="modal-close" onclick="closeAssetModal()">&times;</button>
       </div>
       <div class="modal-body">
-        <div class="modal-preview">
-          <img id="modalImg" src="" alt="">
+        <div>
+          <div class="modal-preview bg-checker" id="modalPreviewBox">
+            <img id="modalImg" src="" alt="">
+          </div>
+          <div class="bg-toggle-bar">
+            <span style="font-size:11px; font-weight:700; color:var(--text-muted); align-self:center;">Fondo:</span>
+            <button class="bg-toggle-btn active" id="btnBgChecker" onclick="setModalBg('checker')">🏁 Ajedrez</button>
+            <button class="bg-toggle-btn" id="btnBgWhite" onclick="setModalBg('white')">⬜ Blanco</button>
+            <button class="bg-toggle-btn" id="btnBgDark" onclick="setModalBg('dark')">⬛ Oscuro</button>
+            <button class="bg-toggle-btn" id="btnBgOrange" onclick="setModalBg('orange')">🟧 Galicia</button>
+          </div>
         </div>
         <div class="modal-details">
           <div>
             <span id="modalBankBadge" class="chip active" style="margin-bottom:8px; display:inline-block;">BANCO</span>
             <span id="modalCategoryBadge" class="chip" style="margin-bottom:8px; display:inline-block;">CATEGORIA</span>
+            <span id="modalTransparencyBadge" class="badge-transparency" style="margin-bottom:8px; display:none;">✨ PNG Transparente RGBA</span>
+          </div>
+
+          <div id="modalOriginalFilenameRow" style="display:none; margin-bottom:8px;">
+            <div style="font-size:11px; font-weight:700; color:var(--text-muted); margin-bottom:2px;">Nombre de archivo original (subida):</div>
+            <code id="modalOriginalFilename" style="font-size:11px; color:var(--bch-navy); background:#F1F5F9; padding:3px 8px; border-radius:4px; display:inline-block; word-break:break-all;"></code>
           </div>
 
           <div>
@@ -955,10 +971,26 @@ Directivas de Operación:
       grid.innerHTML = filtered.map(a => {
         const cdnUrl = a.cdn_url;
         const name = a.title || a.filename;
-        const isHeader = a.category === 'Banners Hero';
+        const isHeader = a.category === 'Banners Hero' || a.has_transparency;
+        const imgSrc = `${a.rel_path}?v=20260924_rgba`;
+        if (isHeader) {
+          return `
+            <div class="visa-mini-card" style="grid-column: span 2; height: auto; padding: 12px 10px; text-align: left;" onclick="openAssetModalByFilename('${a.filename}')" title="${cdnUrl}">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span class="badge-transparency">✨ PNG Transparente</span>
+                <span style="font-size:10px; color:var(--text-muted); font-weight:700;">${a.width}x${a.height}</span>
+              </div>
+              <div class="transparent-checkerboard" style="border-radius: 8px; padding: 8px; border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: center; min-height: 110px; overflow: hidden;">
+                <img src="${imgSrc}" alt="${name}" loading="lazy" style="max-width: 100%; max-height: 120px; object-fit: contain;" onerror="this.style.opacity=0.3">
+              </div>
+              <div class="visa-mini-name" style="margin-top:8px; font-weight:700; color:var(--bch-navy);">${name}</div>
+              ${a.original_filename && a.original_filename !== a.filename ? `<div style="font-size:10px; color:var(--text-muted); margin-top:2px;">📁 ${a.original_filename}</div>` : ''}
+            </div>
+          `;
+        }
         return `
-          <div class="visa-mini-card" style="${isHeader ? 'grid-column: span 2; height: auto;' : ''}" onclick="openAssetModalByFilename('${a.filename}')" title="${cdnUrl}">
-            <img src="${a.rel_path}" alt="${name}" loading="lazy" style="${isHeader ? 'width: 100%; height: 80px; object-fit: cover; border-radius: 6px;' : ''}" onerror="this.style.opacity=0.3">
+          <div class="visa-mini-card" onclick="openAssetModalByFilename('${a.filename}')" title="${cdnUrl}">
+            <img src="${imgSrc}" alt="${name}" loading="lazy" onerror="this.style.opacity=0.3">
             <div class="visa-mini-name">${name}</div>
           </div>
         `;
@@ -1054,17 +1086,21 @@ Directivas de Operación:
         }
         list = [...list, ...list]; // Doble para loop infinito fluido (-50% transform)
 
-        return list.map(item => `
-          <div class="marquee-item" onclick="openAssetModalByFilename('${item.filename}')" title="${item.title} (${item.bank})">
-            <div class="marquee-icon-box">
-              <img src="${item.rel_path}" alt="${item.title}" loading="lazy" onerror="this.style.opacity=0.3">
+        return list.map(item => {
+          const isHeader = item.category === 'Banners Hero' || item.has_transparency;
+          const imgSrc = `${item.rel_path}?v=20260924_rgba`;
+          return `
+            <div class="marquee-item" onclick="openAssetModalByFilename('${item.filename}')" title="${item.title} (${item.bank})">
+              <div class="marquee-icon-box ${isHeader ? 'transparent-checkerboard' : ''}" style="${isHeader ? 'width: 70px; padding: 2px;' : ''}">
+                <img src="${imgSrc}" alt="${item.title}" loading="lazy" style="${isHeader ? 'max-height: 100%; max-width: 100%; object-fit: contain;' : ''}" onerror="this.style.opacity=0.3">
+              </div>
+              <div>
+                <div class="marquee-name">${item.title}</div>
+                <div class="marquee-tag">${item.bank} · ${item.category}${isHeader ? ' (Transparente)' : ''}</div>
+              </div>
             </div>
-            <div>
-              <div class="marquee-name">${item.title}</div>
-              <div class="marquee-tag">${item.bank} · ${item.category}</div>
-            </div>
-          </div>
-        `).join('');
+          `;
+        }).join('');
       }
 
       t1.innerHTML = buildRowHtml(row1);
@@ -1154,12 +1190,14 @@ Directivas de Operación:
       grid.innerHTML = filtered.map(asset => {
         const cdnUrl = asset.cdn_url || (`https://mkt-visa.vercel.app/${asset.rel_path}`);
         const htmlSnippet = `&lt;img src=&quot;${cdnUrl}&quot; width=&quot;64&quot; alt=&quot;${asset.title}&quot;&gt;`;
+        const isHeader = asset.category === 'Banners Hero' || asset.has_transparency;
+        const imgSrc = `${asset.rel_path}?v=20260924_rgba`;
         return `
           <div class="asset-card">
-            <div class="asset-preview" onclick="openAssetModalByFilename('${asset.filename}')">
+            <div class="asset-preview ${isHeader ? 'transparent-checkerboard' : ''}" onclick="openAssetModalByFilename('${asset.filename}')">
               <span class="asset-bank-badge">${asset.bank}</span>
-              <span class="asset-format-badge">${asset.format}</span>
-              <img src="${asset.rel_path}" alt="${asset.title}" loading="lazy">
+              <span class="asset-format-badge" style="${isHeader ? 'background:#059669; color:#fff;' : ''}">${isHeader ? 'PNG Alfa 2x' : asset.format}</span>
+              <img src="${imgSrc}" alt="${asset.title}" loading="lazy" style="${isHeader ? 'max-height: 140px; object-fit: contain;' : ''}">
             </div>
 
             <div class="asset-info">
@@ -1169,6 +1207,7 @@ Directivas de Operación:
               <div class="asset-meta-row">
                 <span>${asset.width}x${asset.height}</span>
                 <span>${asset.size_kb}</span>
+                ${isHeader ? '<span class="badge-transparency" style="font-size:9px; padding:1px 5px;">Transparente</span>' : ''}
               </div>
 
               <div class="asset-actions">
@@ -1192,20 +1231,50 @@ Directivas de Operación:
     }
 
     // Modal Details Logic
+    function setModalBg(type) {
+      const box = document.getElementById('modalPreviewBox');
+      if (!box) return;
+      box.className = 'modal-preview bg-' + type;
+      document.querySelectorAll('.bg-toggle-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('onclick').includes(`'${type}'`));
+      });
+    }
+
     function openAssetModalByFilename(filename) {
       const asset = window.BANK_ASSETS.find(a => a.filename === filename);
       if (!asset) return;
 
       const cdnUrl = asset.cdn_url || (`https://mkt-visa.vercel.app/${asset.rel_path}`);
+      const isHeader = asset.category === 'Banners Hero' || asset.has_transparency;
 
       document.getElementById('modalTitle').innerText = asset.title;
-      document.getElementById('modalImg').src = asset.rel_path;
+      document.getElementById('modalImg').src = `${asset.rel_path}?v=20260924_rgba`;
       document.getElementById('modalBankBadge').innerText = asset.bank;
       document.getElementById('modalCategoryBadge').innerText = asset.category;
+
+      const transBadge = document.getElementById('modalTransparencyBadge');
+      if (transBadge) {
+        transBadge.style.display = isHeader ? 'inline-flex' : 'none';
+      }
+
+      const origRow = document.getElementById('modalOriginalFilenameRow');
+      const origText = document.getElementById('modalOriginalFilename');
+      if (origRow && origText) {
+        if (asset.original_filename && asset.original_filename !== asset.filename) {
+          origRow.style.display = 'block';
+          origText.innerText = asset.original_filename;
+        } else {
+          origRow.style.display = 'none';
+        }
+      }
+
+      // Default background: checkerboard for transparent headers, white for others
+      setModalBg(isHeader ? 'checker' : 'white');
+
       document.getElementById('modalRule').innerText = asset.rule || asset.concept || 'Uso institucional oficial.';
       document.getElementById('modalCdnUrl').innerText = cdnUrl;
       document.getElementById('modalRelPath').innerText = asset.rel_path;
-      document.getElementById('modalHtmlSnippet').innerText = `<img src="${cdnUrl}" width="64" height="64" alt="${asset.title}">`;
+      document.getElementById('modalHtmlSnippet').innerText = `<img src="${cdnUrl}" width="${isHeader ? '600' : '64'}" height="${isHeader ? 'auto' : '64'}" alt="${asset.title}">`;
       document.getElementById('modalDownloadBtn').href = asset.rel_path;
       document.getElementById('modalDownloadBtn').download = asset.filename;
 

@@ -16,15 +16,17 @@ window.BANK_ASSETS = [
     "rubro": "General",
     "rule": "Usar cuando el mensaje explica el medio de pago o portafolio sin especificar canal ni condición técnica.",
     "tags": [
-      "tarjeta",
-      "medio de pago",
-      "credito",
-      "bch",
-      "plastico",
       "visa",
-      "chile"
+      "chile",
+      "credito",
+      "medio de pago",
+      "plastico",
+      "bch",
+      "tarjeta"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "01_tarjeta.png",
+    "has_transparency": false
   },
   {
     "filename": "02_pago_presencial_pos.png",
@@ -43,12 +45,14 @@ window.BANK_ASSETS = [
     "rubro": "Tiendas Físicas",
     "rule": "Versión 2D POS presencial.",
     "tags": [
-      "presencial",
-      "bch",
       "2d",
-      "pos"
+      "pos",
+      "bch",
+      "presencial"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "02_pago_presencial_pos.png",
+    "has_transparency": false
   },
   {
     "filename": "03_ecommerce.png",
@@ -67,12 +71,14 @@ window.BANK_ASSETS = [
     "rubro": "Online",
     "rule": "Versión 2D ecommerce.",
     "tags": [
-      "2d",
-      "bch",
       "ecommerce",
-      "online"
+      "2d",
+      "online",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "03_ecommerce.png",
+    "has_transparency": false
   },
   {
     "filename": "04_wallet_pago_movil.png",
@@ -91,12 +97,14 @@ window.BANK_ASSETS = [
     "rubro": "Digital / Móvil",
     "rule": "Versión 2D wallet. Si el foco es la app del banco usar 40.",
     "tags": [
-      "pago movil",
       "wallet",
+      "pago movil",
       "bch",
       "2d"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "04_wallet_pago_movil.png",
+    "has_transparency": false
   },
   {
     "filename": "05_activacion.png",
@@ -115,11 +123,13 @@ window.BANK_ASSETS = [
     "rubro": "Onboarding",
     "rule": "Versión 2D activación.",
     "tags": [
+      "activacion",
       "2d",
-      "bch",
-      "activacion"
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "05_activacion.png",
+    "has_transparency": false
   },
   {
     "filename": "06_primera_compra.png",
@@ -138,11 +148,13 @@ window.BANK_ASSETS = [
     "rubro": "Onboarding",
     "rule": "Versión 2D primera compra.",
     "tags": [
-      "primera compra",
+      "2d",
       "bch",
-      "2d"
+      "primera compra"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "06_primera_compra.png",
+    "has_transparency": false
   },
   {
     "filename": "07_reactivacion.png",
@@ -161,12 +173,14 @@ window.BANK_ASSETS = [
     "rubro": "Retención",
     "rule": "Versión 2D reactivación.",
     "tags": [
-      "reactivacion",
+      "2d",
       "bch",
       "inactivo",
-      "2d"
+      "reactivacion"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "07_reactivacion.png",
+    "has_transparency": false
   },
   {
     "filename": "08_meta_de_transacciones.png",
@@ -185,12 +199,14 @@ window.BANK_ASSETS = [
     "rubro": "Frecuencia",
     "rule": "Versión 2D meta transacciones.",
     "tags": [
-      "transacciones",
       "meta",
+      "2d",
       "bch",
-      "2d"
+      "transacciones"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "08_meta_de_transacciones.png",
+    "has_transparency": false
   },
   {
     "filename": "09_cashback.png",
@@ -209,12 +225,14 @@ window.BANK_ASSETS = [
     "rubro": "Recompensa",
     "rule": "Versión 2D cashback.",
     "tags": [
-      "bch",
-      "cashback",
       "2d",
-      "devolucion"
+      "devolucion",
+      "bch",
+      "cashback"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "09_cashback.png",
+    "has_transparency": false
   },
   {
     "filename": "10_dolares_premio.png",
@@ -233,12 +251,14 @@ window.BANK_ASSETS = [
     "rubro": "Lealtad",
     "rule": "Versión 2D dólares-premio.",
     "tags": [
-      "dolares premio",
       "2d",
       "bch",
-      "dp"
+      "dp",
+      "dolares premio"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "10_dolares_premio.png",
+    "has_transparency": false
   },
   {
     "filename": "11_supermercado.png",
@@ -261,7 +281,9 @@ window.BANK_ASSETS = [
       "bch",
       "supermercado"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "11_supermercado.png",
+    "has_transparency": false
   },
   {
     "filename": "12_gastronomia_restaurantes.png",
@@ -280,12 +302,14 @@ window.BANK_ASSETS = [
     "rubro": "Gastronomía",
     "rule": "Versión 2D.",
     "tags": [
-      "restaurante",
+      "2d",
       "gastronomia",
       "bch",
-      "2d"
+      "restaurante"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "12_gastronomia_restaurantes.png",
+    "has_transparency": false
   },
   {
     "filename": "13_cafe_cafeterias.png",
@@ -305,10 +329,12 @@ window.BANK_ASSETS = [
     "rule": "Versión 2D.",
     "tags": [
       "cafe",
-      "bch",
-      "2d"
+      "2d",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "13_cafe_cafeterias.png",
+    "has_transparency": false
   },
   {
     "filename": "14_combustible.png",
@@ -327,11 +353,13 @@ window.BANK_ASSETS = [
     "rubro": "Combustible",
     "rule": "Versión 2D.",
     "tags": [
-      "bch",
       "2d",
+      "bch",
       "combustible"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "14_combustible.png",
+    "has_transparency": false
   },
   {
     "filename": "15_farmacia_salud.png",
@@ -350,12 +378,14 @@ window.BANK_ASSETS = [
     "rubro": "Salud",
     "rule": "Versión 2D farmacia. Para salud clínica usar 38.",
     "tags": [
-      "2d",
       "salud",
+      "2d",
       "bch",
       "farmacia"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "15_farmacia_salud.png",
+    "has_transparency": false
   },
   {
     "filename": "16_retail_shopping.png",
@@ -374,12 +404,14 @@ window.BANK_ASSETS = [
     "rubro": "Retail",
     "rule": "Versión 2D retail general. Para moda usar 35, hogar usar 36.",
     "tags": [
-      "bch",
-      "shopping",
       "retail",
-      "2d"
+      "2d",
+      "bch",
+      "shopping"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "16_retail_shopping.png",
+    "has_transparency": false
   },
   {
     "filename": "17_tecnologia.png",
@@ -399,11 +431,13 @@ window.BANK_ASSETS = [
     "rule": "Versión 2D tecnología. Para IA usar 31.",
     "tags": [
       "gadgets",
-      "bch",
       "2d",
+      "bch",
       "tecnologia"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "17_tecnologia.png",
+    "has_transparency": false
   },
   {
     "filename": "18_delivery.png",
@@ -423,11 +457,13 @@ window.BANK_ASSETS = [
     "rule": "Versión 2D.",
     "tags": [
       "delivery",
-      "rappi",
+      "2d",
       "bch",
-      "2d"
+      "rappi"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "18_delivery.png",
+    "has_transparency": false
   },
   {
     "filename": "19_viajes_turismo.png",
@@ -447,11 +483,13 @@ window.BANK_ASSETS = [
     "rule": "Versión 2D.",
     "tags": [
       "viajes",
-      "bch",
       "2d",
-      "turismo"
+      "turismo",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "19_viajes_turismo.png",
+    "has_transparency": false
   },
   {
     "filename": "20_entretenimiento_musica.png",
@@ -470,11 +508,13 @@ window.BANK_ASSETS = [
     "rubro": "Entretenimiento",
     "rule": "Versión 2D genérico. Para cine usar 33, conciertos usar 34.",
     "tags": [
+      "entretenimiento",
       "2d",
-      "bch",
-      "entretenimiento"
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "20_entretenimiento_musica.png",
+    "has_transparency": false
   },
   {
     "filename": "21_contactless.png",
@@ -493,12 +533,14 @@ window.BANK_ASSETS = [
     "rubro": "Tecnología de Pago",
     "rule": "Versión 2D.",
     "tags": [
-      "bch",
       "nfc",
       "2d",
+      "bch",
       "contactless"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "21_contactless.png",
+    "has_transparency": false
   },
   {
     "filename": "22_card_on_file_cof.png",
@@ -522,7 +564,9 @@ window.BANK_ASSETS = [
       "cof",
       "card on file"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "22_card_on_file_cof.png",
+    "has_transparency": false
   },
   {
     "filename": "23_pago_recurrente.png",
@@ -541,12 +585,14 @@ window.BANK_ASSETS = [
     "rubro": "PAT / Servicios",
     "rule": "Versión 2D PAT. Para streaming usar 32.",
     "tags": [
-      "pago recurrente",
-      "bch",
+      "2d",
       "pat",
-      "2d"
+      "bch",
+      "pago recurrente"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "23_pago_recurrente.png",
+    "has_transparency": false
   },
   {
     "filename": "24_descuento.png",
@@ -565,12 +611,14 @@ window.BANK_ASSETS = [
     "rubro": "Promoción",
     "rule": "Versión 2D descuento.",
     "tags": [
+      "2d",
       "off",
-      "descuento",
       "bch",
-      "2d"
+      "descuento"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "24_descuento.png",
+    "has_transparency": false
   },
   {
     "filename": "25_cuotas_sin_interes_csi.png",
@@ -589,12 +637,14 @@ window.BANK_ASSETS = [
     "rubro": "Financiamiento",
     "rule": "Versión 2D CSI.",
     "tags": [
-      "2d",
+      "sin interes",
       "bch",
-      "cuotas",
-      "sin interes"
+      "2d",
+      "cuotas"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "25_cuotas_sin_interes_csi.png",
+    "has_transparency": false
   },
   {
     "filename": "26_meta_de_facturacion.png",
@@ -614,10 +664,12 @@ window.BANK_ASSETS = [
     "rule": "Versión 2D.",
     "tags": [
       "meta facturacion",
-      "bch",
-      "2d"
+      "2d",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "26_meta_de_facturacion.png",
+    "has_transparency": false
   },
   {
     "filename": "27_compra_internacional_crossborder.png",
@@ -636,12 +688,14 @@ window.BANK_ASSETS = [
     "rubro": "Crossborder",
     "rule": "Versión 2D.",
     "tags": [
-      "crossborder",
-      "internacional",
       "2d",
-      "bch"
+      "internacional",
+      "bch",
+      "crossborder"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "27_compra_internacional_crossborder.png",
+    "has_transparency": false
   },
   {
     "filename": "28_ecommerce_internacional.png",
@@ -665,7 +719,9 @@ window.BANK_ASSETS = [
       "amazon",
       "ecommerce internacional"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "28_ecommerce_internacional.png",
+    "has_transparency": false
   },
   {
     "filename": "29_lounge_salon_vip.png",
@@ -684,12 +740,14 @@ window.BANK_ASSETS = [
     "rubro": "Aeropuerto",
     "rule": "Versión 2D.",
     "tags": [
+      "lounge",
       "salon vip",
       "bch",
-      "2d",
-      "lounge"
+      "2d"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "29_lounge_salon_vip.png",
+    "has_transparency": false
   },
   {
     "filename": "30_traslado_aeropuerto.png",
@@ -708,12 +766,14 @@ window.BANK_ASSETS = [
     "rubro": "Aeropuerto",
     "rule": "Versión 2D.",
     "tags": [
-      "traslado",
-      "bch",
+      "aeropuerto",
       "2d",
-      "aeropuerto"
+      "bch",
+      "traslado"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "30_traslado_aeropuerto.png",
+    "has_transparency": false
   },
   {
     "filename": "01_tarjeta_visa.png",
@@ -732,13 +792,15 @@ window.BANK_ASSETS = [
     "rubro": "General",
     "rule": "Versión 2D. Piezas planas o infografías. Para 3D usar 01_tarjeta.",
     "tags": [
-      "tarjeta",
+      "2d",
+      "visa",
       "credito",
       "bch",
-      "2d",
-      "visa"
+      "tarjeta"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "01_tarjeta_visa.png",
+    "has_transparency": false
   },
   {
     "filename": "02_pago_presencial_pos.png",
@@ -757,12 +819,14 @@ window.BANK_ASSETS = [
     "rubro": "Tiendas Físicas",
     "rule": "Versión 2D POS presencial.",
     "tags": [
-      "presencial",
-      "bch",
       "2d",
-      "pos"
+      "pos",
+      "bch",
+      "presencial"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "02_pago_presencial_pos.png",
+    "has_transparency": false
   },
   {
     "filename": "03_ecommerce.png",
@@ -781,12 +845,14 @@ window.BANK_ASSETS = [
     "rubro": "Online",
     "rule": "Versión 2D ecommerce.",
     "tags": [
-      "2d",
-      "bch",
       "ecommerce",
-      "online"
+      "2d",
+      "online",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "03_ecommerce.png",
+    "has_transparency": false
   },
   {
     "filename": "04_wallet_pago_movil.png",
@@ -805,12 +871,14 @@ window.BANK_ASSETS = [
     "rubro": "Digital / Móvil",
     "rule": "Versión 2D wallet. Si el foco es la app del banco usar 40.",
     "tags": [
-      "pago movil",
       "wallet",
+      "pago movil",
       "bch",
       "2d"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "04_wallet_pago_movil.png",
+    "has_transparency": false
   },
   {
     "filename": "05_activacion.png",
@@ -829,11 +897,13 @@ window.BANK_ASSETS = [
     "rubro": "Onboarding",
     "rule": "Versión 2D activación.",
     "tags": [
+      "activacion",
       "2d",
-      "bch",
-      "activacion"
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "05_activacion.png",
+    "has_transparency": false
   },
   {
     "filename": "06_primera_compra.png",
@@ -852,11 +922,13 @@ window.BANK_ASSETS = [
     "rubro": "Onboarding",
     "rule": "Versión 2D primera compra.",
     "tags": [
-      "primera compra",
+      "2d",
       "bch",
-      "2d"
+      "primera compra"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "06_primera_compra.png",
+    "has_transparency": false
   },
   {
     "filename": "07_reactivacion.png",
@@ -875,12 +947,14 @@ window.BANK_ASSETS = [
     "rubro": "Retención",
     "rule": "Versión 2D reactivación.",
     "tags": [
-      "reactivacion",
+      "2d",
       "bch",
       "inactivo",
-      "2d"
+      "reactivacion"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "07_reactivacion.png",
+    "has_transparency": false
   },
   {
     "filename": "08_meta_de_transacciones.png",
@@ -899,12 +973,14 @@ window.BANK_ASSETS = [
     "rubro": "Frecuencia",
     "rule": "Versión 2D meta transacciones.",
     "tags": [
-      "transacciones",
       "meta",
+      "2d",
       "bch",
-      "2d"
+      "transacciones"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "08_meta_de_transacciones.png",
+    "has_transparency": false
   },
   {
     "filename": "09_cashback.png",
@@ -923,12 +999,14 @@ window.BANK_ASSETS = [
     "rubro": "Recompensa",
     "rule": "Versión 2D cashback.",
     "tags": [
-      "bch",
-      "cashback",
       "2d",
-      "devolucion"
+      "devolucion",
+      "bch",
+      "cashback"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "09_cashback.png",
+    "has_transparency": false
   },
   {
     "filename": "10_dolares_premio.png",
@@ -947,12 +1025,14 @@ window.BANK_ASSETS = [
     "rubro": "Lealtad",
     "rule": "Versión 2D dólares-premio.",
     "tags": [
-      "dolares premio",
       "2d",
       "bch",
-      "dp"
+      "dp",
+      "dolares premio"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "10_dolares_premio.png",
+    "has_transparency": false
   },
   {
     "filename": "11_supermercado.png",
@@ -975,7 +1055,9 @@ window.BANK_ASSETS = [
       "bch",
       "supermercado"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "11_supermercado.png",
+    "has_transparency": false
   },
   {
     "filename": "12_gastronomia_restaurantes.png",
@@ -994,12 +1076,14 @@ window.BANK_ASSETS = [
     "rubro": "Gastronomía",
     "rule": "Versión 2D.",
     "tags": [
-      "restaurante",
+      "2d",
       "gastronomia",
       "bch",
-      "2d"
+      "restaurante"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "12_gastronomia_restaurantes.png",
+    "has_transparency": false
   },
   {
     "filename": "13_cafe_cafeterias.png",
@@ -1019,10 +1103,12 @@ window.BANK_ASSETS = [
     "rule": "Versión 2D.",
     "tags": [
       "cafe",
-      "bch",
-      "2d"
+      "2d",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "13_cafe_cafeterias.png",
+    "has_transparency": false
   },
   {
     "filename": "14_combustible.png",
@@ -1041,11 +1127,13 @@ window.BANK_ASSETS = [
     "rubro": "Combustible",
     "rule": "Versión 2D.",
     "tags": [
-      "bch",
       "2d",
+      "bch",
       "combustible"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "14_combustible.png",
+    "has_transparency": false
   },
   {
     "filename": "15_farmacia_salud.png",
@@ -1064,12 +1152,14 @@ window.BANK_ASSETS = [
     "rubro": "Salud",
     "rule": "Versión 2D farmacia. Para salud clínica usar 38.",
     "tags": [
-      "2d",
       "salud",
+      "2d",
       "bch",
       "farmacia"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "15_farmacia_salud.png",
+    "has_transparency": false
   },
   {
     "filename": "16_retail_shopping.png",
@@ -1088,12 +1178,14 @@ window.BANK_ASSETS = [
     "rubro": "Retail",
     "rule": "Versión 2D retail general. Para moda usar 35, hogar usar 36.",
     "tags": [
-      "bch",
-      "shopping",
       "retail",
-      "2d"
+      "2d",
+      "bch",
+      "shopping"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "16_retail_shopping.png",
+    "has_transparency": false
   },
   {
     "filename": "17_tecnologia.png",
@@ -1113,11 +1205,13 @@ window.BANK_ASSETS = [
     "rule": "Versión 2D tecnología. Para IA usar 31.",
     "tags": [
       "gadgets",
-      "bch",
       "2d",
+      "bch",
       "tecnologia"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "17_tecnologia.png",
+    "has_transparency": false
   },
   {
     "filename": "18_delivery.png",
@@ -1137,11 +1231,13 @@ window.BANK_ASSETS = [
     "rule": "Versión 2D.",
     "tags": [
       "delivery",
-      "rappi",
+      "2d",
       "bch",
-      "2d"
+      "rappi"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "18_delivery.png",
+    "has_transparency": false
   },
   {
     "filename": "19_viajes_turismo.png",
@@ -1161,11 +1257,13 @@ window.BANK_ASSETS = [
     "rule": "Versión 2D.",
     "tags": [
       "viajes",
-      "bch",
       "2d",
-      "turismo"
+      "turismo",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "19_viajes_turismo.png",
+    "has_transparency": false
   },
   {
     "filename": "20_entretenimiento_musica.png",
@@ -1184,11 +1282,13 @@ window.BANK_ASSETS = [
     "rubro": "Entretenimiento",
     "rule": "Versión 2D genérico. Para cine usar 33, conciertos usar 34.",
     "tags": [
+      "entretenimiento",
       "2d",
-      "bch",
-      "entretenimiento"
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "20_entretenimiento_musica.png",
+    "has_transparency": false
   },
   {
     "filename": "21_contactless.png",
@@ -1207,12 +1307,14 @@ window.BANK_ASSETS = [
     "rubro": "Tecnología de Pago",
     "rule": "Versión 2D.",
     "tags": [
-      "bch",
       "nfc",
       "2d",
+      "bch",
       "contactless"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "21_contactless.png",
+    "has_transparency": false
   },
   {
     "filename": "22_card_on_file_cof.png",
@@ -1236,7 +1338,9 @@ window.BANK_ASSETS = [
       "cof",
       "card on file"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "22_card_on_file_cof.png",
+    "has_transparency": false
   },
   {
     "filename": "23_pago_recurrente.png",
@@ -1255,12 +1359,14 @@ window.BANK_ASSETS = [
     "rubro": "PAT / Servicios",
     "rule": "Versión 2D PAT. Para streaming usar 32.",
     "tags": [
-      "pago recurrente",
-      "bch",
+      "2d",
       "pat",
-      "2d"
+      "bch",
+      "pago recurrente"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "23_pago_recurrente.png",
+    "has_transparency": false
   },
   {
     "filename": "24_descuento.png",
@@ -1279,12 +1385,14 @@ window.BANK_ASSETS = [
     "rubro": "Promoción",
     "rule": "Versión 2D descuento.",
     "tags": [
+      "2d",
       "off",
-      "descuento",
       "bch",
-      "2d"
+      "descuento"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "24_descuento.png",
+    "has_transparency": false
   },
   {
     "filename": "25_cuotas_sin_interes_csi.png",
@@ -1303,12 +1411,14 @@ window.BANK_ASSETS = [
     "rubro": "Financiamiento",
     "rule": "Versión 2D CSI.",
     "tags": [
-      "2d",
+      "sin interes",
       "bch",
-      "cuotas",
-      "sin interes"
+      "2d",
+      "cuotas"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "25_cuotas_sin_interes_csi.png",
+    "has_transparency": false
   },
   {
     "filename": "26_meta_de_facturacion.png",
@@ -1328,10 +1438,12 @@ window.BANK_ASSETS = [
     "rule": "Versión 2D.",
     "tags": [
       "meta facturacion",
-      "bch",
-      "2d"
+      "2d",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "26_meta_de_facturacion.png",
+    "has_transparency": false
   },
   {
     "filename": "27_compra_internacional_crossborder.png",
@@ -1350,12 +1462,14 @@ window.BANK_ASSETS = [
     "rubro": "Crossborder",
     "rule": "Versión 2D.",
     "tags": [
-      "crossborder",
-      "internacional",
       "2d",
-      "bch"
+      "internacional",
+      "bch",
+      "crossborder"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "27_compra_internacional_crossborder.png",
+    "has_transparency": false
   },
   {
     "filename": "28_ecommerce_internacional.png",
@@ -1379,7 +1493,9 @@ window.BANK_ASSETS = [
       "amazon",
       "ecommerce internacional"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "28_ecommerce_internacional.png",
+    "has_transparency": false
   },
   {
     "filename": "29_lounge_salon_vip.png",
@@ -1398,12 +1514,14 @@ window.BANK_ASSETS = [
     "rubro": "Aeropuerto",
     "rule": "Versión 2D.",
     "tags": [
+      "lounge",
       "salon vip",
       "bch",
-      "2d",
-      "lounge"
+      "2d"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "29_lounge_salon_vip.png",
+    "has_transparency": false
   },
   {
     "filename": "30_traslado_aeropuerto.png",
@@ -1422,12 +1540,14 @@ window.BANK_ASSETS = [
     "rubro": "Aeropuerto",
     "rule": "Versión 2D.",
     "tags": [
-      "traslado",
-      "bch",
+      "aeropuerto",
       "2d",
-      "aeropuerto"
+      "bch",
+      "traslado"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "30_traslado_aeropuerto.png",
+    "has_transparency": false
   },
   {
     "filename": "31_inteligencia_artificial.png",
@@ -1446,16 +1566,18 @@ window.BANK_ASSETS = [
     "rubro": "Innovación",
     "rule": "Usar para IA, chatbot, experiencias AI. Para hardware/gadgets usar 17.",
     "tags": [
-      "innovacion",
-      "ia",
-      "ai",
-      "automatizacion",
       "2d",
-      "bch",
+      "ai",
+      "ia",
+      "inteligencia artificial",
+      "innovacion",
       "chatbot",
-      "inteligencia artificial"
+      "automatizacion",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "31_inteligencia_artificial.png",
+    "has_transparency": false
   },
   {
     "filename": "32_streaming_suscripciones.png",
@@ -1474,15 +1596,17 @@ window.BANK_ASSETS = [
     "rubro": "Entretenimiento Digital",
     "rule": "Usar para Netflix, Spotify, contenido digital. Para PAT genérico usar 23.",
     "tags": [
-      "streaming",
-      "bch",
+      "spotify",
       "2d",
+      "streaming",
       "plataforma digital",
+      "bch",
       "netflix",
-      "suscripcion",
-      "spotify"
+      "suscripcion"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "32_streaming_suscripciones.png",
+    "has_transparency": false
   },
   {
     "filename": "33_cine.png",
@@ -1501,14 +1625,16 @@ window.BANK_ASSETS = [
     "rubro": "Cine",
     "rule": "Usar para beneficios de cine. NO usar 20 (entretenimiento genérico).",
     "tags": [
-      "cine",
-      "entrada cine",
       "2d",
-      "bch",
       "pelicula",
-      "cinema"
+      "entrada cine",
+      "cine",
+      "cinema",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "33_cine.png",
+    "has_transparency": false
   },
   {
     "filename": "34_conciertos_musica_en_vivo.png",
@@ -1527,15 +1653,17 @@ window.BANK_ASSETS = [
     "rubro": "Música en Vivo",
     "rule": "Usar para conciertos, preventas exclusivas. NO usar 20.",
     "tags": [
-      "concierto",
-      "bch",
-      "recital",
+      "preventa",
       "2d",
-      "festival",
       "musica en vivo",
-      "preventa"
+      "concierto",
+      "recital",
+      "festival",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "34_conciertos_musica_en_vivo.png",
+    "has_transparency": false
   },
   {
     "filename": "35_moda_vestuario.png",
@@ -1554,14 +1682,16 @@ window.BANK_ASSETS = [
     "rubro": "Moda",
     "rule": "Usar para moda/ropa específicamente. Para retail general usar 16.",
     "tags": [
-      "moda",
-      "bch",
       "2d",
+      "moda",
       "vestuario",
-      "ropa",
-      "fashion"
+      "fashion",
+      "bch",
+      "ropa"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "35_moda_vestuario.png",
+    "has_transparency": false
   },
   {
     "filename": "36_hogar.png",
@@ -1580,15 +1710,17 @@ window.BANK_ASSETS = [
     "rubro": "Hogar",
     "rule": "Usar para mejoramiento del hogar, muebles, decoración. Para retail general usar 16.",
     "tags": [
-      "hogar",
-      "bch",
       "2d",
-      "linea blanca",
-      "muebles",
       "casa",
-      "decoracion"
+      "decoracion",
+      "linea blanca",
+      "hogar",
+      "muebles",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "36_hogar.png",
+    "has_transparency": false
   },
   {
     "filename": "37_mascotas.png",
@@ -1607,16 +1739,18 @@ window.BANK_ASSETS = [
     "rubro": "Mascotas",
     "rule": "Usar para veterinaria, pet shops, cuidado de mascotas.",
     "tags": [
-      "veterinaria",
-      "gato",
-      "2d",
-      "bch",
-      "pet",
       "perro",
+      "2d",
+      "animales",
+      "gato",
+      "veterinaria",
       "mascotas",
-      "animales"
+      "bch",
+      "pet"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "37_mascotas.png",
+    "has_transparency": false
   },
   {
     "filename": "38_salud_clinica_medico.png",
@@ -1635,14 +1769,16 @@ window.BANK_ASSETS = [
     "rubro": "Salud Clínica",
     "rule": "Usar para clínicas, médicos, consultas. Para farmacia/medicamentos usar 15.",
     "tags": [
-      "bch",
       "2d",
-      "medico",
+      "salud asistencial",
       "consulta",
       "clinica",
-      "salud asistencial"
+      "bch",
+      "medico"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "38_salud_clinica_medico.png",
+    "has_transparency": false
   },
   {
     "filename": "39_seguridad_proteccion.png",
@@ -1661,15 +1797,17 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Usar cuando el mensaje central es seguridad, protección o compra segura.",
     "tags": [
-      "antifraude",
-      "bch",
       "2d",
-      "compra segura",
       "proteccion",
+      "compra segura",
+      "antifraude",
+      "seguridad",
       "respaldo",
-      "seguridad"
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "39_seguridad_proteccion.png",
+    "has_transparency": false
   },
   {
     "filename": "40_app_canal_digital.png",
@@ -1688,15 +1826,17 @@ window.BANK_ASSETS = [
     "rubro": "Canal Digital",
     "rule": "Usar cuando el foco es la app del banco o autogestión. Si el foco es PAGAR con celular, usar 04.",
     "tags": [
+      "2d",
+      "app",
       "autogestion",
       "app mi banco",
-      "bch",
-      "2d",
-      "canal digital",
       "celular banco",
-      "app"
+      "canal digital",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "40_app_canal_digital.png",
+    "has_transparency": false
   },
   {
     "filename": "01_bch_icono_ticket_viaje_ncde7f.png",
@@ -1715,15 +1855,17 @@ window.BANK_ASSETS = [
     "rubro": "Banco de Chile",
     "rule": "Activo corporativo oficial. Usar según contexto de travel & turismo.",
     "tags": [
+      "banco de chile",
       "ticket",
       "icono",
-      "banco de chile",
-      "ncde7f",
-      "bch",
+      "viaje",
       "travel & turismo",
-      "viaje"
+      "ncde7f",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "01_bch_icono_ticket_viaje_ncde7f.png",
+    "has_transparency": false
   },
   {
     "filename": "02_bch_icono_dolares_premio_pplf0o.png",
@@ -1742,15 +1884,17 @@ window.BANK_ASSETS = [
     "rubro": "Banco de Chile",
     "rule": "Activo corporativo oficial. Usar según contexto de travel & turismo.",
     "tags": [
+      "banco de chile",
+      "dolares",
       "pplf0o",
       "icono",
-      "banco de chile",
-      "bch",
-      "dolares",
       "premio",
-      "travel & turismo"
+      "travel & turismo",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "02_bch_icono_dolares_premio_pplf0o.png",
+    "has_transparency": false
   },
   {
     "filename": "03_bch_icono_cuotas_viaje_kml5fp.png",
@@ -1769,15 +1913,17 @@ window.BANK_ASSETS = [
     "rubro": "Banco de Chile",
     "rule": "Activo corporativo oficial. Usar según contexto de travel & turismo.",
     "tags": [
-      "icono",
       "banco de chile",
-      "bch",
-      "cuotas",
+      "icono",
       "kml5fp",
+      "viaje",
       "travel & turismo",
-      "viaje"
+      "bch",
+      "cuotas"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "03_bch_icono_cuotas_viaje_kml5fp.png",
+    "has_transparency": false
   },
   {
     "filename": "04_bch_icono_tasa_preferencial_viajes_qwzxxt.png",
@@ -1796,16 +1942,18 @@ window.BANK_ASSETS = [
     "rubro": "Banco de Chile",
     "rule": "Activo corporativo oficial. Usar según contexto de travel & turismo.",
     "tags": [
-      "icono",
-      "preferencial",
-      "qwzxxt",
       "banco de chile",
-      "bch",
       "viajes",
+      "qwzxxt",
+      "preferencial",
       "tasa",
-      "travel & turismo"
+      "icono",
+      "travel & turismo",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "04_bch_icono_tasa_preferencial_viajes_qwzxxt.png",
+    "has_transparency": false
   },
   {
     "filename": "05_bch_icono_tarjeta_activada_extranjero_h03q2v.png",
@@ -1824,16 +1972,18 @@ window.BANK_ASSETS = [
     "rubro": "Banco de Chile",
     "rule": "Activo corporativo oficial. Usar según contexto de travel & turismo.",
     "tags": [
-      "tarjeta",
-      "icono",
       "banco de chile",
-      "bch",
       "extranjero",
-      "activada",
       "h03q2v",
-      "travel & turismo"
+      "icono",
+      "activada",
+      "travel & turismo",
+      "bch",
+      "tarjeta"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "05_bch_icono_tarjeta_activada_extranjero_h03q2v.png",
+    "has_transparency": false
   },
   {
     "filename": "06_bch_icono_traslado_aeropuerto_r9goav.png",
@@ -1852,15 +2002,17 @@ window.BANK_ASSETS = [
     "rubro": "Banco de Chile",
     "rule": "Activo corporativo oficial. Usar según contexto de travel & turismo.",
     "tags": [
-      "icono",
       "banco de chile",
-      "bch",
-      "traslado",
-      "r9goav",
       "aeropuerto",
-      "travel & turismo"
+      "traslado",
+      "icono",
+      "r9goav",
+      "travel & turismo",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "06_bch_icono_traslado_aeropuerto_r9goav.png",
+    "has_transparency": false
   },
   {
     "filename": "07_bch_icono_avion_despegue_gcez6a.png",
@@ -1879,15 +2031,17 @@ window.BANK_ASSETS = [
     "rubro": "Banco de Chile",
     "rule": "Activo corporativo oficial. Usar según contexto de travel & turismo.",
     "tags": [
-      "icono",
-      "despegue",
       "banco de chile",
-      "bch",
-      "avion",
+      "despegue",
       "gcez6a",
-      "travel & turismo"
+      "icono",
+      "avion",
+      "travel & turismo",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "07_bch_icono_avion_despegue_gcez6a.png",
+    "has_transparency": false
   },
   {
     "filename": "08_bch_icono_hotel_premium_aylvme.png",
@@ -1906,15 +2060,17 @@ window.BANK_ASSETS = [
     "rubro": "Banco de Chile",
     "rule": "Activo corporativo oficial. Usar según contexto de travel & turismo.",
     "tags": [
-      "aylvme",
-      "icono",
       "banco de chile",
-      "hotel",
-      "bch",
+      "icono",
+      "aylvme",
       "premium",
-      "travel & turismo"
+      "travel & turismo",
+      "bch",
+      "hotel"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "08_bch_icono_hotel_premium_aylvme.png",
+    "has_transparency": false
   },
   {
     "filename": "09_bch_icono_maleta_viaje_ntmoww.png",
@@ -1933,15 +2089,17 @@ window.BANK_ASSETS = [
     "rubro": "Banco de Chile",
     "rule": "Activo corporativo oficial. Usar según contexto de travel & turismo.",
     "tags": [
-      "icono",
       "banco de chile",
-      "ntmoww",
-      "bch",
+      "icono",
+      "viaje",
       "maleta",
       "travel & turismo",
-      "viaje"
+      "bch",
+      "ntmoww"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "09_bch_icono_maleta_viaje_ntmoww.png",
+    "has_transparency": false
   },
   {
     "filename": "10_bch_icono_bono_bienvenida_iaohbl.png",
@@ -1960,15 +2118,17 @@ window.BANK_ASSETS = [
     "rubro": "Banco de Chile",
     "rule": "Activo corporativo oficial. Usar según contexto de travel & turismo.",
     "tags": [
-      "icono",
-      "iaohbl",
       "banco de chile",
-      "bch",
+      "bienvenida",
+      "icono",
       "bono",
       "travel & turismo",
-      "bienvenida"
+      "iaohbl",
+      "bch"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "10_bch_icono_bono_bienvenida_iaohbl.png",
+    "has_transparency": false
   },
   {
     "filename": "banco_de_chile.png",
@@ -1987,13 +2147,15 @@ window.BANK_ASSETS = [
     "rubro": "Branding",
     "rule": "Cabecera principal de emails o pie institucional.",
     "tags": [
-      "branding",
-      "logo",
       "banco de chile",
+      "logo",
+      "branding",
       "bch",
       "wordmark"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "banco_de_chile.png",
+    "has_transparency": false
   },
   {
     "filename": "bch_logo.png",
@@ -2012,13 +2174,15 @@ window.BANK_ASSETS = [
     "rubro": "Branding",
     "rule": "Usar como favicon, monograma o elemento de marca secundario.",
     "tags": [
-      "estrella",
+      "favicon",
       "logo",
-      "bch",
       "isotipo",
-      "favicon"
+      "estrella",
+      "bch"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "bch_logo.png",
+    "has_transparency": false
   },
   {
     "filename": "auriculares.png",
@@ -2037,14 +2201,16 @@ window.BANK_ASSETS = [
     "rubro": "Audio & Streaming",
     "rule": "Usar para suscripciones de streaming musical, podcasts, compra de auriculares y audio.",
     "tags": [
+      "spotify",
       "auriculares",
       "audio",
       "streaming",
       "galicia",
-      "musica",
-      "spotify"
+      "musica"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "auriculares.png",
+    "has_transparency": false
   },
   {
     "filename": "auriculares_2.png",
@@ -2063,17 +2229,19 @@ window.BANK_ASSETS = [
     "rubro": "Vencimientos & Pagos",
     "rule": "ATENCIÓN LLM: A pesar del nombre del archivo, representa visualmente un CALENDARIO DE MESA con signo de exclamación y monedas. Usar para fechas de vencimiento de facturas, recordatorios de pago de resumen, adhesión a débito automático y alertas de cobro próximo.",
     "tags": [
-      "alerta",
-      "calendario",
-      "debito automatico",
-      "galicia",
-      "cuotas",
-      "fecha de pago",
-      "vencimiento",
       "factura",
-      "deuda"
+      "alerta",
+      "galicia",
+      "fecha de pago",
+      "debito automatico",
+      "calendario",
+      "deuda",
+      "vencimiento",
+      "cuotas"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "auriculares_2.png",
+    "has_transparency": false
   },
   {
     "filename": "canilla.png",
@@ -2092,14 +2260,16 @@ window.BANK_ASSETS = [
     "rubro": "Servicios Públicos",
     "rule": "Usar para pago de servicios de agua, facturas sanitarias, expensas y suministro hídrico.",
     "tags": [
+      "aysa",
       "galicia",
       "servicios",
       "canilla",
-      "aysa",
-      "cuentas",
-      "agua"
+      "agua",
+      "cuentas"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "canilla.png",
+    "has_transparency": false
   },
   {
     "filename": "celular.png",
@@ -2119,16 +2289,18 @@ window.BANK_ASSETS = [
     "rule": "Usar para pagos móviles con celular, adhesión a MODO / Apple Pay / Google Wallet, recarga de saldo y confirmación de operaciones en App Galicia.",
     "tags": [
       "app galicia",
-      "celular",
-      "galicia",
-      "wallet",
-      "apple pay",
-      "modo",
-      "recargas",
       "pago movil",
-      "smartphone"
+      "galicia",
+      "celular",
+      "smartphone",
+      "modo",
+      "apple pay",
+      "recargas",
+      "wallet"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "celular.png",
+    "has_transparency": false
   },
   {
     "filename": "cine.png",
@@ -2147,15 +2319,17 @@ window.BANK_ASSETS = [
     "rubro": "Cine & Espectáculos",
     "rule": "Usar para campañas principales de cine, 2x1 en entradas (Hoyts, Cinemark, Showcase), estrenos y festivales audiovisuales.",
     "tags": [
-      "cine",
-      "galicia",
-      "cinemark",
-      "entradas",
+      "hoyts",
       "peliculas",
+      "galicia",
+      "entradas",
       "cartelera",
-      "hoyts"
+      "cine",
+      "cinemark"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "cine.png",
+    "has_transparency": false
   },
   {
     "filename": "cine_2.png",
@@ -2174,14 +2348,16 @@ window.BANK_ASSETS = [
     "rubro": "Cine & Espectáculos",
     "rule": "Usar como variante limpia de claqueta para botones, grillas compactas o llamadas a la acción rápidas de cine.",
     "tags": [
-      "claqueta",
-      "cine",
-      "galicia",
+      "estrenos",
       "minimalista",
       "peliculas",
-      "estrenos"
+      "galicia",
+      "cine",
+      "claqueta"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "cine_2.png",
+    "has_transparency": false
   },
   {
     "filename": "entradas.png",
@@ -2200,15 +2376,17 @@ window.BANK_ASSETS = [
     "rubro": "Espectáculos & Tickets",
     "rule": "Usar para compra de tickets, promociones 2x1 en salidas, cines o recitales generales.",
     "tags": [
-      "recitales",
-      "eventos",
+      "tickets",
+      "2x1",
+      "shows",
       "galicia",
       "entradas",
-      "shows",
-      "2x1",
-      "tickets"
+      "recitales",
+      "eventos"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "entradas.png",
+    "has_transparency": false
   },
   {
     "filename": "entradas_2.png",
@@ -2227,15 +2405,17 @@ window.BANK_ASSETS = [
     "rubro": "Espectáculos & Preventas",
     "rule": "Usar para preventas exclusivas Galicia, acceso VIP con Tarjeta Galicia, recitales sponsoreados y descuentos en festivales de música.",
     "tags": [
-      "recitales",
-      "cruz de santiago",
+      "tickets",
+      "preventa",
+      "shows",
       "galicia",
       "entradas",
-      "shows",
-      "tickets",
-      "preventa"
+      "cruz de santiago",
+      "recitales"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "entradas_2.png",
+    "has_transparency": false
   },
   {
     "filename": "gas.png",
@@ -2255,14 +2435,16 @@ window.BANK_ASSETS = [
     "rule": "Usar para pago de facturas de gas de red, garrafas, calefacción y débitos automáticos del hogar.",
     "tags": [
       "calefaccion",
-      "camuzzi",
+      "naturgy",
+      "gas",
       "galicia",
       "servicios",
-      "gas",
-      "naturgy",
+      "camuzzi",
       "metrogas"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "gas.png",
+    "has_transparency": false
   },
   {
     "filename": "luz_lampara.png",
@@ -2281,16 +2463,18 @@ window.BANK_ASSETS = [
     "rubro": "Servicios Públicos",
     "rule": "Usar para pago de facturas de luz domiciliaria o comercial y servicios de suministro eléctrico.",
     "tags": [
-      "lampara",
-      "galicia",
-      "luz",
-      "servicios",
-      "edesur",
-      "epec",
       "electricidad",
+      "luz",
+      "galicia",
+      "epec",
+      "edesur",
+      "lampara",
+      "servicios",
       "edenor"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "luz_lampara.png",
+    "has_transparency": false
   },
   {
     "filename": "microfono.png",
@@ -2309,14 +2493,16 @@ window.BANK_ASSETS = [
     "rubro": "Música & Shows",
     "rule": "Usar para recitales masivos, shows de música en vivo, bandas y conciertos.",
     "tags": [
+      "galicia",
       "canto",
-      "conciertos",
+      "musica en vivo",
       "recitales",
       "microfono",
-      "galicia",
-      "musica en vivo"
+      "conciertos"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "microfono.png",
+    "has_transparency": false
   },
   {
     "filename": "microfono_2.png",
@@ -2335,16 +2521,18 @@ window.BANK_ASSETS = [
     "rubro": "Humor & Streaming",
     "rule": "Usar para obras de stand-up comedy, transmisiones en vivo, streaming, podcasts, radio y eventos humorísticos.",
     "tags": [
-      "comedia",
+      "soporte",
       "podcast",
-      "microfono",
-      "galicia",
+      "streaming",
       "standup",
       "shows",
-      "soporte",
-      "streaming"
+      "galicia",
+      "comedia",
+      "microfono"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "microfono_2.png",
+    "has_transparency": false
   },
   {
     "filename": "paraguas.png",
@@ -2363,14 +2551,16 @@ window.BANK_ASSETS = [
     "rubro": "Seguros & Asistencia",
     "rule": "Usar para conceptos de respaldo patrimonial, protección ante imprevistos, cobertura integral y fondos de emergencia.",
     "tags": [
-      "imprevistos",
+      "paraguas",
+      "proteccion",
       "seguros",
       "galicia",
-      "proteccion",
-      "paraguas",
+      "imprevistos",
       "respaldo"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "paraguas.png",
+    "has_transparency": false
   },
   {
     "filename": "pochoclos.png",
@@ -2389,14 +2579,16 @@ window.BANK_ASSETS = [
     "rubro": "Cine & Snacks",
     "rule": "Usar para beneficios en candy bar de cines, pochoclos y snacks de entretenimiento.",
     "tags": [
-      "cine",
       "popcorn",
       "galicia",
-      "candybar",
+      "cine",
       "snacks",
+      "candybar",
       "pochoclos"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "pochoclos.png",
+    "has_transparency": false
   },
   {
     "filename": "pochoclos_2.png",
@@ -2415,14 +2607,16 @@ window.BANK_ASSETS = [
     "rubro": "Cine & Snacks",
     "rule": "Usar para promociones enérgicas de Candy Bar, combos 2x1 y estrenos pochocleros.",
     "tags": [
-      "cine",
+      "combos",
       "popcorn",
       "galicia",
+      "cine",
       "candybar",
-      "pochoclos",
-      "combos"
+      "pochoclos"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "pochoclos_2.png",
+    "has_transparency": false
   },
   {
     "filename": "primeros_auxilios.png",
@@ -2444,12 +2638,14 @@ window.BANK_ASSETS = [
       "botiquin",
       "seguros",
       "galicia",
-      "medico",
-      "primeros auxilios",
       "salud",
-      "emergencias"
+      "emergencias",
+      "primeros auxilios",
+      "medico"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "primeros_auxilios.png",
+    "has_transparency": false
   },
   {
     "filename": "rayo.png",
@@ -2468,15 +2664,17 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Usar para destacar pagos instantáneos, acreditación en el acto, ofertas relámpago y pagos sin contacto.",
     "tags": [
-      "pago inmediato",
-      "rayo",
-      "galicia",
-      "energia",
       "flash",
+      "energia",
+      "rapido",
+      "galicia",
       "express",
-      "rapido"
+      "pago inmediato",
+      "rayo"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "rayo.png",
+    "has_transparency": false
   },
   {
     "filename": "seguro_auto.png",
@@ -2495,15 +2693,17 @@ window.BANK_ASSETS = [
     "rubro": "Seguros",
     "rule": "Usar para pólizas de automotor Galicia Seguros, auxilio mecánico en ruta, cobertura contra terceros y todo riesgo.",
     "tags": [
-      "automotor",
       "seguro auto",
-      "escarabajo",
+      "automotor",
+      "galicia seguros",
       "galicia",
       "poliza",
       "vehiculo",
-      "galicia seguros"
+      "escarabajo"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "seguro_auto.png",
+    "has_transparency": false
   },
   {
     "filename": "seguro_hogar.png",
@@ -2522,14 +2722,16 @@ window.BANK_ASSETS = [
     "rubro": "Seguros",
     "rule": "Usar para Galicia Seguros de hogar, cobertura contra incendio, robo, daños por agua y asistencia domiciliaria.",
     "tags": [
-      "seguro hogar",
+      "galicia seguros",
+      "casa",
       "galicia",
       "vivienda",
-      "combinado familiar",
-      "casa",
-      "galicia seguros"
+      "seguro hogar",
+      "combinado familiar"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "seguro_hogar.png",
+    "has_transparency": false
   },
   {
     "filename": "seguro_vida.png",
@@ -2548,15 +2750,17 @@ window.BANK_ASSETS = [
     "rubro": "Seguros",
     "rule": "Usar para seguros de vida individual y colectivo, indemnización, protección económica y bienestar familiar.",
     "tags": [
-      "seguro vida",
-      "galicia",
-      "vida",
-      "proteccion familiar",
-      "salud",
       "electrocardiograma",
-      "galicia seguros"
+      "galicia seguros",
+      "galicia",
+      "proteccion familiar",
+      "seguro vida",
+      "salud",
+      "vida"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "seguro_vida.png",
+    "has_transparency": false
   },
   {
     "filename": "seguros.png",
@@ -2575,15 +2779,17 @@ window.BANK_ASSETS = [
     "rubro": "Seguros",
     "rule": "Usar para el ecosistema integral de pólizas Galicia Seguros, verificación de cobertura y tranquilidad patrimonial.",
     "tags": [
-      "escudo",
+      "coberturas",
+      "galicia seguros",
       "seguros",
       "galicia",
+      "escudo",
       "polizas",
-      "tilde",
-      "coberturas",
-      "galicia seguros"
+      "tilde"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "seguros.png",
+    "has_transparency": false
   },
   {
     "filename": "teatro.png",
@@ -2602,16 +2808,18 @@ window.BANK_ASSETS = [
     "rubro": "Cultura & Teatro",
     "rule": "Usar para obras de teatro, espectáculos en Calle Corrientes, comedia musical y eventos culturales.",
     "tags": [
+      "calle corrientes",
+      "cultura",
+      "galicia",
       "tragedia",
       "comedia",
-      "mascaras",
-      "cultura",
-      "teatro",
-      "galicia",
       "espectaculos",
-      "calle corrientes"
+      "teatro",
+      "mascaras"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "teatro.png",
+    "has_transparency": false
   },
   {
     "filename": "wi_fi.png",
@@ -2631,13 +2839,15 @@ window.BANK_ASSETS = [
     "rule": "Usar para facturas y promociones en abonos de internet (Personal Flow, Telecentro, Movistar Fibra, Claro) y débito automático de telecomunicaciones.",
     "tags": [
       "internet",
-      "conectividad",
+      "fibra",
       "galicia",
-      "servicios",
+      "conectividad",
       "wifi",
-      "fibra"
+      "servicios"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "wi_fi.png",
+    "has_transparency": false
   },
   {
     "filename": "header_promos_visa_permanentes_07.png",
@@ -2656,20 +2866,22 @@ window.BANK_ASSETS = [
     "rubro": "Gastronomía Diaria & Cafeterías",
     "rule": "Cabecera transparente adaptable a cualquier fondo de email. Usar en correos de microgastronomía, cafés al paso, desayunos, salidas cotidianas y compras de bajo monto con Visa.",
     "tags": [
-      "hero",
-      "sin texto",
-      "desayuno",
-      "celular",
-      "galicia",
-      "retina",
-      "cafe",
-      "banner",
-      "lifestyle",
-      "header",
       "visa",
-      "transparente"
+      "galicia",
+      "transparente",
+      "header",
+      "celular",
+      "desayuno",
+      "cafe",
+      "hero",
+      "lifestyle",
+      "sin texto",
+      "retina",
+      "banner"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "galicia_Promos Visa Permanentes copia 7.png",
+    "has_transparency": true
   },
   {
     "filename": "header_promos_visa_permanentes_08.png",
@@ -2688,21 +2900,23 @@ window.BANK_ASSETS = [
     "rubro": "Shopping & Tiendas Físicas",
     "rule": "Cabecera transparente adaptable a cualquier fondo de email. Usar para compras presenciales en shoppings, indumentaria, planes de cuotas sin interés y promociones en comercios físicos.",
     "tags": [
-      "hero",
       "sin texto",
+      "visa",
       "galicia",
-      "comisiones",
-      "cuotas",
-      "retina",
-      "tienda fisica",
-      "banner",
+      "transparente",
       "header",
       "shopping",
-      "visa",
-      "transparente",
-      "pos"
+      "tienda fisica",
+      "comisiones",
+      "hero",
+      "pos",
+      "retina",
+      "banner",
+      "cuotas"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "galicia_Promos Visa Permanentes copia 8.png",
+    "has_transparency": true
   },
   {
     "filename": "header_promos_visa_permanentes_09.png",
@@ -2721,22 +2935,24 @@ window.BANK_ASSETS = [
     "rubro": "Pagos Móviles & NFC",
     "rule": "Cabecera transparente adaptable a cualquier fondo de email. Usar para campañas de pagos sin contacto (Tap to Pay), enrolamiento de tarjetas en Apple Pay / Google Wallet / MODO y tecnología contactless.",
     "tags": [
-      "hero",
       "sin texto",
+      "visa",
+      "pago movil",
       "galicia",
+      "contactless",
+      "transparente",
+      "header",
       "nfc",
-      "apple pay",
       "modo",
+      "apple pay",
+      "hero",
       "pos",
       "retina",
-      "banner",
-      "header",
-      "pago movil",
-      "visa",
-      "transparente",
-      "contactless"
+      "banner"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "galicia_Promos Visa Permanentes copia 9.png",
+    "has_transparency": true
   },
   {
     "filename": "header_promos_visa_permanentes_10.png",
@@ -2755,21 +2971,23 @@ window.BANK_ASSETS = [
     "rubro": "Ecommerce & Delivery",
     "rule": "Cabecera compacta con silueteado y transparencia total en laterales. Usar para compras online, delivery a domicilio y correos con grilla extensa inferior.",
     "tags": [
-      "hero",
-      "sin texto",
-      "galicia",
-      "paquete",
-      "retina",
-      "delivery",
-      "cafe",
-      "banner",
       "ecommerce",
+      "sin texto",
+      "visa",
+      "delivery",
+      "galicia",
+      "transparente",
       "header",
       "compacto",
-      "visa",
-      "transparente"
+      "cafe",
+      "hero",
+      "paquete",
+      "retina",
+      "banner"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "galicia_Promos Visa Permanentes copia 10.png",
+    "has_transparency": true
   },
   {
     "filename": "header_promos_visa_permanentes_11.png",
@@ -2788,22 +3006,24 @@ window.BANK_ASSETS = [
     "rubro": "Fintech & Onboarding",
     "rule": "Cabecera compacta ilustrada con bordes transparentes. Usar para comunicaciones ilustradas, onboarding digital de billeteras móviles, resúmenes transaccionales o correos sobrios.",
     "tags": [
-      "vectorial",
-      "hero",
       "sin texto",
-      "ilustrado",
-      "celular",
-      "galicia",
-      "retina",
       "minimalista",
-      "banner",
-      "header",
-      "compacto",
       "visa",
+      "galicia",
+      "vectorial",
       "transparente",
-      "pos"
+      "header",
+      "celular",
+      "compacto",
+      "hero",
+      "ilustrado",
+      "pos",
+      "retina",
+      "banner"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "galicia_Promos Visa Permanentes copia 11.png",
+    "has_transparency": true
   },
   {
     "filename": "header_promos_visa_permanentes_12.png",
@@ -2822,21 +3042,23 @@ window.BANK_ASSETS = [
     "rubro": "Grandes Eventos & Mega Promos",
     "rule": "Cabecera compacta con esquinas redondeadas transparentes. Usar para aperturas de campaña de alto impacto (Hot Sale, Cyber Monday), lanzamientos oficiales masivos y comunicaciones donde el color naranja domine la pantalla.",
     "tags": [
-      "shock",
-      "cybermonday",
-      "naranja solido",
-      "hero",
-      "sin texto",
-      "galicia",
-      "retina",
-      "banner",
-      "header",
       "hotsale",
-      "compacto",
       "visa",
-      "transparente"
+      "galicia",
+      "transparente",
+      "header",
+      "compacto",
+      "naranja solido",
+      "shock",
+      "hero",
+      "cybermonday",
+      "sin texto",
+      "retina",
+      "banner"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "galicia_Promos Visa Permanentes copia 12.png",
+    "has_transparency": true
   },
   {
     "filename": "logo_galicia_header.png",
@@ -2855,13 +3077,15 @@ window.BANK_ASSETS = [
     "rubro": "Branding",
     "rule": "Cabecera principal de correos institucionales de Banco Galicia.",
     "tags": [
-      "branding",
-      "logo",
       "galicia",
       "header",
+      "logo",
+      "branding",
       "banco galicia"
     ],
-    "is_featured": true
+    "is_featured": true,
+    "original_filename": "logo_galicia_header.png",
+    "has_transparency": false
   },
   {
     "filename": "account-add-high.svg",
@@ -2880,12 +3104,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "add",
+      "visa",
       "icono",
       "svg",
-      "add",
-      "oficial",
       "account",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -2906,12 +3130,12 @@ window.BANK_ASSETS = [
     "rubro": "Cuenta y Wallet",
     "rule": "Ícono SVG oficial Visa para cuenta y wallet. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
-      "favorite",
       "svg",
-      "oficial",
       "account",
-      "visa"
+      "favorite",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -2932,11 +3156,11 @@ window.BANK_ASSETS = [
     "rubro": "Cuenta y Wallet",
     "rule": "Ícono SVG oficial Visa para cuenta y wallet. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "account",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -2957,12 +3181,12 @@ window.BANK_ASSETS = [
     "rubro": "Cuenta y Wallet",
     "rule": "Ícono SVG oficial Visa para cuenta y wallet. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "lock",
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "account",
-      "lock",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -2983,12 +3207,12 @@ window.BANK_ASSETS = [
     "rubro": "Cuenta y Wallet",
     "rule": "Ícono SVG oficial Visa para cuenta y wallet. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "remove",
-      "oficial",
       "account",
-      "visa"
+      "remove",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3009,11 +3233,11 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "acquirer",
+      "visa",
       "icono",
       "svg",
-      "acquirer",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3034,11 +3258,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "add",
+      "visa",
       "icono",
       "svg",
-      "add",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3059,11 +3283,11 @@ window.BANK_ASSETS = [
     "rubro": "Analítica",
     "rule": "Ícono SVG oficial Visa para analítica. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "analytics",
+      "visa",
       "icono",
       "svg",
       "oficial",
-      "visa"
+      "analytics"
     ],
     "is_featured": false
   },
@@ -3084,12 +3308,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "arrow",
-      "oficial",
       "back",
-      "visa"
+      "oficial",
+      "arrow"
     ],
     "is_featured": false
   },
@@ -3110,12 +3334,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "arrow",
-      "oficial",
       "down",
-      "visa"
+      "oficial",
+      "arrow"
     ],
     "is_featured": false
   },
@@ -3136,12 +3360,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "forward",
+      "visa",
       "icono",
       "svg",
-      "forward",
-      "arrow",
       "oficial",
-      "visa"
+      "arrow"
     ],
     "is_featured": false
   },
@@ -3162,12 +3386,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "arrow",
-      "oficial",
       "up",
-      "visa"
+      "oficial",
+      "arrow"
     ],
     "is_featured": false
   },
@@ -3188,11 +3412,11 @@ window.BANK_ASSETS = [
     "rubro": "Cuenta y Wallet",
     "rule": "Ícono SVG oficial Visa para cuenta y wallet. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "atm",
       "oficial",
-      "visa"
+      "atm"
     ],
     "is_featured": false
   },
@@ -3213,12 +3437,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
+      "visa",
       "code",
+      "icono",
       "svg",
       "oficial",
-      "auth",
-      "visa"
+      "auth"
     ],
     "is_featured": false
   },
@@ -3239,12 +3463,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
+      "face",
       "oficial",
-      "auth",
-      "visa",
-      "face"
+      "auth"
     ],
     "is_featured": false
   },
@@ -3265,12 +3489,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "reauthorize",
-      "auth",
-      "visa"
+      "oficial",
+      "auth"
     ],
     "is_featured": false
   },
@@ -3291,12 +3515,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "voice",
+      "visa",
       "icono",
       "svg",
       "oficial",
-      "voice",
-      "auth",
-      "visa"
+      "auth"
     ],
     "is_featured": false
   },
@@ -3318,10 +3542,10 @@ window.BANK_ASSETS = [
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
       "balance",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3342,12 +3566,12 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "bill",
       "icono",
       "svg",
-      "oficial",
       "alt",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3368,11 +3592,11 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "bill",
       "icono",
       "svg",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3393,12 +3617,12 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "points",
+      "visa",
+      "bonus",
       "icono",
       "svg",
-      "bonus",
-      "oficial",
-      "visa"
+      "points",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3419,11 +3643,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "calendar",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "calendar"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3444,12 +3668,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "corporate",
       "icono",
       "svg",
-      "oficial",
-      "corporate",
       "card",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3470,12 +3694,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "debit",
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "card",
-      "debit",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3496,12 +3720,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "generic",
       "card",
-      "visa"
+      "generic",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3522,13 +3746,13 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
-      "alt",
       "svg",
-      "manage",
-      "oficial",
+      "alt",
       "card",
-      "visa"
+      "oficial",
+      "manage"
     ],
     "is_featured": false
   },
@@ -3549,12 +3773,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "manage",
-      "oficial",
       "card",
-      "visa"
+      "oficial",
+      "manage"
     ],
     "is_featured": false
   },
@@ -3575,12 +3799,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
       "number",
+      "visa",
+      "icono",
       "svg",
-      "oficial",
       "card",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3601,12 +3825,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "off",
       "icono",
       "svg",
-      "oficial",
       "card",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3627,12 +3851,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "prepaid",
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "card",
-      "visa"
+      "prepaid",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3653,12 +3877,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "suspend",
-      "oficial",
       "card",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3679,12 +3903,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "verify",
+      "visa",
       "icono",
       "svg",
-      "oficial",
+      "verify",
       "card",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3705,11 +3929,11 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "cart",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "cart",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3730,11 +3954,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "chat",
+      "visa",
       "icono",
       "svg",
-      "chat",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3755,11 +3979,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "check",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3780,12 +4004,12 @@ window.BANK_ASSETS = [
     "rubro": "Viajes",
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "international",
+      "visa",
       "icono",
       "svg",
       "check",
-      "oficial",
-      "international",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3806,11 +4030,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "checkmark"
+      "checkmark",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3831,12 +4055,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
+      "visa",
       "chevron",
+      "icono",
       "svg",
-      "oficial",
       "down",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3857,12 +4081,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
+      "visa",
       "chevron",
+      "icono",
       "svg",
       "oficial",
-      "left",
-      "visa"
+      "left"
     ],
     "is_featured": false
   },
@@ -3883,12 +4107,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
-      "chevron",
-      "svg",
       "right",
-      "oficial",
-      "visa"
+      "visa",
+      "chevron",
+      "icono",
+      "svg",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3909,12 +4133,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
+      "visa",
       "chevron",
+      "icono",
       "svg",
-      "oficial",
       "up",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3935,11 +4159,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "close",
       "icono",
       "svg",
-      "oficial",
-      "close",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3960,11 +4184,11 @@ window.BANK_ASSETS = [
     "rubro": "Identidad",
     "rule": "Ícono SVG oficial Visa para identidad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "company",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "company"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -3985,11 +4209,11 @@ window.BANK_ASSETS = [
     "rubro": "Identidad",
     "rule": "Ícono SVG oficial Visa para identidad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "contact",
       "icono",
       "svg",
-      "contact",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4010,11 +4234,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "copy",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "copy"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4035,13 +4259,13 @@ window.BANK_ASSETS = [
     "rubro": "Divisas",
     "rule": "Ícono SVG oficial Visa para divisas. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "convert",
+      "visa",
+      "currency",
       "icono",
       "svg",
-      "currency",
-      "oficial",
+      "convert",
       "alt",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4062,12 +4286,12 @@ window.BANK_ASSETS = [
     "rubro": "Divisas",
     "rule": "Ícono SVG oficial Visa para divisas. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "convert",
+      "visa",
+      "currency",
       "icono",
       "svg",
-      "currency",
-      "oficial",
-      "visa"
+      "convert",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4088,12 +4312,12 @@ window.BANK_ASSETS = [
     "rubro": "Divisas",
     "rule": "Ícono SVG oficial Visa para divisas. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "currency",
       "icono",
       "svg",
-      "currency",
-      "oficial",
       "euro",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4114,11 +4338,11 @@ window.BANK_ASSETS = [
     "rubro": "Divisas",
     "rule": "Ícono SVG oficial Visa para divisas. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "currency",
       "icono",
       "svg",
-      "currency",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4139,12 +4363,12 @@ window.BANK_ASSETS = [
     "rubro": "Divisas",
     "rule": "Ícono SVG oficial Visa para divisas. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "pound",
+      "visa",
+      "currency",
       "icono",
       "svg",
-      "currency",
-      "oficial",
-      "pound",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4165,12 +4389,12 @@ window.BANK_ASSETS = [
     "rubro": "Divisas",
     "rule": "Ícono SVG oficial Visa para divisas. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "currency",
       "icono",
       "svg",
       "usd",
-      "currency",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4191,12 +4415,12 @@ window.BANK_ASSETS = [
     "rubro": "Divisas",
     "rule": "Ícono SVG oficial Visa para divisas. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "yen",
+      "visa",
+      "currency",
       "icono",
       "svg",
-      "currency",
-      "oficial",
-      "visa"
+      "yen",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4217,12 +4441,12 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "support",
       "customer",
-      "visa"
+      "support",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4243,10 +4467,10 @@ window.BANK_ASSETS = [
     "rubro": "Analítica",
     "rule": "Ícono SVG oficial Visa para analítica. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "oficial",
-      "visa",
       "dashboard"
     ],
     "is_featured": false
@@ -4268,11 +4492,11 @@ window.BANK_ASSETS = [
     "rubro": "Analítica",
     "rule": "Ícono SVG oficial Visa para analítica. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "data",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "data",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4293,11 +4517,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "delete",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "delete"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4318,12 +4542,12 @@ window.BANK_ASSETS = [
     "rubro": "Dispositivos",
     "rule": "Ícono SVG oficial Visa para dispositivos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "device",
+      "visa",
       "icono",
       "svg",
       "oficial",
-      "device",
-      "laptop",
-      "visa"
+      "laptop"
     ],
     "is_featured": false
   },
@@ -4344,12 +4568,12 @@ window.BANK_ASSETS = [
     "rubro": "Dispositivos",
     "rule": "Ícono SVG oficial Visa para dispositivos. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
-      "mobile",
-      "svg",
-      "oficial",
       "device",
-      "visa"
+      "visa",
+      "mobile",
+      "icono",
+      "svg",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4370,12 +4594,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "device",
+      "visa",
       "icono",
       "svg",
       "oficial",
-      "secure",
-      "device",
-      "visa"
+      "secure"
     ],
     "is_featured": false
   },
@@ -4396,12 +4620,12 @@ window.BANK_ASSETS = [
     "rubro": "Dispositivos",
     "rule": "Ícono SVG oficial Visa para dispositivos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "device",
+      "visa",
       "icono",
       "svg",
       "wearable",
-      "oficial",
-      "device",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4422,11 +4646,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
-      "edit",
       "svg",
-      "oficial",
-      "visa"
+      "edit",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4447,11 +4671,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
+      "visa",
       "email",
+      "icono",
       "svg",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4472,11 +4696,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "error",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa"
+      "error",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4497,11 +4721,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "export",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4522,11 +4746,11 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "fast",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa"
+      "fast",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4547,12 +4771,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "file",
+      "visa",
       "icono",
       "svg",
       "download",
-      "oficial",
-      "visa",
-      "file"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4573,12 +4797,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
       "upload",
-      "svg",
-      "oficial",
+      "file",
       "visa",
-      "file"
+      "icono",
+      "svg",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4599,11 +4823,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "filter",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4624,11 +4848,11 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
-      "fingerprint",
       "svg",
-      "oficial",
-      "visa"
+      "fingerprint",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4649,11 +4873,11 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
-      "fraud",
       "svg",
       "oficial",
-      "visa"
+      "fraud"
     ],
     "is_featured": false
   },
@@ -4674,11 +4898,11 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "gift",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4699,11 +4923,11 @@ window.BANK_ASSETS = [
     "rubro": "Viajes",
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "global",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa"
+      "global",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4724,11 +4948,11 @@ window.BANK_ASSETS = [
     "rubro": "Identidad",
     "rule": "Ícono SVG oficial Visa para identidad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "government",
       "icono",
       "svg",
-      "government",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4749,11 +4973,11 @@ window.BANK_ASSETS = [
     "rubro": "Identidad",
     "rule": "Ícono SVG oficial Visa para identidad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "handshake",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4774,11 +4998,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "help",
       "icono",
       "svg",
-      "help",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4799,11 +5023,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "history",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "history"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4824,11 +5048,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "oficial",
-      "home",
-      "visa"
+      "home"
     ],
     "is_featured": false
   },
@@ -4849,11 +5073,11 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
       "number",
+      "visa",
+      "icono",
       "svg",
       "oficial",
-      "visa",
       "id"
     ],
     "is_featured": false
@@ -4875,11 +5099,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "information",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4900,11 +5124,11 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "issuer",
       "icono",
       "svg",
-      "issuer",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4925,12 +5149,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
-      "change",
-      "svg",
-      "oficial",
       "key",
-      "visa"
+      "visa",
+      "change",
+      "icono",
+      "svg",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4951,11 +5175,11 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "key",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "key",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -4976,12 +5200,12 @@ window.BANK_ASSETS = [
     "rubro": "Viajes",
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "map",
       "icono",
       "svg",
-      "map",
-      "oficial",
       "directions",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5002,11 +5226,11 @@ window.BANK_ASSETS = [
     "rubro": "Viajes",
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "map",
       "icono",
       "svg",
-      "map",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5027,12 +5251,12 @@ window.BANK_ASSETS = [
     "rubro": "Viajes",
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
-      "svg",
-      "map",
-      "oficial",
       "location",
       "visa",
+      "map",
+      "icono",
+      "svg",
+      "oficial",
       "current"
     ],
     "is_featured": false
@@ -5054,12 +5278,12 @@ window.BANK_ASSETS = [
     "rubro": "Viajes",
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "location",
+      "visa",
+      "map",
       "icono",
       "svg",
-      "map",
-      "oficial",
-      "location",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5080,11 +5304,11 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "marketplace",
       "icono",
       "svg",
-      "marketplace",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5105,11 +5329,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "menu",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "menu"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5130,11 +5354,11 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "merchant",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5155,11 +5379,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
+      "message",
       "visa",
+      "icono",
       "svg",
-      "oficial",
-      "message"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5180,12 +5404,12 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
       "visa",
+      "mobile",
+      "icono",
       "svg",
-      "oficial",
       "success",
-      "mobile"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5206,12 +5430,12 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
       "visa",
-      "svg",
-      "oficial",
       "transfer",
-      "mobile"
+      "mobile",
+      "icono",
+      "svg",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5232,12 +5456,12 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "add",
+      "visa",
       "icono",
       "svg",
-      "add",
       "oficial",
-      "money",
-      "visa"
+      "money"
     ],
     "is_featured": false
   },
@@ -5258,12 +5482,12 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "oficial",
       "request",
-      "money",
-      "visa"
+      "money"
     ],
     "is_featured": false
   },
@@ -5284,12 +5508,12 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "send",
       "icono",
       "svg",
       "oficial",
-      "send",
-      "money",
-      "visa"
+      "money"
     ],
     "is_featured": false
   },
@@ -5310,12 +5534,12 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
+      "withdrawn",
       "oficial",
-      "money",
-      "visa",
-      "withdrawn"
+      "money"
     ],
     "is_featured": false
   },
@@ -5336,11 +5560,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "notifications",
+      "visa",
       "icono",
       "svg",
-      "notifications",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5361,12 +5585,12 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "deal",
       "icono",
       "svg",
-      "offers",
-      "deal",
       "oficial",
-      "visa"
+      "offers"
     ],
     "is_featured": false
   },
@@ -5387,11 +5611,11 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "offers",
       "oficial",
-      "visa"
+      "offers"
     ],
     "is_featured": false
   },
@@ -5412,12 +5636,12 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "on",
       "hold",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "on",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5438,12 +5662,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "password",
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "hide",
-      "password",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5464,12 +5688,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "password",
+      "show",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "show",
-      "password",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5490,11 +5714,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "phone",
+      "visa",
       "icono",
       "svg",
-      "phone",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5515,11 +5739,11 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "alt",
-      "visa",
+      "oficial",
       "pos"
     ],
     "is_featured": false
@@ -5541,10 +5765,10 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "oficial",
-      "visa",
       "pos"
     ],
     "is_featured": false
@@ -5566,11 +5790,11 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "qr"
+      "qr",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5591,11 +5815,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "question",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5616,11 +5840,11 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "receipt",
       "oficial",
-      "visa"
+      "receipt"
     ],
     "is_featured": false
   },
@@ -5641,11 +5865,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "refresh",
+      "visa",
       "icono",
       "svg",
-      "refresh",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5666,11 +5890,11 @@ window.BANK_ASSETS = [
     "rubro": "Analítica",
     "rule": "Ícono SVG oficial Visa para analítica. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
-      "report",
       "svg",
       "oficial",
-      "visa"
+      "report"
     ],
     "is_featured": false
   },
@@ -5692,10 +5916,10 @@ window.BANK_ASSETS = [
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
       "return",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5716,11 +5940,11 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "reward",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5741,11 +5965,11 @@ window.BANK_ASSETS = [
     "rubro": "Viajes",
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "roadsign",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5766,11 +5990,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "icono",
+      "visa",
       "save",
+      "icono",
       "svg",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5791,12 +6015,12 @@ window.BANK_ASSETS = [
     "rubro": "Cuenta y Wallet",
     "rule": "Ícono SVG oficial Visa para cuenta y wallet. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "savings",
-      "oficial",
       "account",
-      "visa"
+      "oficial",
+      "savings"
     ],
     "is_featured": false
   },
@@ -5817,12 +6041,12 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "scan",
       "icono",
       "svg",
-      "oficial",
       "card",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5843,11 +6067,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "schedule",
+      "visa",
       "icono",
       "svg",
-      "schedule",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5868,11 +6092,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "oficial",
-      "search",
-      "visa"
+      "search"
     ],
     "is_featured": false
   },
@@ -5893,12 +6117,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "firewall",
       "security",
       "oficial",
-      "visa"
+      "firewall"
     ],
     "is_featured": false
   },
@@ -5919,11 +6143,11 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "security",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5944,12 +6168,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "lock",
+      "visa",
       "icono",
       "svg",
       "security",
-      "oficial",
-      "lock",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5970,12 +6194,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "security",
       "protection",
-      "oficial",
-      "visa"
+      "security",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -5996,12 +6220,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "unlock",
+      "visa",
       "icono",
       "svg",
-      "unlock",
       "security",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6022,11 +6246,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "send",
       "icono",
       "svg",
-      "oficial",
-      "send",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6047,11 +6271,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "settings",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6072,11 +6296,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "share",
       "icono",
       "svg",
-      "share",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6097,11 +6321,11 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "shipping"
+      "shipping",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6122,12 +6346,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "in",
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "sign",
-      "visa",
-      "in"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6148,12 +6372,12 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "out",
       "sign",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6174,11 +6398,11 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "signature",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "signature"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6199,12 +6423,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "sort",
-      "oficial",
       "ascending",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6225,12 +6449,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "sort",
-      "oficial",
       "descending",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6251,11 +6475,11 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "split",
+      "visa",
       "icono",
       "svg",
-      "split",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6276,11 +6500,11 @@ window.BANK_ASSETS = [
     "rubro": "Analítica",
     "rule": "Ícono SVG oficial Visa para analítica. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
-      "statistics",
       "svg",
-      "oficial",
-      "visa"
+      "statistics",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6301,12 +6525,12 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
+      "closed",
       "store",
-      "oficial",
-      "visa",
-      "closed"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6327,12 +6551,12 @@ window.BANK_ASSETS = [
     "rubro": "Comercio",
     "rule": "Ícono SVG oficial Visa para comercio. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "open",
       "icono",
       "svg",
-      "open",
       "store",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6353,11 +6577,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "success",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6379,11 +6603,11 @@ window.BANK_ASSETS = [
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
       "ticket",
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "support",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6404,11 +6628,11 @@ window.BANK_ASSETS = [
     "rubro": "Pagos",
     "rule": "Ícono SVG oficial Visa para pagos. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "tap",
       "icono",
       "svg",
-      "tap",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6429,11 +6653,11 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "time",
+      "visa",
       "icono",
       "svg",
-      "time",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6454,11 +6678,11 @@ window.BANK_ASSETS = [
     "rubro": "Seguridad",
     "rule": "Ícono SVG oficial Visa para seguridad. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "token",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "token",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6479,11 +6703,11 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "transactions",
       "icono",
       "svg",
-      "transactions",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6504,12 +6728,12 @@ window.BANK_ASSETS = [
     "rubro": "Transacciones",
     "rule": "Ícono SVG oficial Visa para transacciones. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
+      "transactions",
       "icono",
       "svg",
-      "new",
-      "transactions",
       "oficial",
-      "visa"
+      "new"
     ],
     "is_featured": false
   },
@@ -6530,12 +6754,12 @@ window.BANK_ASSETS = [
     "rubro": "Viajes",
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
-      "airplane",
       "transit",
-      "oficial",
-      "visa"
+      "airplane",
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6556,12 +6780,12 @@ window.BANK_ASSETS = [
     "rubro": "Viajes",
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "car",
+      "visa",
       "icono",
       "svg",
       "transit",
-      "oficial",
-      "car",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6583,11 +6807,11 @@ window.BANK_ASSETS = [
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
       "train",
+      "visa",
       "icono",
       "svg",
       "transit",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6608,12 +6832,12 @@ window.BANK_ASSETS = [
     "rubro": "Viajes",
     "rule": "Ícono SVG oficial Visa para viajes. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "notifications",
+      "visa",
       "icono",
       "svg",
-      "notifications",
-      "oficial",
       "travel",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6634,11 +6858,11 @@ window.BANK_ASSETS = [
     "rubro": "Analítica",
     "rule": "Ícono SVG oficial Visa para analítica. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "trending",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6659,12 +6883,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "grid",
+      "visa",
       "icono",
       "svg",
       "view",
-      "grid",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6685,12 +6909,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
-      "list",
+      "visa",
       "icono",
       "svg",
+      "list",
       "view",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6711,12 +6935,12 @@ window.BANK_ASSETS = [
     "rubro": "Cuenta y Wallet",
     "rule": "Ícono SVG oficial Visa para cuenta y wallet. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "default",
+      "visa",
       "icono",
       "svg",
       "wallet",
-      "oficial",
-      "default",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6737,11 +6961,11 @@ window.BANK_ASSETS = [
     "rubro": "Cuenta y Wallet",
     "rule": "Ícono SVG oficial Visa para cuenta y wallet. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "visa",
       "icono",
       "svg",
       "wallet",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6762,11 +6986,11 @@ window.BANK_ASSETS = [
     "rubro": "Comunicación",
     "rule": "Ícono SVG oficial Visa para comunicación. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "warning",
+      "visa",
       "icono",
       "svg",
-      "warning",
-      "oficial",
-      "visa"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6787,12 +7011,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "zoom",
+      "in",
+      "visa",
       "icono",
       "svg",
-      "oficial",
-      "visa",
-      "zoom",
-      "in"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6813,12 +7037,12 @@ window.BANK_ASSETS = [
     "rubro": "UI",
     "rule": "Ícono SVG oficial Visa para ui. Usar URL CDN con variante -high.svg.",
     "tags": [
+      "zoom",
+      "visa",
       "icono",
       "svg",
-      "oficial",
       "out",
-      "visa",
-      "zoom"
+      "oficial"
     ],
     "is_featured": false
   },
@@ -6839,12 +7063,14 @@ window.BANK_ASSETS = [
     "rubro": "Visa",
     "rule": "Activo corporativo oficial. Usar según contexto de logotipos.",
     "tags": [
-      "blue",
-      "icono",
       "visa",
-      "logotipos"
+      "logotipos",
+      "blue",
+      "icono"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "visa_blue.png",
+    "has_transparency": false
   },
   {
     "filename": "visa_logo_white.png",
@@ -6864,12 +7090,14 @@ window.BANK_ASSETS = [
     "rule": "Activo corporativo oficial. Usar según contexto de logotipos.",
     "tags": [
       "white",
-      "icono",
-      "logo",
       "visa",
-      "logotipos"
+      "logotipos",
+      "logo",
+      "icono"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "visa_logo_white.png",
+    "has_transparency": false
   },
   {
     "filename": "visa_vector.png",
@@ -6888,11 +7116,13 @@ window.BANK_ASSETS = [
     "rubro": "Visa",
     "rule": "Activo corporativo oficial. Usar según contexto de logotipos.",
     "tags": [
-      "icono",
       "visa",
       "logotipos",
-      "vector"
+      "vector",
+      "icono"
     ],
-    "is_featured": false
+    "is_featured": false,
+    "original_filename": "visa_vector.png",
+    "has_transparency": false
   }
 ];

@@ -336,37 +336,43 @@ METADATA_TABLE = {
         "title": "Header Promos Visa #07 · Café & Rutinas Diarias (PNG Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
         "concept": "Fotografía lifestyle Retina 2x (2292x1049, canal alfa RGBA transparente): Joven con cabello rosado sosteniendo bandeja de café y celular con tilde de confirmación, ondas orgánicas naranjas y base con transparencia",
         "rubro": "Gastronomía Diaria & Cafeterías", "rule": "Cabecera transparente adaptable a cualquier fondo de email. Usar en correos de microgastronomía, cafés al paso, desayunos, salidas cotidianas y compras de bajo monto con Visa.",
-        "tags": ["header","banner","transparente","cafe","desayuno","lifestyle","celular","visa","galicia","hero","sin texto","retina"], "is_featured": True
+        "tags": ["header","banner","transparente","cafe","desayuno","lifestyle","celular","visa","galicia","hero","sin texto","retina"], "is_featured": True,
+        "original_filename": "galicia_Promos Visa Permanentes copia 7.png", "has_transparency": True
     },
     "header_promos_visa_permanentes_08.png": {
         "title": "Header Promos Visa #08 · Compras en Tienda Física & Cuotas (PNG Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
         "concept": "Fotografía comercial Retina 2x (2292x1049, canal alfa RGBA transparente): Mujer sonriendo pagando con tarjeta física sobre POS en mostrador, con badges flotantes naranjas 'ahorrá' y 'comprá', y ondas inferiores con transparencia",
         "rubro": "Shopping & Tiendas Físicas", "rule": "Cabecera transparente adaptable a cualquier fondo de email. Usar para compras presenciales en shoppings, indumentaria, planes de cuotas sin interés y promociones en comercios físicos.",
-        "tags": ["header","banner","transparente","shopping","pos","tienda fisica","cuotas","comisiones","visa","galicia","hero","sin texto","retina"], "is_featured": True
+        "tags": ["header","banner","transparente","shopping","pos","tienda fisica","cuotas","comisiones","visa","galicia","hero","sin texto","retina"], "is_featured": True,
+        "original_filename": "galicia_Promos Visa Permanentes copia 8.png", "has_transparency": True
     },
     "header_promos_visa_permanentes_09.png": {
         "title": "Header Promos Visa #09 · Contactless & Billeteras Digitales (PNG Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
         "concept": "Fotografía primer plano Retina 2x (2292x1046, canal alfa RGBA transparente): Mano apoyando smartphone con tarjeta Galicia Visa digital sobre lector POS contactless que indica 'Acercar al lector', con ondas inferiores transparentes",
         "rubro": "Pagos Móviles & NFC", "rule": "Cabecera transparente adaptable a cualquier fondo de email. Usar para campañas de pagos sin contacto (Tap to Pay), enrolamiento de tarjetas en Apple Pay / Google Wallet / MODO y tecnología contactless.",
-        "tags": ["header","banner","transparente","contactless","nfc","modo","apple pay","pago movil","pos","visa","galicia","hero","sin texto","retina"], "is_featured": True
+        "tags": ["header","banner","transparente","contactless","nfc","modo","apple pay","pago movil","pos","visa","galicia","hero","sin texto","retina"], "is_featured": True,
+        "original_filename": "galicia_Promos Visa Permanentes copia 9.png", "has_transparency": True
     },
     "header_promos_visa_permanentes_10.png": {
         "title": "Header Promos Visa #10 · Ecommerce & Envíos (Compacto Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
         "concept": "Fotografía lifestyle compacta Retina 2x (2292x964, fondo y laterales con canal alfa RGBA 100% transparente): Joven recibiendo paquete de delivery sosteniendo café y celular, con badges 'comprá' y 'ahorrá' silueteados",
         "rubro": "Ecommerce & Delivery", "rule": "Cabecera compacta con silueteado y transparencia total en laterales. Usar para compras online, delivery a domicilio y correos con grilla extensa inferior.",
-        "tags": ["header","banner","transparente","compacto","delivery","ecommerce","paquete","cafe","visa","galicia","hero","sin texto","retina"], "is_featured": True
+        "tags": ["header","banner","transparente","compacto","delivery","ecommerce","paquete","cafe","visa","galicia","hero","sin texto","retina"], "is_featured": True,
+        "original_filename": "galicia_Promos Visa Permanentes copia 10.png", "has_transparency": True
     },
     "header_promos_visa_permanentes_11.png": {
         "title": "Header Promos Visa #11 · Ilustrado Minimalista Claro (Compacto Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
         "concept": "Ilustración vectorial en viñeta circular Retina 2x (2292x964, fondo crema/marfil con canal alfa perimetral transparente): Teléfono naranja pagando sobre POS con ondas de radio y espacio libre para tipografía",
         "rubro": "Fintech & Onboarding", "rule": "Cabecera compacta ilustrada con bordes transparentes. Usar para comunicaciones ilustradas, onboarding digital de billeteras móviles, resúmenes transaccionales o correos sobrios.",
-        "tags": ["header","banner","transparente","compacto","ilustrado","vectorial","minimalista","pos","celular","visa","galicia","hero","sin texto","retina"], "is_featured": True
+        "tags": ["header","banner","transparente","compacto","ilustrado","vectorial","minimalista","pos","celular","visa","galicia","hero","sin texto","retina"], "is_featured": True,
+        "original_filename": "galicia_Promos Visa Permanentes copia 11.png", "has_transparency": True
     },
     "header_promos_visa_permanentes_12.png": {
         "title": "Header Promos Visa #12 · Ilustrado Naranja Galicia Shock (Compacto Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
         "concept": "Ilustración vectorial sobre tarjeta naranja corporativa Galicia #F96400 Retina 2x (2292x964, esquinas redondeadas con canal alfa transparente): Teléfono naranja pagando sobre POS en viñeta circular blanca de máximo impacto",
         "rubro": "Grandes Eventos & Mega Promos", "rule": "Cabecera compacta con esquinas redondeadas transparentes. Usar para aperturas de campaña de alto impacto (Hot Sale, Cyber Monday), lanzamientos oficiales masivos y comunicaciones donde el color naranja domine la pantalla.",
-        "tags": ["header","banner","transparente","compacto","naranja solido","shock","hotsale","cybermonday","visa","galicia","hero","sin texto","retina"], "is_featured": True
+        "tags": ["header","banner","transparente","compacto","naranja solido","shock","hotsale","cybermonday","visa","galicia","hero","sin texto","retina"], "is_featured": True,
+        "original_filename": "galicia_Promos Visa Permanentes copia 12.png", "has_transparency": True
     },
 
     # ── GALICIA LOGOS ──────────────────────────────────────────────────────
@@ -442,7 +448,9 @@ def make_entry(fp: pathlib.Path, bank: str, default_cat: str, default_family: st
             "rubro": m.get("rubro",""),
             "rule": m.get("rule",""),
             "tags": list(set(m.get("tags", []))),
-            "is_featured": m.get("is_featured", featured)
+            "is_featured": m.get("is_featured", featured),
+            "original_filename": m.get("original_filename", fn),
+            "has_transparency": m.get("has_transparency", False)
         })
         return base
 
@@ -453,7 +461,9 @@ def make_entry(fp: pathlib.Path, bank: str, default_cat: str, default_family: st
         "concept": f"Activo oficial {bank}: {title}", "rubro": bank,
         "rule": f"Activo corporativo oficial. Usar según contexto de {default_cat.lower()}.",
         "tags": list(set([bank.lower(), default_cat.lower(), "icono"] + title.lower().split())),
-        "is_featured": featured
+        "is_featured": featured,
+        "original_filename": fn,
+        "has_transparency": False
     })
     return base
 
@@ -480,6 +490,7 @@ for bank, specs in BANK_CONFIG.items():
             files = sorted(folder.glob("*"))
 
         for fp in files:
+            if fp.is_symlink():                              continue
             if not fp.is_file():                              continue
             if fp.name in SKIP or fp.name.startswith('.'):   continue
             if fp.suffix.lower() not in IMG_EXT:             continue

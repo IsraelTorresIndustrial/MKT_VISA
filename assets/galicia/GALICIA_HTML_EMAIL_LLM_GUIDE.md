@@ -48,14 +48,17 @@ Para garantizar nitidez retina y fusión perfecta con el fondo:
 
 ### 3.1 Headers Hero Sin Texto con Transparencia (Imágenes de Cabecera 2292px Retina)
 
-| Si el correo trata sobre... | Disparadores / Palabras Clave | Archivo a Usar | URL Canónica CDN |
+> [!NOTE]
+> Cada archivo canónico cuenta con un alias idéntico con el nombre original de subida (`galicia_Promos Visa Permanentes copia X.png`). Ambos acceden al mismo archivo PNG RGBA de 2292 px con canal alfa de transparencia.
+
+| Si el correo trata sobre... | Disparadores / Palabras Clave | Archivo a Usar (Alias Original) | URL Canónica CDN |
 |---|---|---|---|
-| **Cafeterías, desayunos, pastelería o rutina diaria de consumo** | `cafeterias`, `desayuno`, `cafe`, `starbucks`, `havanna`, `rutina`, `mañanas`, `take away`, `transparente` | `header_promos_visa_permanentes_07.png` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_07.png` |
-| **Compras en comercios físicos, indumentaria, cuotas o shoppings** | `shopping`, `locales`, `tiendas fisicas`, `cuotas sin interes`, `indumentaria`, `moda`, `ahorra y compra`, `transparente` | `header_promos_visa_permanentes_08.png` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_08.png` |
-| **Pagos sin contacto (Tap to Pay), NFC o billeteras digitales (MODO, Apple Pay)** | `contactless`, `nfc`, `tap to pay`, `modo`, `apple pay`, `google pay`, `acercar al lector`, `pagar con celu`, `transparente` | `header_promos_visa_permanentes_09.png` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_09.png` |
-| **Compras online, delivery a domicilio o correos con grilla extensa inferior** | `ecommerce`, `online`, `delivery`, `envios`, `pedidosya`, `mercadolibre`, `paquete`, `grilla extensa`, `transparente` | `header_promos_visa_permanentes_10.png` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_10.png` |
-| **Comunicaciones institucionales sobrias, tutoriales o onboarding digital** | `onboarding`, `tutorial`, `como pagar`, `resumen`, `notificacion`, `sobrio`, `minimalista`, `marfil`, `transparente` | `header_promos_visa_permanentes_11.png` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_11.png` |
-| **Grandes eventos comerciales, mega ofertas o lanzamientos masivos** | `hotsale`, `cybermonday`, `blackfriday`, `mega promos`, `semana galicia`, `alerta promo`, `urgente`, `transparente` | `header_promos_visa_permanentes_12.png` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_12.png` |
+| **Cafeterías, desayunos, pastelería o rutina diaria de consumo** | `cafeterias`, `desayuno`, `cafe`, `starbucks`, `havanna`, `rutina`, `mañanas`, `take away`, `transparente` | `header_promos_visa_permanentes_07.png`<br>`(copia 7.png)` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_07.png` |
+| **Compras en comercios físicos, indumentaria, cuotas o shoppings** | `shopping`, `locales`, `tiendas fisicas`, `cuotas sin interes`, `indumentaria`, `moda`, `ahorra y compra`, `transparente` | `header_promos_visa_permanentes_08.png`<br>`(copia 8.png)` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_08.png` |
+| **Pagos sin contacto (Tap to Pay), NFC o billeteras digitales (MODO, Apple Pay)** | `contactless`, `nfc`, `tap to pay`, `modo`, `apple pay`, `google pay`, `acercar al lector`, `pagar con celu`, `transparente` | `header_promos_visa_permanentes_09.png`<br>`(copia 9.png)` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_09.png` |
+| **Compras online, delivery a domicilio o correos con grilla extensa inferior** | `ecommerce`, `online`, `delivery`, `envios`, `pedidosya`, `mercadolibre`, `paquete`, `grilla extensa`, `transparente` | `header_promos_visa_permanentes_10.png`<br>`(copia 10.png)` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_10.png` |
+| **Comunicaciones institucionales sobrias, tutoriales o onboarding digital** | `onboarding`, `tutorial`, `como pagar`, `resumen`, `notificacion`, `sobrio`, `minimalista`, `marfil`, `transparente` | `header_promos_visa_permanentes_11.png`<br>`(copia 11.png)` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_11.png` |
+| **Grandes eventos comerciales, mega ofertas o lanzamientos masivos** | `hotsale`, `cybermonday`, `blackfriday`, `mega promos`, `semana galicia`, `alerta promo`, `urgente`, `transparente` | `header_promos_visa_permanentes_12.png`<br>`(copia 12.png)` | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_12.png` |
 
 ---
 
