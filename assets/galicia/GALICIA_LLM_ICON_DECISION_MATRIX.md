@@ -10,13 +10,13 @@
 > [!IMPORTANT]
 > **¿Por qué los LLMs deben usar exclusivamente las URLs canónicas absolutas de Vercel (`https://mkt-visa.vercel.app/assets/galicia/...`)?**
 > 1. **Cero Enlaces Rotos**: En campañas de correo electrónico, landing pages o compiladores de diapositivas DOM-to-PPTX, el motor de rendering realiza peticiones HTTP directas al Edge. Las rutas relativas (`assets/...`, `./icons/...`) o locales (`file:///...`) se rompen inmediatamente.
-> 2. **Renderizado Retina 2x**: Los headers hero cuentan con un ancho nativo de 1100px. Al insertarse en correos de 550px o 600px con `width="100%"` o `max-width="550px"`, ofrecen máxima nitidez en pantallas de alta densidad (iPhone, iPad, MacBook Retina, displays OLED).
-> 3. **Canal Alfa RGBA Transparente**: Los 23 íconos 3D poseen fondos transparentes limpios de 32 bits, adaptándose sobre fondos blancos `#FFFFFF`, crema institucional `#FFFBF7` o contenedores de tarjeta.
+> 2. **Renderizado Retina 2x Ultra-HD & Transparencia RGBA**: Los 6 headers hero cuentan ahora con una resolución ultra nítida de **2292px de ancho nativo (Retina 2x/3x)** y **canal alfa RGBA 100% transparente**. Sus siluetas y ondas orgánicas inferiores no tienen cajas blancas rígidas, por lo que se funden de manera natural e impecable sobre fondos blancos `#FFFFFF`, crema `#FFFBF7`, o fondos de color de la plantilla. Al insertarse con `width="100%"` y `max-width="550px"` o `600px`, ofrecen máxima nitidez sin pixelado.
+> 3. **Canal Alfa RGBA en Íconos 3D**: Los 23 íconos 3D poseen fondos transparentes limpios de 32 bits, adaptándose sobre fondos blancos `#FFFFFF`, crema institucional `#FFFBF7` o contenedores de tarjeta.
 > 4. **CORS Permisivo (`*`)**: Habilitado en Vercel Edge para evitar bloqueos cross-origin en clientes de correo y navegadores.
 
 ### Estructura de URLs Canónicas
 ```text
-Headers Hero Sin Texto:
+Headers Hero Sin Texto (PNG Transparente 2292px):
 https://mkt-visa.vercel.app/assets/galicia/headers/{filename}.png
 
 Íconos 3D Oficiales:
@@ -148,21 +148,21 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-## 🖼️ 6. DOSSIER EXHAUSTIVO: HEADERS HERO SIN TEXTO (BANNERS 1100PX)
+## 🖼️ 6. DOSSIER EXHAUSTIVO: HEADERS HERO SIN TEXTO CON TRANSPARENCIA RGBA (2292PX RETINA)
 
-### 🔹 [H07] `header_promos_visa_permanentes_07.png` · Café, Desayunos & Rutinas Diarias
+### 🔹 [H07] `header_promos_visa_permanentes_07.png` · Café, Desayunos & Rutinas Diarias (PNG Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_07.png`
 - **Snippet HTML:**
   ```html
   <img src="https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_07.png" alt="Promociones Permanentes Galicia Visa" width="550" border="0" style="display:block; width:100%; max-width:550px; height:auto; margin:0 auto;" />
   ```
-- **Dimensiones:** 1100 x 504 px (Aspect Ratio ~2.18:1).
+- **Dimensiones:** 2292 x 1049 px (Retina 2x/3x Ultra-HD, Canal Alfa RGBA Transparente).
 - **Descripción Visual Morfológica:**  
-  Fotografía lifestyle de calidad publicitaria. En el plano medio destaca una mujer joven sonriente con cabello color rosa pastel recogida, vestida con sweater beige texturado. Sostiene con ambas manos una bandeja de cartón kraft para llevar café con dos vasos térmicos altos descartables de tapa blanca. Sobre la bandeja apoya su smartphone, cuya pantalla muestra claramente un círculo blanco con una tilde verde de transacción aprobada. A la izquierda se superpone una forma orgánica ondulada en naranja Galicia translúcido y blanco, ideal para colocar el titular de apertura.
+  Fotografía lifestyle de calidad publicitaria con base y ondas de corte en **transparencia total (canal alfa)**. En el plano medio destaca una mujer joven sonriente con cabello color rosa pastel recogida, vestida con campera de denim y sweater rayado. Sostiene con ambas manos una bandeja de cartón kraft para llevar café con dos vasos térmicos descartables. Con su mano izquierda muestra su smartphone, cuya pantalla exhibe claramente un círculo blanco con una tilde verde de transacción aprobada. A la izquierda se expanden formas orgánicas en naranja Galicia (`#F96400`) y ondas inferiores que se funden de manera natural con el color de fondo del email o diapositiva gracias a su canal alfa transparente.
 - **Concepto Semántico:** Compras cotidianas, microgastronomía, cafés al paso, desayunos compartidos y pagos rápidos con tarjeta Visa de Banco Galicia.
 - **Intención de Negocio:** Fomentar el uso diario (frecuencia de uso) y microtransacciones con tarjeta de débito o crédito Galicia Visa.
-- **Disparadores (Triggers):** `cafeterias`, `desayunos`, `cafe`, `starbucks`, `havanna`, `rutina diaria`, `mananas`, `take away`, `antojo`, `ahorra en tus mañanas`.
-- **Cuándo Usar:** Emails promocionales de beneficios en gastronomía diurna, cafeterías de especialidad, pastelería y microcompras cotidianas.
+- **Disparadores (Triggers):** `cafeterias`, `desayunos`, `cafe`, `starbucks`, `havanna`, `rutina diaria`, `mananas`, `take away`, `antojo`, `ahorra en tus mañanas`, `transparente`.
+- **Cuándo Usar:** Emails promocionales de beneficios en gastronomía diurna, cafeterías de especialidad, pastelería y microcompras cotidianas sobre cualquier color de fondo.
 - **Cuándo NO Usar:** No usar para compras en cuotas de electrodomésticos, seguros o viajes.
 - **Copies de Ejemplo en Voseo:**
   - *"Empezá el día con el mejor café: 20% de ahorro en cafeterías adheridas con tu Visa Galicia."*
@@ -170,19 +170,19 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-### 🔹 [H08] `header_promos_visa_permanentes_08.png` · Compras en Tienda Física & Cuotas
+### 🔹 [H08] `header_promos_visa_permanentes_08.png` · Compras en Tienda Física & Cuotas (PNG Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_08.png`
 - **Snippet HTML:**
   ```html
   <img src="https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_08.png" alt="Promociones Galicia Visa en Comercios" width="550" border="0" style="display:block; width:100%; max-width:550px; height:auto; margin:0 auto;" />
   ```
-- **Dimensiones:** 1100 x 504 px (Aspect Ratio ~2.18:1).
+- **Dimensiones:** 2292 x 1049 px (Retina 2x/3x Ultra-HD, Canal Alfa RGBA Transparente).
 - **Descripción Visual Morfológica:**  
-  Fotografía comercial en tienda minorista física. Una mujer joven sonriente con campera de denim (jean) azul y cabello castaño claro apoya su tarjeta de crédito plástica sobre una terminal POS de cobro sostenida por el dependiente del local comercial. Flotando alrededor de la escena se aprecian dos pastillas/insignias gráficas tridimensionales redondeadas en naranja brillante con tipografía blanca en voseo: **"ahorrá"** en la parte superior y **"comprá"** a la izquierda. Fondo iluminado con tonos cálidos de tienda de moda.
+  Fotografía comercial en tienda minorista física con **ondas de corte inferiores en transparencia total**. Una mujer joven sonriente con sweater verde oliva y camisa rayada acerca su tarjeta de crédito plástica hacia una terminal POS sostenida por el dependiente del local comercial. Flotando en primer plano destacan dos insignias gráficas tridimensionales redondeadas en naranja brillante con tipografía blanca en voseo: **"ahorrá"** en la parte inferior y **"comprá"** a la derecha. La base ondulada es 100% transparente, eliminando bordes rectangulares artificiales.
 - **Concepto Semántico:** Compras presenciales en comercios físicos, indumentaria, planes de cuotas fijas o sin interés y ahorro directo en mostrador.
 - **Intención de Negocio:** Estimular el volumen de facturación presencial en shoppings, indumentaria y grandes tiendas comerciales.
-- **Disparadores (Triggers):** `shopping`, `tiendas fisicas`, `locales`, `compras presenciales`, `cuotas sin interes`, `indumentaria`, `moda`, `ahorra`, `compra`, `galerias`.
-- **Cuándo Usar:** Campañas de promociones en centros comerciales, fines de semana de shopping, días de la madre/padre/niñez y planes de cuotas en indumentaria y calzado.
+- **Disparadores (Triggers):** `shopping`, `tiendas fisicas`, `locales`, `compras presenciales`, `cuotas sin interes`, `indumentaria`, `moda`, `ahorra`, `compra`, `galerias`, `transparente`.
+- **Cuándo Usar:** Campañas de promociones en centros comerciales, fines de semana de shopping, días festivos y planes de cuotas en indumentaria y calzado.
 - **Cuándo NO Usar:** No usar para pagos digitales de facturas de luz o servicios públicos domiciliarios.
 - **Copies de Ejemplo en Voseo:**
   - *"Ahorrá y comprá en tus marcas favoritas con hasta 3 y 6 cuotas sin interés con Visa Galicia."*
@@ -190,18 +190,18 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-### 🔹 [H09] `header_promos_visa_permanentes_09.png` · Contactless, Billeteras Móviles & Tap to Pay
+### 🔹 [H09] `header_promos_visa_permanentes_09.png` · Contactless, Billeteras Móviles & Tap to Pay (PNG Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_09.png`
 - **Snippet HTML:**
   ```html
   <img src="https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_09.png" alt="Pagos sin Contacto Galicia Visa" width="550" border="0" style="display:block; width:100%; max-width:550px; height:auto; margin:0 auto;" />
   ```
-- **Dimensiones:** 1100 x 502 px (Aspect Ratio ~2.19:1).
+- **Dimensiones:** 2292 x 1046 px (Retina 2x/3x Ultra-HD, Canal Alfa RGBA Transparente).
 - **Descripción Visual Morfológica:**  
-  Fotografía primer plano macro de tecnología financiera. La mano del cliente sostiene un smartphone moderno y lo acerca para realizar un pago sin contacto (Tap to Pay) sobre una terminal POS blanca de última generación. En la pantalla táctil de la terminal POS se lee con total nitidez el mensaje en español: **"Acercar al lector"** junto con el símbolo oficial de cuatro ondas de radio contactless. En la pantalla del smartphone se distingue la tarjeta Galicia Visa digitalizada en la billetera móvil. A la izquierda se abre un área despejada con degradado sutil blanco-grisáceo.
+  Fotografía primer plano macro de tecnología financiera con **ondas inferiores recortadas con transparencia alfa**. La mano del cliente sostiene un smartphone con funda naranja y acerca la tarjeta virtual Visa Débito Galicia para realizar un pago sin contacto sobre una terminal POS de cobro que indica **"Acercar al lector"**. En el lateral izquierdo domina una forma orgánica en naranja Galicia sólido para titulares de impacto, y el borde inferior serpentea con curvas transparentes para ensamblar con el cuerpo del correo.
 - **Concepto Semántico:** Modernidad, conveniencia, pago contactless NFC con celular, enrolamiento en MODO, Apple Pay y Google Wallet.
 - **Intención de Negocio:** Adopción de billeteras móviles y penetración de pagos sin contacto (NFC / Tap to Pay).
-- **Disparadores (Triggers):** `contactless`, `pagar con celular`, `modo`, `apple pay`, `google pay`, `billetera virtual`, `sin contacto`, `tap to pay`, `nfc`, `acercar al lector`.
+- **Disparadores (Triggers):** `contactless`, `pagar con celular`, `modo`, `apple pay`, `google pay`, `billetera virtual`, `sin contacto`, `tap to pay`, `nfc`, `acercar al lector`, `transparente`.
 - **Cuándo Usar:** Comunicaciones sobre habilitación de Apple Pay o Google Wallet en Galicia, promociones exclusivas pagando con MODO o NFC.
 - **Cuándo NO Usar:** No usar si el beneficio aplica únicamente a compras telefónicas o débito automático de facturas.
 - **Copies de Ejemplo en Voseo:**
@@ -210,18 +210,18 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-### 🔹 [H10] `header_promos_visa_permanentes_10.png` · Ecommerce & Envíos (Compacto)
+### 🔹 [H10] `header_promos_visa_permanentes_10.png` · Ecommerce & Envíos (Compacto Silueteado Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_10.png`
 - **Snippet HTML:**
   ```html
   <img src="https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_10.png" alt="Compras Online Galicia Visa" width="550" border="0" style="display:block; width:100%; max-width:550px; height:auto; margin:0 auto;" />
   ```
-- **Dimensiones:** 1100 x 463 px (Aspect Ratio ~2.37:1 - Formato Compacto).
+- **Dimensiones:** 2292 x 964 px (Retina 2x/3x Ultra-HD, Canal Alfa RGBA Transparente).
 - **Descripción Visual Morfológica:**  
-  Fotografía lifestyle en formato horizontal panorámico compacto sobre fondo blanco puro de estudio. A la derecha, una joven de cabello rosado sonríe mientras recibe un paquete o caja de cartón kraft de delivery, mientras sostiene su vaso de café y su celular. Flotan cerca insignias naranjas redondeadas "comprá" y "ahorrá". La mitad izquierda del banner ofrece un espacio limpio y despejado para colocar títulos destacados sin invadir la fotografía.
+  Banner horizontal compacto de máxima versatilidad: **todo el fondo izquierdo y los contornos de la escena son 100% transparentes**. A la derecha se aprecia la silueta recortada en forma de nube/burbuja fotográfica de una joven de cabello rosado recibiendo una caja de entrega de delivery mientras sostiene sus cafés y su celular con tilde de confirmación. Acompañan insignias flotantes naranjas **"comprá"** y **"ahorrá"**, junto a un blob naranja sólido. Al carecer de fondo rígido, se adapta con total limpieza a plantillas de cualquier color.
 - **Concepto Semántico:** Compras por internet, ecommerce, envíos a domicilio, paquetería, delivery gastronómico y tiendas online.
-- **Intención de Negocio:** Impulsar el gasto en comercio electrónico (ecommerce) con tarjeta Galicia Visa y optimizar el espacio vertical del email gracias a su altura compacta (463px).
-- **Disparadores (Triggers):** `ecommerce`, `compras online`, `delivery`, `envios`, `paquete`, `tienda online`, `pedidosya`, `mercadolibre`, `ahorra online`, `grilla extensa`.
+- **Intención de Negocio:** Impulsar el gasto en comercio electrónico con tarjeta Galicia Visa y optimizar el espacio vertical del email gracias a su altura compacta y transparencia lateral.
+- **Disparadores (Triggers):** `ecommerce`, `compras online`, `delivery`, `envios`, `paquete`, `tienda online`, `pedidosya`, `mercadolibre`, `ahorra online`, `grilla extensa`, `transparente`.
 - **Cuándo Usar:** Correos con múltiples módulos o grillas de beneficios extensas abajo (para que el usuario vea la primera fila de ofertas sin necesidad de hacer scroll profundo).
 - **Cuándo NO Usar:** No usar cuando se requiera mostrar una escena de compra en caja de tienda física con POS.
 - **Copies de Ejemplo en Voseo:**
@@ -230,18 +230,18 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-### 🔹 [H11] `header_promos_visa_permanentes_11.png` · Ilustrado Minimalista Claro (Compacto)
+### 🔹 [H11] `header_promos_visa_permanentes_11.png` · Ilustrado Minimalista Claro (Compacto Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_11.png`
 - **Snippet HTML:**
   ```html
   <img src="https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_11.png" alt="Información Galicia Visa" width="550" border="0" style="display:block; width:100%; max-width:550px; height:auto; margin:0 auto;" />
   ```
-- **Dimensiones:** 1100 x 463 px (Aspect Ratio ~2.37:1 - Formato Compacto).
+- **Dimensiones:** 2292 x 964 px (Retina 2x/3x Ultra-HD, Canal Alfa RGBA Transparente).
 - **Descripción Visual Morfológica:**  
-  Diseño gráfico vectorial sobre fondo claro marfil/crema (`#FDFBF7`) de máxima elegancia. A la derecha, dentro de una viñeta circular blanca con sombra tenue, se ilustra en estilo de trazo lineal negro un teléfono móvil naranja acercándose a una terminal POS con ondas de radio de pago sin contacto. El resto del lienzo es completamente limpio y claro, diseñado para insertar tipografía institucional sobria.
+  Diseño gráfico vectorial sobre silueta orgánica de color marfil/crema suave, con **perímetro exterior completamente transparente en canal alfa**. En la parte derecha, dentro de una viñeta circular blanca, se ilustra en trazo lineal fino un teléfono móvil naranja acercándose a una terminal POS con ondas de radio de pago sin contacto. El área izquierda es amplia y despejada para superponer títulos dinámicos con excelente legibilidad.
 - **Concepto Semántico:** Información oficial, avisos funcionales, onboarding digital a la app Galicia, tecnología transparente y comunicación sobria.
 - **Intención de Negocio:** Comunicaciones de fidelización, tutoriales de uso del medio de pago, resúmenes mensuales y avisos institucionales sin saturación fotográfica.
-- **Disparadores (Triggers):** `onboarding`, `tutorial`, `como pagar`, `resumen`, `notificacion`, `aviso`, `funcional`, `minimalista`, `ilustrado`.
+- **Disparadores (Triggers):** `onboarding`, `tutorial`, `como pagar`, `resumen`, `notificacion`, `aviso`, `funcional`, `minimalista`, `ilustrado`, `transparente`.
 - **Cuándo Usar:** Piezas transaccionales, instructivos paso a paso para asociar la tarjeta, y correos de diseño sobrio y limpio.
 - **Cuándo NO Usar:** No usar en campañas comerciales agresivas de liquidación o ventas relámpago que necesiten emoción humana.
 - **Copies de Ejemplo en Voseo:**
@@ -250,18 +250,18 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 ---
 
-### 🔹 [H12] `header_promos_visa_permanentes_12.png` · Ilustrado Naranja Galicia Shock (Compacto)
+### 🔹 [H12] `header_promos_visa_permanentes_12.png` · Ilustrado Naranja Galicia Shock (Compacto Transparente)
 - **URL Canónica CDN:** `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_12.png`
 - **Snippet HTML:**
   ```html
   <img src="https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_12.png" alt="Beneficios Exclusivos Galicia Visa" width="550" border="0" style="display:block; width:100%; max-width:550px; height:auto; margin:0 auto;" />
   ```
-- **Dimensiones:** 1100 x 463 px (Aspect Ratio ~2.37:1 - Formato Compacto).
+- **Dimensiones:** 2292 x 964 px (Retina 2x/3x Ultra-HD, Canal Alfa RGBA Transparente).
 - **Descripción Visual Morfológica:**  
-  Diseño gráfico de alto impacto visual dominado por un fondo sólido en **Naranja Corporativo Galicia (`#F96400`)**. En el lateral derecho destaca una viñeta circular blanca en alto contraste con la ilustración vectorial en trazo negro y naranja de un smartphone realizando un pago sobre terminal POS. El contraste cromático genera un efecto "shock" instantáneo en la bandeja de entrada del usuario.
+  Diseño gráfico de alto impacto visual con silueta en **Naranja Corporativo Galicia (`#F96400`)** y **esquinas exteriores redondeadas con canal alfa transparente**. En el lateral derecho destaca la viñeta circular con la ilustración vectorial en trazo negro de un smartphone realizando un pago sobre terminal POS. La transparencia perimetral asegura que las esquinas curvadas luzcan impecables sobre fondos oscuros o claros sin esquinas cuadradas residuales.
 - **Concepto Semántico:** Gran evento promocional, mega-ofertas, campanadas de ahorro masivo, presencia institucional Galicia al 100%.
 - **Intención de Negocio:** Captar la atención inmediata en la bandeja de entrada durante temporadas de alta competencia (Hot Sale, Cyber Monday, Black Friday, Semana Galicia).
-- **Disparadores (Triggers):** `hotsale`, `cybermonday`, `blackfriday`, `mega promos`, `semana galicia`, `alerta promo`, `urgente`, `shock naranja`, `gran descuento`.
+- **Disparadores (Triggers):** `hotsale`, `cybermonday`, `blackfriday`, `mega promos`, `semana galicia`, `alerta promo`, `urgente`, `shock naranja`, `gran descuento`, `transparente`.
 - **Cuándo Usar:** En los correos principales de apertura de grandes eventos promocionales o anuncios bancarios de máxima relevancia.
 - **Cuándo NO Usar:** No usar en correos transaccionales de condolencias, reclamos, cobro judicial o avisos de baja de cuenta.
 - **Copies de Ejemplo en Voseo:**
@@ -658,12 +658,12 @@ Cuando recibas un requerimiento de copy o brief para una comunicación de Banco 
 
 | Archivo | Categoría | Concepto Exacto | Disparador Clave | URL Canónica CDN |
 |---|---|---|---|---|
-| `header_promos_visa_permanentes_07.png` | Banner Hero | Fotografía mujer café + celular | Cafeterías, desayunos, rutinas | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_07.png` |
-| `header_promos_visa_permanentes_08.png` | Banner Hero | Fotografía pago en POS + ahorrá/comprá | Shoppings, locales, cuotas | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_08.png` |
-| `header_promos_visa_permanentes_09.png` | Banner Hero | Fotografía celular sobre lector POS | Contactless, MODO, Tap to Pay | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_09.png` |
-| `header_promos_visa_permanentes_10.png` | Banner Hero | Fotografía delivery paquete (Compacto) | Ecommerce, compras online | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_10.png` |
-| `header_promos_visa_permanentes_11.png` | Banner Hero | Ilustración fondo crema (Compacto) | Onboarding, sobrio, tutorial | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_11.png` |
-| `header_promos_visa_permanentes_12.png` | Banner Hero | Ilustración naranja pleno (Compacto) | Mega promos, Hot Sale, Cyber | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_12.png` |
+| `header_promos_visa_permanentes_07.png` | Banner Hero | Fotografía mujer café + celular (2292px Transparente) | Cafeterías, desayunos, rutinas, transparente | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_07.png` |
+| `header_promos_visa_permanentes_08.png` | Banner Hero | Fotografía pago POS + ahorrá/comprá (2292px Transparente) | Shoppings, locales, cuotas, transparente | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_08.png` |
+| `header_promos_visa_permanentes_09.png` | Banner Hero | Fotografía celular sobre lector POS (2292px Transparente) | Contactless, MODO, Tap to Pay, transparente | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_09.png` |
+| `header_promos_visa_permanentes_10.png` | Banner Hero | Fotografía delivery paquete silueteado (2292px Transparente) | Ecommerce, compras online, transparente | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_10.png` |
+| `header_promos_visa_permanentes_11.png` | Banner Hero | Ilustración fondo crema orgánico (2292px Transparente) | Onboarding, sobrio, tutorial, transparente | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_11.png` |
+| `header_promos_visa_permanentes_12.png` | Banner Hero | Ilustración tarjeta naranja redondeada (2292px Transparente) | Mega promos, Hot Sale, Cyber, transparente | `https://mkt-visa.vercel.app/assets/galicia/headers/header_promos_visa_permanentes_12.png` |
 | `luz_lampara.png` | Ícono 3D | Foco de luz incandescente | Edenor, Edesur, luz, electricidad | `https://mkt-visa.vercel.app/assets/galicia/icons/luz_lampara.png` |
 | `gas.png` | Ícono 3D | Quemador con llama azul y naranja | Metrogas, Naturgy, gas de red | `https://mkt-visa.vercel.app/assets/galicia/icons/gas.png` |
 | `canilla.png` | Ícono 3D | Canilla de agua metálica | AySA, agua potable, saneamiento | `https://mkt-visa.vercel.app/assets/galicia/icons/canilla.png` |

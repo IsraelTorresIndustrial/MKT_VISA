@@ -331,42 +331,42 @@ METADATA_TABLE = {
         "tags": ["teatro","mascaras","comedia","tragedia","calle corrientes","espectaculos","cultura","galicia"], "is_featured": True
     },
 
-    # ── GALICIA HEADERS (Banners Hero Sin Texto) ───────────────────────────
+    # ── GALICIA HEADERS (Banners Hero Sin Texto con Transparencia RGBA) ────
     "header_promos_visa_permanentes_07.png": {
-        "title": "Header Promos Visa #07 · Café & Rutinas Diarias", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
-        "concept": "Fotografía lifestyle (1100x504): Joven con cabello rosado sosteniendo bandeja de café y celular con tilde de confirmación, onda orgánica naranja a la izquierda",
-        "rubro": "Gastronomía Diaria & Cafeterías", "rule": "Usar en correos de microgastronomía, cafés al paso, desayunos, salidas cotidianas y compras de bajo monto con Visa.",
-        "tags": ["header","banner","cafe","desayuno","lifestyle","celular","visa","galicia","hero","sin texto"], "is_featured": True
+        "title": "Header Promos Visa #07 · Café & Rutinas Diarias (PNG Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Fotografía lifestyle Retina 2x (2292x1049, canal alfa RGBA transparente): Joven con cabello rosado sosteniendo bandeja de café y celular con tilde de confirmación, ondas orgánicas naranjas y base con transparencia",
+        "rubro": "Gastronomía Diaria & Cafeterías", "rule": "Cabecera transparente adaptable a cualquier fondo de email. Usar en correos de microgastronomía, cafés al paso, desayunos, salidas cotidianas y compras de bajo monto con Visa.",
+        "tags": ["header","banner","transparente","cafe","desayuno","lifestyle","celular","visa","galicia","hero","sin texto","retina"], "is_featured": True
     },
     "header_promos_visa_permanentes_08.png": {
-        "title": "Header Promos Visa #08 · Compras en Tienda Física & Cuotas", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
-        "concept": "Fotografía comercial (1100x504): Mujer sonriendo pagando con tarjeta física sobre POS en mostrador, con badges flotantes naranjas 'ahorrá' y 'comprá'",
-        "rubro": "Shopping & Tiendas Físicas", "rule": "Usar para compras presenciales en shoppings, indumentaria, planes de cuotas sin interés y promociones en comercios físicos.",
-        "tags": ["header","banner","shopping","pos","tienda fisica","cuotas","comisiones","visa","galicia","hero","sin texto"], "is_featured": True
+        "title": "Header Promos Visa #08 · Compras en Tienda Física & Cuotas (PNG Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Fotografía comercial Retina 2x (2292x1049, canal alfa RGBA transparente): Mujer sonriendo pagando con tarjeta física sobre POS en mostrador, con badges flotantes naranjas 'ahorrá' y 'comprá', y ondas inferiores con transparencia",
+        "rubro": "Shopping & Tiendas Físicas", "rule": "Cabecera transparente adaptable a cualquier fondo de email. Usar para compras presenciales en shoppings, indumentaria, planes de cuotas sin interés y promociones en comercios físicos.",
+        "tags": ["header","banner","transparente","shopping","pos","tienda fisica","cuotas","comisiones","visa","galicia","hero","sin texto","retina"], "is_featured": True
     },
     "header_promos_visa_permanentes_09.png": {
-        "title": "Header Promos Visa #09 · Contactless & Billeteras Digitales", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
-        "concept": "Fotografía primer plano (1100x502): Mano apoyando smartphone con tarjeta Galicia Visa digital sobre lector POS contactless que indica 'Acercar al lector'",
-        "rubro": "Pagos Móviles & NFC", "rule": "Usar para campañas de pagos sin contacto (Tap to Pay), enrolamiento de tarjetas en Apple Pay / Google Wallet / MODO y tecnología contactless.",
-        "tags": ["header","banner","contactless","nfc","modo","apple pay","pago movil","pos","visa","galicia","hero","sin texto"], "is_featured": True
+        "title": "Header Promos Visa #09 · Contactless & Billeteras Digitales (PNG Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Fotografía primer plano Retina 2x (2292x1046, canal alfa RGBA transparente): Mano apoyando smartphone con tarjeta Galicia Visa digital sobre lector POS contactless que indica 'Acercar al lector', con ondas inferiores transparentes",
+        "rubro": "Pagos Móviles & NFC", "rule": "Cabecera transparente adaptable a cualquier fondo de email. Usar para campañas de pagos sin contacto (Tap to Pay), enrolamiento de tarjetas en Apple Pay / Google Wallet / MODO y tecnología contactless.",
+        "tags": ["header","banner","transparente","contactless","nfc","modo","apple pay","pago movil","pos","visa","galicia","hero","sin texto","retina"], "is_featured": True
     },
     "header_promos_visa_permanentes_10.png": {
-        "title": "Header Promos Visa #10 · Ecommerce & Envíos (Compacto)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
-        "concept": "Fotografía lifestyle compacta (1100x463, fondo blanco puro): Joven recibiendo paquete de delivery sosteniendo café y celular, con badges 'comprá' y 'ahorrá'",
-        "rubro": "Ecommerce & Delivery", "rule": "Usar para compras online, delivery a domicilio, compras en marketplaces y correos con grilla extensa de beneficios inferior gracias a su altura compacta.",
-        "tags": ["header","banner","compacto","delivery","ecommerce","paquete","cafe","visa","galicia","hero","sin texto"], "is_featured": True
+        "title": "Header Promos Visa #10 · Ecommerce & Envíos (Compacto Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Fotografía lifestyle compacta Retina 2x (2292x964, fondo y laterales con canal alfa RGBA 100% transparente): Joven recibiendo paquete de delivery sosteniendo café y celular, con badges 'comprá' y 'ahorrá' silueteados",
+        "rubro": "Ecommerce & Delivery", "rule": "Cabecera compacta con silueteado y transparencia total en laterales. Usar para compras online, delivery a domicilio y correos con grilla extensa inferior.",
+        "tags": ["header","banner","transparente","compacto","delivery","ecommerce","paquete","cafe","visa","galicia","hero","sin texto","retina"], "is_featured": True
     },
     "header_promos_visa_permanentes_11.png": {
-        "title": "Header Promos Visa #11 · Ilustrado Minimalista Claro (Compacto)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
-        "concept": "Ilustración vectorial en viñeta circular (1100x463, fondo crema/marfil limpio): Teléfono naranja pagando sobre POS con ondas de radio y espacio libre para tipografía",
-        "rubro": "Fintech & Onboarding", "rule": "Usar para comunicaciones ilustradas, onboarding digital de billeteras móviles, resúmenes transaccionales o correos de diseño sobrio y minimalista.",
-        "tags": ["header","banner","compacto","ilustrado","vectorial","minimalista","pos","celular","visa","galicia","hero","sin texto"], "is_featured": True
+        "title": "Header Promos Visa #11 · Ilustrado Minimalista Claro (Compacto Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Ilustración vectorial en viñeta circular Retina 2x (2292x964, fondo crema/marfil con canal alfa perimetral transparente): Teléfono naranja pagando sobre POS con ondas de radio y espacio libre para tipografía",
+        "rubro": "Fintech & Onboarding", "rule": "Cabecera compacta ilustrada con bordes transparentes. Usar para comunicaciones ilustradas, onboarding digital de billeteras móviles, resúmenes transaccionales o correos sobrios.",
+        "tags": ["header","banner","transparente","compacto","ilustrado","vectorial","minimalista","pos","celular","visa","galicia","hero","sin texto","retina"], "is_featured": True
     },
     "header_promos_visa_permanentes_12.png": {
-        "title": "Header Promos Visa #12 · Ilustrado Naranja Galicia Shock (Compacto)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
-        "concept": "Ilustración vectorial sobre fondo sólido naranja corporativo Galicia #F96400 (1100x463): Teléfono naranja pagando sobre POS en viñeta circular blanca de máximo impacto",
-        "rubro": "Grandes Eventos & Mega Promos", "rule": "Usar para aperturas de campaña de alto impacto (Hot Sale, Cyber Monday), lanzamientos oficiales masivos y comunicaciones donde el color naranja deba dominar la pantalla.",
-        "tags": ["header","banner","compacto","naranja solido","shock","hotsale","cybermonday","visa","galicia","hero","sin texto"], "is_featured": True
+        "title": "Header Promos Visa #12 · Ilustrado Naranja Galicia Shock (Compacto Transparente)", "category": "Banners Hero", "family": "Headers sin Texto Galicia",
+        "concept": "Ilustración vectorial sobre tarjeta naranja corporativa Galicia #F96400 Retina 2x (2292x964, esquinas redondeadas con canal alfa transparente): Teléfono naranja pagando sobre POS en viñeta circular blanca de máximo impacto",
+        "rubro": "Grandes Eventos & Mega Promos", "rule": "Cabecera compacta con esquinas redondeadas transparentes. Usar para aperturas de campaña de alto impacto (Hot Sale, Cyber Monday), lanzamientos oficiales masivos y comunicaciones donde el color naranja domine la pantalla.",
+        "tags": ["header","banner","transparente","compacto","naranja solido","shock","hotsale","cybermonday","visa","galicia","hero","sin texto","retina"], "is_featured": True
     },
 
     # ── GALICIA LOGOS ──────────────────────────────────────────────────────
